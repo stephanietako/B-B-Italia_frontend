@@ -1,0 +1,37 @@
+.header {
+  display: inline-block;
+  padding: 0 20px;
+  width: 100%;
+  height: 100px;
+  border: 4px solid red;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+
+    p {
+      margin-right: auto;
+      font-size: 1.5em;
+    }
+  }
+
+  // &__container {
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   align-items: center;
+  //   padding: 20px 50px;
+  //   box-shadow: 0 1px 8px #ddd;
+
+  //   h1 {
+  //     margin-right: auto;
+  //     font-size: 1.5em;
+  //   }
+}
+
+/* #nav-title {
+  margin-right: auto;
+  font-size: 1.5em;
+} */

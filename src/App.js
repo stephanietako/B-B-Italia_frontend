@@ -1,8 +1,9 @@
 import React from "react";
 import Home from "./pages/Home";
-import "./App.css";
+import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import "./styles/main.scss";
 
 function App() {
   return (

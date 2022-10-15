@@ -1,0 +1,22 @@
+.banner {
+  display: flex;
+}
+
+.banner__content {
+  border: 2px solid blue;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.banner__left {
+  border: 2px solid red;
+  width: 50%;
+  height: 100%;
+}
+
+.banner__right {
+  border: 2px solid red;
+  width: 50%;
+}

@@ -1,13 +1,12 @@
-@import "./styles/_variables";
-@import "./styles/fonts.scss";
-@import "./styles/_mixins";
+@import "./style/_mixins";
+@import "./style/css-variables";
 
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   line-height: 1;
-  background-color: $color-white;
+  background-color: var(--color-white);
   @include mobile {
     flex-direction: column;
   }

@@ -19,4 +19,11 @@
 .banner__right {
   border: 2px solid red;
   width: 50%;
+  margin-left: 20px;
+
+  img {
+    border: 3px solid yellow;
+    width: 100%;
+    height: auto;
+  }
 }

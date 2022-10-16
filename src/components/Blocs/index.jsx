@@ -8,9 +8,10 @@ const index = (props) => {
         {/* <p>BLOC CONTENT</p> */}
         <div className={styles.blocs__img}>
           <img src={props.img} alt={props.alt} />
-        </div>
-        <div className={styles.blocs__text}>
-          <p>{props.text}</p>
+
+          <div className={styles.blocs__text}>
+            <p>{props.text}</p>
+          </div>
         </div>
       </div>
     </div>

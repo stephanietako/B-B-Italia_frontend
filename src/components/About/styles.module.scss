@@ -19,21 +19,15 @@
   }
 
   &__text {
-    @include blocTxtPresentation(100%, 40%, 20%); // height: 100%;
-    // width: 40%;
-    // left: 20%;
-    // display: block;
-    // text-align: center;
-    // position: absolute;
-    // border: 2px solid red;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
-    // bottom: 0;
-    // right: 0;
-    // color: #f1f1f1;
-    // padding: 20px;
-    // background: rgb(0, 0, 0); /* Fallback color */
-    // background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    @include blocTxtPresentation(100%, 40%, 20%);
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    top: 88%;
+    left: 80%;
+    border: 2px solid red;
   }
 
   &__content {

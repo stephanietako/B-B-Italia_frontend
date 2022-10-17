@@ -1,3 +1,5 @@
+@import "../../style/_mixins";
+
 .main {
   width: 100vh;
 }
@@ -5,4 +7,8 @@
 .wrapper {
   display: block;
   flex-direction: column;
+}
+
+.banner {
+  margin-top: 40px;
 }

@@ -1,6 +1,6 @@
 @import "../../style/_mixins";
 
-.blocs {
+.about {
   display: flex;
 
   &__img {
@@ -19,10 +19,9 @@
   }
 
   &__text {
-    @include blocTxtPresentation(auto, 100%, 50%);
-    // height: auto;
-    // width: 100%;
-    // left: 50%;
+    @include blocTxtPresentation(100%, 40%, 20%); // height: 100%;
+    // width: 40%;
+    // left: 20%;
     // display: block;
     // text-align: center;
     // position: absolute;

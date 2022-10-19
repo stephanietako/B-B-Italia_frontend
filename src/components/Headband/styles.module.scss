@@ -1,0 +1,19 @@
+.headband {
+  display: flex;
+  border: 2px solid blueviolet;
+  overflow-x: hidden;
+
+  & p {
+    color: blueviolet;
+    animation: 3s linear 1s infinite running slidein;
+  }
+}
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}

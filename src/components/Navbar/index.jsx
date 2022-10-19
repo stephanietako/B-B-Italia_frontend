@@ -7,7 +7,6 @@ const Navbar = () => {
     <nav>
       {/* exemple si je veux mettre plusieurs class ds la même div <div className={`${styles.navLinks} ${styles.test}`}> */}
       <div className={styles.navLinks}>
-        <Link to="/">Home</Link>
         <Link to="/">À propos</Link>
         <Link to="/">Produits</Link>
         <Link to="/">Projets</Link>

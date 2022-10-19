@@ -1,7 +1,14 @@
 @import "../../style/_mixins";
 
 .main {
-  width: 100vh;
+  display: flex;
+  background-color: aqua;
+  justify-content: center;
+  section {
+    width: 85%;
+    border: 3px solid;
+    margin-top: 30px;
+  }
 }
 
 .wrapper {

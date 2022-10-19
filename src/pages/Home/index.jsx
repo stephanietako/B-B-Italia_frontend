@@ -4,11 +4,13 @@ import Blocs from "../../components/Blocs";
 import styles from "./styles.module.scss";
 import images from "../../assets/images/leia.jpeg";
 import About from "../../components/About";
+import Headband from "../../components/Headband";
 
 const HomePage = () => {
   return (
     <div className={styles.main}>
       <section>
+        <Headband />
         <div className={styles.banner}>
           <Banner />
         </div>

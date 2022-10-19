@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import images from "../../assets/images/leia.jpeg";
 
-const index = () => {
+const Banner = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.banner__content}>
@@ -18,4 +18,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Banner;

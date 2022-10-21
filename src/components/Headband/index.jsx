@@ -4,7 +4,7 @@ const Headband = () => {
   return (
     <div className={styles.headband}>
       <div className={styles.headband__content}>
-        <p>HELLO WORLD HELLO WORLD HELLO WORLD</p>
+        <h1>Hello World</h1>
       </div>
     </div>
   );

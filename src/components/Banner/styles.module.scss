@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 .banner {
   display: flex;
 }
@@ -16,12 +18,62 @@
   border: 2px solid red;
   width: 50%;
   height: 100%;
-  background-color: pink;
-  p {
-    position: absolute;
-    color: red;
+  // background-color: pink;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://media.giphy.com/media/S99cgkURVO62qemEKM/giphy.gif);
+}
+.anim_title {
+  display: block;
+  border: 2px solid blue;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: max-content;
+  h2 {
+    // color: var(--color-white);
+    color: transparent;
+    font-size: 45px;
+    font-family: "Poppins", sans-serif;
+    -webkit-text-stroke: 1px red;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-color: -390px 0;
+
+    // animation: backcolor 3s linear infinite;
+    background-position: left, right;
+    animation: backcolor 0.8s 2s cubic-bezier(0, 0, 0.2, 1) forwards infinite;
   }
 }
+
+@keyframes backcolor {
+  0% {
+    background-size: 0% 100%, 100% 100%;
+    background-position: left, right;
+  }
+  50% {
+    background-size: 100% 100%, 0% 100%;
+    background-position: left, right;
+  }
+  51% {
+    background-size: 100% 100%, 0% 100%;
+    background-position: right;
+  }
+  100% {
+    background-size: 0% 100%, 0% 100%;
+    background-position: right;
+  }
+}
+
+// @keyframes backcolor {
+//   100% {
+//     background-position-x: 0 0;
+//   }
+// }
 
 .banner__right {
   border: 2px solid red;

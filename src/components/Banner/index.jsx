@@ -7,7 +7,9 @@ const Banner = () => {
     <div className={styles.banner}>
       <div className={styles.banner__content}>
         <div className={styles.banner__left}>
-          <p>BOX 1</p>
+          <span className={styles.anim_title}>
+            <h2>Welcome to Mars</h2>
+          </span>
         </div>
         <div className={styles.banner__right}>
           <p>BOX 2</p>

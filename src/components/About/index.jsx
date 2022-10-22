@@ -4,7 +4,7 @@ import logo from "../../assets/logo/bb-logo-noir.png";
 
 const About = ({ img, alt, text }) => {
   return (
-    <div className={styles.about} id={styles.about}>
+    <div className={styles.about}>
       <div className={styles.about__content}>
         <div className={styles.about__img}>
           <img src={img} alt={alt} />

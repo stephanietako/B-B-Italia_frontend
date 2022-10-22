@@ -11,14 +11,13 @@
   }
 }
 
-@mixin blocTxtPresentation($height, $width, $left) {
+@mixin blocsTxt($height, $width, $left) {
   height: $height;
   width: $width;
   left: $left;
   display: block;
   text-align: center;
   position: absolute;
-  border: 2px solid red;
   top: 50%;
   transform: translate(-50%, -50%);
   bottom: 0;

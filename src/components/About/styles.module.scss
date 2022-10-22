@@ -2,41 +2,34 @@
 
 .about {
   display: flex;
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 35rem;
+    margin-top: 5rem;
+  }
 
   &__img {
     display: block;
     width: 100%;
     height: 100%;
-    border: 3px solid aquamarine;
     position: relative;
-
     img {
       object-fit: cover;
-      border: 3px solid yellow;
       width: 100%;
       height: 100%;
     }
   }
 
   &__text {
-    @include blocTxtPresentation(100%, 40%, 20%);
+    @include blocsTxt(100%, 40%, 20%);
   }
-
   span {
     display: block;
     position: absolute;
     top: 88%;
     left: 80%;
-    border: 2px solid red;
-  }
-
-  &__content {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    border: 2px solid blue;
-    width: 100%;
-    height: 25rem;
-    margin-top: 3rem;
   }
 }

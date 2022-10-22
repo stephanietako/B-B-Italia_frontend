@@ -15,22 +15,19 @@ const HomePage = () => {
           <Banner />
         </div>
         <>
-          <div className={styles.wrapper}>
+          <div className={styles.__wrapper}>
             <section id="about">
               <About text="ABOUT" img={images} alt="c'est Christophe" />
             </section>
             <section id="products">
               <Blocs text="PRODUCTS" img={images} alt="c'est Leia" />
             </section>
-            {/* <Blocs text="BLOC 1" img={images} alt="c'est Leia" /> */}
             <section id="projects">
               <Blocs text="PROJECTS" img={images} alt="c'est Leia" />
             </section>
-            {/* <Blocs text="BLOC 2" img={images} alt="c'est Leia" /> */}
             <section id="contact">
               <Blocs text="CONTACT" img={images} alt="c'est Leia" />
             </section>
-            {/* <Blocs text="BLOC 3" img={images} alt="c'est Leia" /> */}
           </div>
         </>
       </div>

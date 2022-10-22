@@ -6,7 +6,11 @@ import logo from "../../assets/logo/bb-logo-noir.png";
 const Header = () => (
   <div className={styles.header}>
     <header className={styles.header__container}>
-      <img src={logo} className={styles.logo} alt="logo B and B Italia" />
+      <img
+        src={logo}
+        className={styles.header__logo}
+        alt="logo B and B Italia"
+      />
       <Navbar />
     </header>
   </div>

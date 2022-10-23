@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 .banner {
   display: flex;
   margin-top: 35px;
@@ -48,14 +46,15 @@
       h2 {
         color: transparent;
         font-size: 45px;
-        font-family: "Poppins", sans-serif;
+        // font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 1px red;
         background-image: linear-gradient(#fff, #fff);
         background-repeat: no-repeat;
         -webkit-background-clip: text;
         background-clip: text;
         background-position: left, right;
-        animation: backcolor 0.8s 2s cubic-bezier(0, 0, 0.2, 1) forwards
+        // animation: backcolor 7s 7s cubic-bezier(1, 1, 1, 1) forwards infinite;
+        animation: backcolor 7s 5s cubic-bezier(0.41, 0.04, 0.66, 0.87) forwards
           infinite;
       }
     }
@@ -66,12 +65,16 @@
       background-size: 0% 100%, 100% 100%;
       background-position: left, right;
     }
+    25% {
+      background-size: 0% 100%, 100% 100%;
+      background-position: left, right;
+    }
     50% {
-      background-size: 100% 100%, 0% 100%;
+      background-size: 100% 0%, 100% 100%;
       background-position: left, right;
     }
     51% {
-      background-size: 100% 100%, 0% 100%;
+      background-size: 100% 100%, 100% 100%;
       background-position: right;
     }
     100% {

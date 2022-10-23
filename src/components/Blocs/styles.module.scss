@@ -25,5 +25,11 @@
 
   &__text {
     @include blocsTxt(auto, 100%, 50%);
+    &__logo {
+      display: flex;
+      max-width: 15%;
+      max-height: 100%;
+      border: 3px solid yellow;
+    }
   }
 }

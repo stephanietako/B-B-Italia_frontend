@@ -11,12 +11,6 @@ const About = ({ img, alt, text }) => {
           <span id={styles.about__christophe}>
             <p>CHRISTOPHE</p>
           </span>
-          {/* <div className={styles.about__text}>
-            <div className={styles.about__text__logo}>
-              <img src={logo} alt=" logo B&B Italia Saint-Tropez" />
-              <p>{text}</p>
-            </div>
-          </div> */}
           <div className={styles.about__text}>
             <div className={styles.about__text__box}>
               <div className={styles.about__text__logo}>

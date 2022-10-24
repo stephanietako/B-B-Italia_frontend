@@ -35,10 +35,20 @@ const HomePage = () => {
               />
             </section>
             <section id="projects">
-              <Blocs text="PROJECTS" img={images} alt="c'est Leia" />
+              <Blocs
+                text="Fondée en 1975 aux côtés de B&B Italia, Maxalto a rapidement développé une identité personnelle dans la production spécialisée de meubles artisanaux. 
+              La recherche des plus hauts standards de qualité en termes de matériaux et de fabrication est l'objectif d'excellence inhérent au nom même de la marque. En effet, Maxalto dérive des termes dialectaux vénitiens massa alto, qui signifient le plus haut."
+                img={images}
+                alt="c'est Leia"
+              />
             </section>
             <section id="contact">
-              <Blocs text="CONTACT" img={images} alt="c'est Leia" />
+              <Blocs
+                text="Arclinea, fabricant majeur de cuisine en Italie depuis 1925, rejoint le groupe B&B Italia en 2016. Ce partenariat stratégique repose sur des valeurs communes de conception, d'innovation et de qualité, et sur une approche commune de la production et de l'industrie axée sur l'excellence.
+                L'objectif d'Arclinea est de produire des projets qui durent, capables de générer à chaque fois la cuisine souhaitée. Car si la perfection peut exister sur le papier, elle n'existe que lorsque le projet répond pleinement à toutes les exigences qui lui sont faites : une synthèse de valeurs conjuguées."
+                img={images}
+                alt="c'est Leia"
+              />
             </section>
           </div>
         </>

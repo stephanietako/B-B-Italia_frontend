@@ -7,8 +7,8 @@ const Footer = () => {
   const currentYear = date.getFullYear();
 
   return (
-    <div>
-      <footer className={styles.container}>
+    <div className={styles.footer}>
+      <footer className={styles.footer__container}>
         <h2>B&B Italia </h2>
         <ul>
           <Link to="/">Lien 1</Link>

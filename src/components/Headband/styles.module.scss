@@ -2,9 +2,10 @@
   display: block;
   border: 2px solid #000000;
   overflow-x: hidden;
+
   h1 {
     font-weight: 100;
-    animation: 7s linear 3s infinite running slidein;
+    animation: slidein linear 7s infinite running;
   }
 }
 

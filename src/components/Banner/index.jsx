@@ -10,7 +10,7 @@ const Banner = () => {
         <div className={styles.banner__left}>
           <img src={background} className={styles.background} alt="nasa" />
           <span className={styles.anim_title}>
-            <h2>Welcome to Mars</h2>
+            <h2>Welcome to Mars ...</h2>
           </span>
         </div>
         <div className={styles.banner__right}>

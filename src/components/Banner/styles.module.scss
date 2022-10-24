@@ -43,43 +43,80 @@
       left: 50%;
       top: 50%;
       width: max-content;
+
+      // Choix 1 animation
+      //     h2 {
+      //       color: transparent;
+      //       font-size: 45px;
+      //       // font-family: "Poppins", sans-serif;
+      //       -webkit-text-stroke: 1px red;
+      //       background-image: linear-gradient(#fff, #fff);
+      //       background-repeat: no-repeat;
+      //       -webkit-background-clip: text;
+      //       background-clip: text;
+      //       background-position: left, right;
+      //       // animation: backcolor 7s 7s cubic-bezier(1, 1, 1, 1) forwards infinite;
+      //       animation: backcolor 7s 5s cubic-bezier(0.41, 0.04, 0.66, 0.87) forwards
+      //         infinite;
+      //     }
+      //   }
+
+      // @keyframes backcolor {
+      //   0% {
+      //     background-size: 0% 100%, 100% 100%;
+      //     background-position: left, right;
+      //   }
+      //   25% {
+      //     background-size: 0% 100%, 100% 100%;
+      //     background-position: left, right;
+      //   }
+      //   50% {
+      //     background-size: 100% 0%, 100% 100%;
+      //     background-position: left, right;
+      //   }
+      //   75% {
+      //     background-size: 100% 100%, 100% 100%;
+      //     background-position: right;
+      //   }
+      //   100% {
+      //     background-size: 0% 100%, 0% 100%;
+      //     background-position: right;
+      //   }
+      // }
+
+      // Choix 2 animation
       h2 {
-        color: transparent;
-        font-size: 45px;
-        // font-family: "Poppins", sans-serif;
-        -webkit-text-stroke: 1px red;
-        background-image: linear-gradient(#fff, #fff);
-        background-repeat: no-repeat;
-        -webkit-background-clip: text;
-        background-clip: text;
-        background-position: left, right;
-        // animation: backcolor 7s 7s cubic-bezier(1, 1, 1, 1) forwards infinite;
-        animation: backcolor 7s 5s cubic-bezier(0.41, 0.04, 0.66, 0.87) forwards
-          infinite;
+        color: hsl(0, 0%, 70%);
+        font-weight: bold;
+        font-family: "Anonymous Pro", monospace;
+        letter-spacing: 7px;
+        cursor: pointer;
+        font-weight: 100;
+        border-right: 2px solid hsl(0, 0%, 80%);
+
+        // le nombre est élevé pour que ce soit plus smooth et normal c est une progression de gauche à droite et blinkTextCursor c'est l'animation du tiret horizontale de fin
+        animation: typewriter 7s steps(55) forwards infinite,
+          blinkTextCursor 0.9s infinite;
+        white-space: nowrap;
+        overflow: hidden;
       }
     }
-  }
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 425px;
+      }
+    }
 
-  @keyframes backcolor {
-    0% {
-      background-size: 0% 100%, 100% 100%;
-      background-position: left, right;
-    }
-    25% {
-      background-size: 0% 100%, 100% 100%;
-      background-position: left, right;
-    }
-    50% {
-      background-size: 100% 0%, 100% 100%;
-      background-position: left, right;
-    }
-    75% {
-      background-size: 100% 100%, 100% 100%;
-      background-position: right;
-    }
-    100% {
-      background-size: 0% 100%, 0% 100%;
-      background-position: right;
+    @keyframes blinkTextCursor {
+      from {
+        border-right-color: transparent;
+      }
+      to {
+        border-right-color: hsl(0, 0%, 80%);
+      }
     }
   }
 }

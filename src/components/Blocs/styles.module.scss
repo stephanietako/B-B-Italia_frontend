@@ -25,11 +25,21 @@
 
   &__text {
     @include blocsTxt(auto, 100%, 50%);
+    &__box {
+      display: flex;
+      position: absolute;
+      border: 5px solid darkblue;
+      overflow: hidden;
+      flex-direction: column;
+      margin-left: 250px;
+      padding: 20px;
+    }
     &__logo {
       display: flex;
+      border: 3px solid yellow;
       max-width: 15%;
       max-height: 100%;
-      border: 3px solid yellow;
+      justify-content: flex-start;
     }
   }
 }

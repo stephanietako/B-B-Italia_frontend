@@ -12,9 +12,11 @@ const About = ({ img, alt, text }) => {
             <p>CHRISTOPHE</p>
           </span>
           <div className={styles.about__text}>
-            <p>{text}</p>
             <div className={styles.about__text__logo}>
               <img src={logo} alt=" logo B&B Italia Saint-Tropez" />
+              <p>{text}</p>
+              {/* <div className={styles.about__text__logo}>
+              <img src={logo} alt=" logo B&B Italia Saint-Tropez" /> */}
             </div>
           </div>
         </div>

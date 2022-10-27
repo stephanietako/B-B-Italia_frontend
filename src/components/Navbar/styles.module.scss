@@ -1,55 +1,83 @@
 @import "../../style/css-variables";
 
 .navbar {
+  display: block;
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  &__logo {
-    color: #fff;
-    justify-self: start;
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+
+  .__logo {
+    height: 85px;
   }
 
-  .nav_menu {
+  .__nav_menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
     list-style: none;
-    text-align: center;
-    width: 70vw;
-    justify-content: end;
-    margin-right: 2rem;
-    &__item {
-      display: flex;
-      align-items: center;
-      height: 80px;
-      color: #1888ff;
-    }
-    &__links {
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      &:hover {
-        background-color: blue;
-        border-radius: 4px;
-        transition: all 0.2s ease-out;
+    grid-gap: 15px;
+    margin-right: 15px;
+  }
+
+  .__nav_mobile_menu {
+    display: none !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    margin: 25px;
+    display: block;
+
+    details {
+      summary {
+        list-style-type: ""; //delete arrow
+        text-align: end;
+
+        img {
+          filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg)
+            brightness(99%) contrast(107%);
+        }
+      }
+      div {
+        margin-top: 10px;
+        z-index: 100;
+        opacity: 0.9;
+        position: absolute;
+        right: -25px;
+        width: 100vw;
+        background: linear-gradient(
+          90deg,
+          rgb(28, 27, 27) 0%,
+          rgb(26, 23, 23) 100%
+        );
       }
     }
   }
+
   //fa-bars
   .menu_icon {
     display: none;
-    // display: block;
     color: #fff;
   }
 }
-////////////////////////////////////////////////////
+
+// ############## RESPONSIVE  ###############
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    .__nav_menu {
+      display: none !important;
+    }
+
+    .__nav_mobile_menu {
+      display: block !important;
+    }
+  }
+}
+
+/*
 @media screen and (max-width: 960px) {
   .navbar {
     position: relative;
@@ -101,3 +129,5 @@
     }
   }
 }
+
+*/

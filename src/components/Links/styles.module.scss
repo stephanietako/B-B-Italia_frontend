@@ -1,0 +1,63 @@
+// link unitaire
+.link {
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      opacity: 0.75;
+      border-radius: 4px;
+      transition: all 0.2s ease-out;
+    }
+  }
+}
+
+// dropdown unitaire
+
+/* Pour personnaliser l'icon de la balise details
+details > summary {
+  list-style-type: "fermé";
+}
+
+details[open] > summary {
+  list-style-type: "ouvert";
+}
+*/
+
+.dropdown {
+  color: #ffffff;
+  background-color: rgb(26, 23, 23);
+  padding: 0 10px 10px 10px;
+  cursor: pointer;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+  z-index: 666;
+
+  summary {
+    margin-top: 30px;
+  }
+
+  ul {
+    position: absolute;
+    background-color: rgb(26, 23, 23);
+    padding: 20px 20px 10px 20px;
+    font-size: 18px;
+    list-style-type: none;
+    li {
+      margin: 8px 0;
+      a {
+        color: #ffffff;
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}

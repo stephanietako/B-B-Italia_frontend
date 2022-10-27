@@ -1,83 +1,101 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Dropdown from "./Dropdown";
+import { v4 as uuidv4 } from "uuid";
+
+// Assets
+import logo from "../../assets/logo/bandb-logo-blanc.png";
+import menu from "../../assets/icon/menu.svg";
+import cross from "../../assets/icon/cross.svg";
+
+// Cmp
+import Links from "../Links";
+
+// Styles
 import styles from "./styles.module.scss";
 
 const Navbar = () => {
-  //   return (
-  //     <nav>
-  //       <div className={styles.navLinks}>
-  //         <a href="/#about">About</a>
-  //         <a href="/#products">Products</a>
-  //         <a href="/#projects">Projects</a>
-  //         <a href="/#contact">Contact</a>
-  //       </div>
-  //     </nav>
-  //   );
-  // };
-  // ici mon usestate pour le menu
-  const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
-  // rappel: handleClick pour changer le state et le ! c'est le state opposé
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const [isOpen, setIsOpen] = useState(true);
+  const [refresh, setRefresh] = useState(false);
+
+  const links = [
+    { name: "Accueil", target: "#home" },
+    { name: "A propos", target: "#about" },
+    { name: "Produits", target: "", dropdown: true },
+    { name: "Projets", target: "#projects" },
+    { name: "Contact", target: "#contact" },
+  ];
+
+  const linksMobile = [
+    { name: "Accueil", target: "#home" },
+    { name: "A propos", target: "#about" },
+    { name: "Produits", target: "#products" },
+    { name: "Projets", target: "#projects" },
+    { name: "Contact", target: "#contact" },
+  ];
+
+  const sublinks = [
+    [
+      { name: "B&B", target: "#bandb" },
+      { name: "MaxAlto", target: "#maxalto" },
+      { name: "Arclinea", target: "#arclineo" },
+    ],
+  ];
+
+  const triggerMenu = () => setRefresh(!refresh);
+
+  useEffect(() => {
+    setIsOpen(!isOpen);
+  }, [refresh]);
 
   return (
     <nav className={styles.navbar}>
-      <Link to="/" className={styles.navbar__logo}>
-        BBI
+      <Link to="/">
+        <img
+          className={styles.__logo}
+          src={logo}
+          alt="logo B&B Italia Saint-Tropez"
+        />
       </Link>
-      {/* MENU ICON */}
-      <div className={styles.menu_icon} onClick={handleClick}>
-        <i className={click ? "fas fa-times" : "fas fa-bars"} />
+      {/* MOBILE MENU */}
+      <div className={styles.__nav_mobile_menu} onClick={() => triggerMenu()}>
+        <details open={isOpen}>
+          <summary>
+            <img src={isOpen ? cross : menu} alt={isOpen ? "Menu" : "Cross"} />
+          </summary>
+          <div>
+            {linksMobile.map((link, index) => {
+              return (
+                <Links
+                  key={uuidv4()}
+                  link={link}
+                  sublinks={sublinks}
+                  dropdownPosition={0}
+                  closeMenu={() => triggerMenu()}
+                />
+              );
+            })}
+          </div>
+        </details>
       </div>
-      <ul className={click ? "nav_menu__active" : "nav_menu"}>
-        <li className={styles.nav_menu__item}>
-          <Link
-            to="/"
-            className={styles.nav_menu__links}
-            onClick={closeMobileMenu}
-          >
-            Home
-          </Link>
-        </li>
-        <li className={styles.nav_menu__item}>
-          <Link
-            to="/"
-            className={styles.nav_menu__links}
-            onClick={closeMobileMenu}
-          >
-            About
-          </Link>
-        </li>
-        <li className={styles.nav_menu__item}>
-          <Link
-            to="/products"
-            className={styles.nav_menu__links}
-            onClick={closeMobileMenu}
-          >
-            Products <i className="fas fa-caret-down" />
-          </Link>
-          {dropdown && <Dropdown />}
-        </li>
-        <li className={styles.nav_menu__item}>
-          <Link
-            to="/projects"
-            className={styles.nav_menu__links}
-            onClick={closeMobileMenu}
-          >
-            Projets
-          </Link>
-        </li>
-        <li className={styles.nav_menu__item}>
-          <Link
-            to="/contact"
-            className={styles.nav_menu__links}
-            onClick={closeMobileMenu}
-          >
-            Contact
-          </Link>
-        </li>
+      {/* DESKTOP MENU */}
+      <ul className={styles.__nav_menu}>
+        {links.map((link, index) => {
+          let dropdownPosition = 0;
+          const ddList = links.filter((lnk) => lnk.dropdown === true);
+          ddList.map((lnk, i) => {
+            if (link.name === lnk.name) dropdownPosition = i;
+            return null;
+          });
+
+          return (
+            <Links
+              key={uuidv4()}
+              link={link}
+              sublinks={sublinks}
+              dropdownPosition={dropdownPosition}
+            />
+          );
+        })}
       </ul>
     </nav>
   );

@@ -1,5 +1,4 @@
 .dropdown-menu {
-  background: red;
   width: 200px;
   position: absolute;
   top: 80px;
@@ -15,15 +14,6 @@
   &__clicked {
     display: none;
   }
-}
-
-.dropdown_link {
-  display: block;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  color: #fff;
-  padding: 16px;
 }
 
 @media screen and (max-width: 960px) {

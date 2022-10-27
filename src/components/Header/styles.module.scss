@@ -1,5 +1,6 @@
 // @import "../../style/_mixins";
 @import "../../style/css-variables";
+@import "../../style/scss-variables.scss";
 
 .header {
   display: flex;
@@ -18,6 +19,6 @@
     flex-direction: column;
     display: flex;
     // align-items: flex-end;
-    box-shadow: 0 1px 8px var(--light-grey);
+    box-shadow: 0 1px 8px $light-grey;
   }
 }

@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <div className={styles.footer}>
-      <footer className={styles.footer__container}>
+      <footer className={styles.__container}>
         <h2>B&B Italia </h2>
         <ul>
           <Link to="/">Lien 1</Link>

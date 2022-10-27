@@ -1,19 +1,103 @@
 @import "../../style/css-variables";
 
-nav {
+.navbar {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  height: 80px;
   display: flex;
-  border: 2px solid red;
-  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  &__logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .nav_menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+    &__item {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      color: #1888ff;
+    }
+    &__links {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      &:hover {
+        background-color: blue;
+        border-radius: 4px;
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+  //fa-bars
+  .menu_icon {
+    display: none;
+    // display: block;
+    color: #fff;
+  }
 }
-.navLinks a {
-  font-size: 22px;
-  color: var(--color-link);
-  opacity: 0.8;
-  padding-top: 36px;
-  margin-right: 15px;
-  transition: 0.5s;
-  cursor: pointer;
-  &:hover {
-    color: #000;
+////////////////////////////////////////////////////
+@media screen and (max-width: 960px) {
+  .navbar {
+    position: relative;
+
+    .nav_menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      &__active {
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
+    }
+    .menu_icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .nav_links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+      &:hover {
+        background-color: #1888ff;
+        border-radius: 0;
+      }
+    }
+
+    .navbar__logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
   }
 }

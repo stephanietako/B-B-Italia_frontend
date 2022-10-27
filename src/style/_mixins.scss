@@ -6,7 +6,10 @@
 }
 
 @mixin mobile {
-  @media (max-width: 800px) {
+  @media (max-width: 350px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 4px solid blue;
     @content;
   }
 }

@@ -1,13 +1,13 @@
 @import "./style/_mixins";
 @import "./style/css-variables";
-// @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./style/fonts.scss";
 
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   line-height: 1;
-  font-family: "Roboto", sans-serif;
+  font-family: $roboto_font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-white);

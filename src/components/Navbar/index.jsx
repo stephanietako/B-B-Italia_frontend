@@ -53,7 +53,7 @@ const Navbar = () => {
         <img
           className={styles.__logo}
           src={logo}
-          alt="logo B&B Italia Saint-Tropez"
+          alt="B&B Italia Saint-Tropez"
         />
       </Link>
       {/* MOBILE MENU */}

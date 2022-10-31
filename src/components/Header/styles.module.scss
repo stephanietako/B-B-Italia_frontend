@@ -6,19 +6,5 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
-  &__logo {
-    max-width: 25%;
-    max-height: 100%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-  }
-  &__container {
-    flex-direction: column;
-    display: flex;
-    // align-items: flex-end;
-    box-shadow: 0 1px 8px $light-grey;
-  }
+  height: 11rem;
 }

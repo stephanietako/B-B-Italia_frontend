@@ -6,20 +6,22 @@ import background from "../../assets/images/nasa.gif";
 const Banner = () => {
   return (
     <div className={styles.banner}>
-      <div className={styles.banner__content}>
-        <div className={styles.banner__left}>
+      <div className={styles.__main_block}>
+        <div className={styles.__container_left}>
           <img src={background} className={styles.background} alt="nasa" />
-          <span className={styles.anim_title}>
-            <h2>Welcome to Mars ...</h2>
-          </span>
+          <div className={styles.__text_block}>
+            <p>Welcome to Mars ...</p>
+          </div>
         </div>
-        <div className={styles.banner__right}>
-          <p>BOX 2</p>
+
+        <div className={styles.__container_right}>
           <img src={images} className={styles.image} alt="banner bloc" />
+          <div className={styles.__text_block}>
+            <p>BOX 2</p>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default Banner;

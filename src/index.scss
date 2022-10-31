@@ -4,9 +4,10 @@
 @import "./style/scss-variables.scss";
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   line-height: 1;
   font-family: $roboto_font;
   -webkit-font-smoothing: antialiased;

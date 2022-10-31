@@ -4,12 +4,19 @@
   display: flex;
   background-color: transparent;
   justify-content: center;
-}
-.container {
-  width: 85%;
-  // margin-top: 35px;
-  &__wrapper {
-    display: block;
-    flex-direction: column;
+  .__container {
+    width: 85%;
+
+    .__head {
+      display: flex;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      .__logo {
+        align-items: center;
+        max-width: 25%;
+        max-height: 100%;
+      }
+    }
   }
 }

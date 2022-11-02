@@ -1,5 +1,4 @@
 .navbar {
-  display: block;
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   display: flex;
   justify-content: space-between;
@@ -20,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(5, auto);
     list-style: none;
-    grid-gap: 15px;
+    // grid-gap: 15px;
     margin-right: 15px;
   }
 
@@ -31,34 +30,39 @@
     top: 0;
     cursor: pointer;
     margin: 25px;
-    display: block;
-
+    // transition: all 4s;
     details {
+      transition: 4s;
       summary {
-        list-style-type: ""; //delete arrow
+        list-style-type: " "; //delete arrow
         text-align: end;
-
         img {
           filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg)
             brightness(99%) contrast(107%);
         }
       }
       div {
-        margin-top: 10px;
+        display: block;
+        width: 100vw;
+        margin-top: 55px;
         z-index: 100;
         opacity: 0.9;
-        position: absolute;
+        position: relative;
         right: -25px;
-        width: 100vw;
-        background: linear-gradient(
-          90deg,
-          rgb(28, 27, 27) 0%,
-          rgb(26, 23, 23) 100%
-        );
+        // background: linear-gradient(
+        //   90deg,
+        //   rgb(28, 27, 27) 0%,
+        //   rgb(26, 23, 23) 100%
+        // );
+        background-color: aqua;
+        transition-delay: 0s;
+        &:hover {
+          background-color: blue;
+          transition-delay: 0s;
+        }
       }
     }
   }
-
   //fa-bars
   .menu_icon {
     display: none;

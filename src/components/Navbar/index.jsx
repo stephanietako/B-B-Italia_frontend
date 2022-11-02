@@ -29,6 +29,8 @@ const Navbar = () => {
     { name: "Accueil", target: "#home" },
     { name: "A propos", target: "#about" },
     { name: "Produits", target: "#products" },
+    // menu du dropdown de products a ajouter
+    // { name: "Produits", target: "", dropdown: true },
     { name: "Projets", target: "#projects" },
     { name: "Contact", target: "#contact" },
   ];
@@ -42,6 +44,14 @@ const Navbar = () => {
   ];
 
   const triggerMenu = () => setRefresh(!refresh);
+
+  // const onMouseEnter = () => {
+  //   setRefresh(true);
+  // };
+
+  // const onMouseLeave = () => {
+  //   setRefresh(false);
+  // };
 
   useEffect(() => {
     setIsOpen(!isOpen);
@@ -57,7 +67,11 @@ const Navbar = () => {
         />
       </Link>
       {/* MOBILE MENU */}
-      <div className={styles.__nav_mobile_menu} onClick={() => triggerMenu()}>
+      <div
+        className={styles.__nav_mobile_menu}
+        onMouseEnter={() => triggerMenu()}
+        onMouseLeave={() => triggerMenu()}
+      >
         <details open={isOpen}>
           <summary>
             <img src={isOpen ? cross : menu} alt={isOpen ? "Menu" : "Cross"} />
@@ -70,7 +84,7 @@ const Navbar = () => {
                   link={link}
                   sublinks={sublinks}
                   dropdownPosition={0}
-                  closeMenu={() => triggerMenu()}
+                  // closeMobileMenu={() => triggerMenu({ onMouseLeave })}
                 />
               );
             })}
@@ -82,8 +96,8 @@ const Navbar = () => {
         {links.map((link, index) => {
           let dropdownPosition = 0;
           const ddList = links.filter((lnk) => lnk.dropdown === true);
-          ddList.map((lnk, i) => {
-            if (link.name === lnk.name) dropdownPosition = i;
+          ddList.map((lnk, index) => {
+            if (link.name === lnk.name) dropdownPosition = index;
             return null;
           });
 

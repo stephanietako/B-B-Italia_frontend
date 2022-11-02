@@ -1,9 +1,15 @@
+import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 // Styles
 import styles from "./styles.module.scss";
 
 const Links = ({ link, sublinks, dropdownPosition, closeMenu }) => {
   const { name, target, dropdown } = link;
+
+  const [refresh, setRefresh] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
+
+  const triggerMenu = () => setRefresh(!refresh);
 
   const sublinksrender = sublinks[dropdownPosition]?.map((link) => (
     <li key={uuidv4()}>
@@ -13,9 +19,18 @@ const Links = ({ link, sublinks, dropdownPosition, closeMenu }) => {
     </li>
   ));
 
+  useEffect(() => {
+    setIsOpen(!isOpen);
+  }, [refresh]);
+
   if (dropdown) {
     return (
-      <details className={styles.dropdown}>
+      <details
+        open={isOpen}
+        className={styles.dropdown}
+        onMouseEnter={() => triggerMenu()}
+        onMouseLeave={() => triggerMenu()}
+      >
         <summary>{name}</summary>
         <ul>{sublinksrender}</ul>
       </details>

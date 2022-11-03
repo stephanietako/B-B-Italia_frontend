@@ -31,7 +31,7 @@
     margin: 25px;
     details {
       transition: 4s;
-      summary {
+      .__summ {
         list-style-type: " "; //delete arrow
         text-align: end;
         img {
@@ -73,6 +73,32 @@
 
     .__nav_mobile_menu {
       display: block !important;
+      // summary {
+      //   list-style-type: " "; //delete arrow
+      //   text-align: start;
+      //   border: 2px solid red;
+      // }
+      details {
+        border: 2px solid white;
+        display: flex;
+
+        .__summ_products {
+          border: 2px solid blue;
+        }
+      }
+
+      div {
+        border: 2px solid yellow;
+      }
+    }
+
+    ul {
+      display: flex;
+      text-align: start;
+      position: relative;
+      align-self: flex-start;
+      border: 2px solid red;
+      align-items: center;
     }
   }
 }

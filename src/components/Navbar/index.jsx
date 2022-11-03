@@ -28,9 +28,9 @@ const Navbar = () => {
   const linksMobile = [
     { name: "Accueil", target: "#home" },
     { name: "A propos", target: "#about" },
-    { name: "Produits", target: "#products" },
+    // { name: "Produits", target: "#products" },
     // menu du dropdown de products a ajouter
-    // { name: "Produits", target: "", dropdown: true },
+    { name: "Produits", target: "", dropdown: true },
     { name: "Projets", target: "#projects" },
     { name: "Contact", target: "#contact" },
   ];
@@ -73,7 +73,7 @@ const Navbar = () => {
         onMouseLeave={() => triggerMenu()}
       >
         <details open={isOpen}>
-          <summary>
+          <summary className={`${styles.__summ} ${styles.__summ_products}`}>
             <img src={isOpen ? cross : menu} alt={isOpen ? "Menu" : "Cross"} />
           </summary>
           <div>

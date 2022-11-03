@@ -28,20 +28,32 @@
     &__box {
       display: flex;
       padding: 20px;
-      justify-content: space-between;
-
+      // justify-content: space-between;
+      border: 2px solid blue;
+      width: 100%;
+      max-width: 100%;
       p {
+        position: relative;
+        border: 2px solid yellow;
         display: block;
         width: 80%;
         color: black;
         overflow: hidden;
+        padding: 1rem;
+        left: 22%;
       }
     }
-    &__logo {
-      display: flex;
-      border: 3px solid yellow;
-      max-width: 15%;
+    .__logo {
+      display: block;
+      border: 3px solid red;
+      width: 20%;
       max-height: 100%;
+      position: absolute;
+      align-self: center;
+      img {
+        max-width: 10rem;
+        object-fit: contain;
+      }
     }
   }
 }

@@ -12,6 +12,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={HomePage} />
           <Route path="/products" element={HomePage} />
+          <Route exact path="/bandb" element={HomePage} />
+          <Route exact path="/maxalto" element={HomePage} />
+          <Route exact path="/arclinea" element={HomePage} />
           <Route path="/projects" element={HomePage} />
           <Route path="/contact" element={HomePage} />
         </Route>

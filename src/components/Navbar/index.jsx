@@ -39,7 +39,7 @@ const Navbar = () => {
     [
       { name: "B&B", target: "#bandb" },
       { name: "MaxAlto", target: "#maxalto" },
-      { name: "Arclinea", target: "#arclineo" },
+      { name: "Arclinea", target: "#arclinea" },
     ],
   ];
 

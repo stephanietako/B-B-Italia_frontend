@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo/bb-logo-noir.png";
+import arclinea from "../../assets/logo/arclinea-logo.png";
+import maxalto from "../../assets/logo/maxalto-logo.png";
 import Banner from "../../components/Banner";
 import Blocs from "../../components/Blocs";
 import styles from "./styles.module.scss";
@@ -29,6 +31,8 @@ const HomePage = () => {
                 La rencontre avec un acteur majeur du design italien en France lui a permis de concrétiser, il ouvre en 2016 le 1er  showroom monomarque B&B Italia en France."
               img={images}
               alt="c'est Christophe"
+              logo={logo}
+              altLogo="logo B and B Italia"
             />
           </section>
           <section id="bandb">
@@ -38,6 +42,8 @@ const HomePage = () => {
                 Design Holding est un hub de design unique par sa taille et son envergure internationale, intégrant des marques emblématiques telles que B&B Italia, Maxalto, Azucena, Arclinea, Flos, Louis Poulsen, Fendi Casa, Menu, by Lassen et Lumens."
               img={images}
               alt="c'est Leia"
+              logo={logo}
+              altLogo="logo B and B Italia"
             />
           </section>
           <section id="maxalto">
@@ -46,6 +52,8 @@ const HomePage = () => {
               La recherche des plus hauts standards de qualité en termes de matériaux et de fabrication est l'objectif d'excellence inhérent au nom même de la marque. En effet, Maxalto dérive des termes dialectaux vénitiens massa alto, qui signifient le plus haut."
               img={images}
               alt="c'est Leia"
+              logo={maxalto}
+              altLogo="maxalto"
             />
           </section>
           <section id="arclinea">
@@ -54,6 +62,8 @@ const HomePage = () => {
                 L'objectif d'Arclinea est de produire des projets qui durent, capables de générer à chaque fois la cuisine souhaitée. Car si la perfection peut exister sur le papier, elle n'existe que lorsque le projet répond pleinement à toutes les exigences qui lui sont faites : une synthèse de valeurs conjuguées."
               img={images}
               alt="c'est Leia"
+              logo={arclinea}
+              altLogo="arclinea"
             />
           </section>
           <section id="projects">
@@ -61,10 +71,18 @@ const HomePage = () => {
               text="ANicole Äbischer Michael Anastassiades Monica Armani Edward Barber & Jay Osgerby  Jeffrey Bernett Gabriele & Oscar Buratti David Chipperfield Antonio Citterio Nipa Doshi & Jonathan Levien Uwe Fischer Naoto Fukasawa Carsten Gerhards & Andreas Glücker Zaha Hadid Chris Howker Foster+Partners Industrial Design Studio Studio Kairos Piero Lissoni Jean-Marie Massaud Jasper Morrison Paolo Nava Atelier Oï Gaetano Pesce Paolo Piva Yabu Pushelberg Afra & Tobia Scarpa Francesca Simen Ettore Sottsass Philippe Starck Studio unPIZZO Patricia Urquiola Vincent Van Duysen Jakob Wagner Marcel Wanders"
               img={images}
               alt="c'est Leia"
+              logo={logo}
+              altLogo="les projets"
             />
           </section>
           <section id="contact">
-            <Blocs text="CONTACT ......" img={images} alt="c'est Leia" />
+            <Blocs
+              text="CONTACT ......"
+              img={images}
+              alt="c'est Leia"
+              logo={logo}
+              altLogo="logo B and B Italia"
+            />
           </section>
           {/* </div> */}
         </>

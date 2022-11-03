@@ -26,6 +26,9 @@
         transform: translate(-50%, -50%);
         left: 50%;
         top: 50%;
+        border: 2px solid red;
+        overflow: hidden;
+        max-width: 100%;
       }
     }
 
@@ -44,6 +47,9 @@
         transform: translate(-50%, -50%);
         left: 50%;
         top: 50%;
+        border: 2px solid red;
+        overflow: hidden;
+        max-width: 100%;
         p {
           display: block;
           max-width: 20rem;

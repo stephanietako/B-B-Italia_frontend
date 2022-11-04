@@ -79,17 +79,17 @@
       //   border: 2px solid red;
       // }
       details {
-        border: 2px solid white;
+        // border: 2px solid white;
         display: flex;
 
-        .__summ_products {
-          border: 2px solid blue;
-        }
+        // .__summ_products {
+        //   border: 2px solid blue;
+        // }
       }
 
-      div {
-        border: 2px solid yellow;
-      }
+      // div {
+      //   border: 2px solid yellow;
+      // }
     }
 
     ul {
@@ -97,7 +97,7 @@
       text-align: start;
       position: relative;
       align-self: flex-start;
-      border: 2px solid red;
+      // border: 2px solid red;
       align-items: center;
     }
   }

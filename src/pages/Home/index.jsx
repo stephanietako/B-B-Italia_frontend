@@ -8,6 +8,9 @@ import styles from "./styles.module.scss";
 import images from "../../assets/images/leia.jpeg";
 import About from "../../components/About";
 import Headband from "../../components/Headband";
+import at from "../../assets/icon/at.svg";
+import phone from "../../assets/icon/phone.svg";
+import instagram from "../../assets/icon/instagram.svg";
 
 const HomePage = () => {
   return (
@@ -15,10 +18,22 @@ const HomePage = () => {
       <div className={styles.__container}>
         <div className={styles.__head}>
           <img src={logo} className={styles.__logo} alt="logo B and B Italia" />
+
+          <ul>
+            <li>
+              <img src={phone} alt={"phone symbol"} />
+            </li>
+            <li>
+              <img src={at} alt={"at symbol"} />
+            </li>
+
+            <li>
+              <img src={instagram} alt={"instagram symbol"} />
+            </li>
+          </ul>
+
           <Headband />
         </div>
-        {/* <img src={logo} className={styles.__logo} alt="logo B and B Italia" /> */}
-
         <div className={styles.banner}>
           <Banner />
         </div>

@@ -10,13 +10,16 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <footer className={styles.__container}>
-        <Link to="/">
-          <img
-            className={styles.__logo}
-            src={logo}
-            alt="B&B Italia Saint-Tropez"
-          />
-        </Link>
+        <div className={styles.__logo}>
+          <Link to="/">
+            <img
+              className={styles.__logo}
+              src={logo}
+              alt="B&B Italia Saint-Tropez"
+            />
+          </Link>
+        </div>
+
         <ul>
           <Link to="/">Lien 1</Link>
           <Link to="/">Lien 2</Link>

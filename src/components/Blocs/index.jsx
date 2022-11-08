@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./styles.module.scss";
-// import logo from "../../assets/logo/bb-logo-noir.png";
+// c'est là que ça se passe pour les textes(je me comprends bonjour)
 
-const Blocs = ({ img, alt, text, logo }) => {
+const Blocs = ({ img, alt, text, logo, altLogo }) => {
   return (
     <div className={styles.blocs}>
       <div className={styles.blocs__content}>
@@ -12,7 +12,7 @@ const Blocs = ({ img, alt, text, logo }) => {
           <div className={styles.blocs__text}>
             <div className={styles.blocs__text__box}>
               <div className={styles.__logo}>
-                <img src={logo} alt={""} />
+                <img src={logo} alt={altLogo} />
               </div>
               <p>{text}</p>
             </div>

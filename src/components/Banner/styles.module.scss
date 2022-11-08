@@ -5,11 +5,11 @@
 .banner {
   display: flex;
   @include mobile;
-  margin-top: 35px;
+  margin-top: 18px;
   .__main_block {
     display: flex;
     flex-basis: 100%;
-    max-height: 30rem;
+    max-height: 55rem;
     .__container_right {
       position: relative;
       width: 50%;
@@ -51,8 +51,10 @@
         overflow: hidden;
         max-width: 100%;
         p {
+          font-size: 30px;
           display: block;
-          max-width: 20rem;
+          // max-width: 20rem;
+          width: 100%;
           color: hsl(0, 0%, 70%);
           font-family: $anonymous_font, monospace;
           letter-spacing: 7px;
@@ -72,7 +74,7 @@
       width: 0;
     }
     to {
-      width: 345px;
+      width: 470px;
     }
   }
 

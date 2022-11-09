@@ -45,14 +45,6 @@ const Navbar = () => {
 
   const triggerMenu = () => setRefresh(!refresh);
 
-  // const onMouseEnter = () => {
-  //   setRefresh(true);
-  // };
-
-  // const onMouseLeave = () => {
-  //   setRefresh(false);
-  // };
-
   useEffect(() => {
     setIsOpen(!isOpen);
   }, [refresh]);

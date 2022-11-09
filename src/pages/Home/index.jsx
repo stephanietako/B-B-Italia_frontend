@@ -11,14 +11,10 @@ import Headband from "../../components/Headband";
 import at from "../../assets/icon/at.svg";
 import phone from "../../assets/icon/phone.svg";
 import instagram from "../../assets/icon/instagram.svg";
+import ImgSlider from "../../components/ImgSlider";
+import { SliderData } from "../../components/SliderData";
 
 const HomePage = () => {
-  <div style={{ whiteSpace: "pre-wrap" }}>
-    {`
-    keep formatting
-    keep spaces
-  `}
-  </div>;
   return (
     <div className={styles.main}>
       <div className={styles.__container}>
@@ -43,8 +39,6 @@ const HomePage = () => {
           <Banner />
         </div>
         <>
-          {/* <div className={styles.__wrapper}> */}
-
           <section id="about">
             <About
               text="Tropézien depuis 25 ans, Christophe Papa vient de l’univers du luxe et de la mode. Ce sont les figures historiques; Le Corbusier, Charlotte Perriand, Florence Knoll, Eliel et Eero Saarinen, Alvar Aalto, Walter Gropius et Ludwig Mies van der Rohe; qui lui ont donné l’envie d’aller plus loin.
@@ -90,14 +84,16 @@ const HomePage = () => {
             />
           </section>
           <section id="projects">
-            <Blocs
+            <ImgSlider slides={SliderData} />
+            {/* <Blocs
               text="ANicole Äbischer Michael Anastassiades Monica Armani Edward Barber & Jay Osgerby  Jeffrey Bernett Gabriele & Oscar Buratti David Chipperfield Antonio Citterio Nipa Doshi & Jonathan Levien Uwe Fischer Naoto Fukasawa Carsten Gerhards & Andreas Glücker Zaha Hadid Chris Howker Foster+Partners Industrial Design Studio Studio Kairos Piero Lissoni Jean-Marie Massaud Jasper Morrison Paolo Nava Atelier Oï Gaetano Pesce Paolo Piva Yabu Pushelberg Afra & Tobia Scarpa Francesca Simen Ettore Sottsass Philippe Starck Studio unPIZZO Patricia Urquiola Vincent Van Duysen Jakob Wagner Marcel Wanders"
               img={images}
               alt="c'est Leia"
               logo={logo}
               altLogo="les projets"
-            />
+            /> */}
           </section>
+
           <section id="contact">
             <Blocs
               text={"This \n works"}
@@ -107,8 +103,6 @@ const HomePage = () => {
               altLogo="logo B and B Italia"
             />
           </section>
-
-          {/* </div> */}
         </>
       </div>
     </div>

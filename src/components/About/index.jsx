@@ -8,7 +8,7 @@ const About = ({ img, alt, text }) => {
       <div className={styles.__content}>
         <div className={styles.__img}>
           <img src={img} alt={alt} />
-          <span idclassName={styles.__christophe}>
+          <span className={styles.__christophe}>
             <p>CHRISTOPHE &agrave;blablablabla</p>
           </span>
           <div className={styles.__text}>

@@ -5,19 +5,19 @@ import styles from "./styles.module.scss";
 
 const ImgSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
-  const sliderLenght = slides.lenght;
+  const sliderlength = slides.length;
 
   const nextSlide = () => {
-    setCurrent(current === sliderLenght - 1 ? 0 : current + 1);
+    setCurrent(current === sliderlength - 1 ? 0 : current + 1);
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? sliderLenght - 1 : current - 1);
+    setCurrent(current === 0 ? sliderlength - 1 : current - 1);
   };
 
   console.log(current);
 
-  if (!Array.isArray(slides) || sliderLenght <= 0) {
+  if (!Array.isArray(slides) || sliderlength <= 0) {
     return null;
   }
 
@@ -34,13 +34,13 @@ const ImgSlider = ({ slides }) => {
         return (
           <div
             key={index}
-            className={
-              index === current
-                ? `{${styles.__slide} ${styles.__active}`
-                : `${styles.__slide}}`
-            }
+            className={`${styles.__slide} ${
+              index === current ? styles.__active : ""
+            }`}
           >
-            <img src={slide.image} alt="design" className={styles.__image} />
+            {index === current && (
+              <img src={slide.image} alt="design" className={styles.__image} />
+            )}
           </div>
         );
       })}

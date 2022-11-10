@@ -42,7 +42,7 @@
     transition-duration: 1s ease;
   }
 
-  .__slide.active {
+  .__slide .__active {
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);

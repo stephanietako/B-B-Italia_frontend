@@ -76,7 +76,6 @@ const Navbar = () => {
                   link={link}
                   sublinks={sublinks}
                   dropdownPosition={0}
-                  // closeMobileMenu={() => triggerMenu({ onMouseLeave })}
                 />
               );
             })}

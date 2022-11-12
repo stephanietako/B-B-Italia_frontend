@@ -17,6 +17,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [refresh, setRefresh] = useState(false);
 
+  const [show, setShow] = useState(true);
+
   const links = [
     { name: "Accueil", target: "#home" },
     { name: "A propos", target: "#about" },
@@ -28,8 +30,6 @@ const Navbar = () => {
   const linksMobile = [
     { name: "Accueil", target: "#home" },
     { name: "A propos", target: "#about" },
-    // { name: "Produits", target: "#products" },
-    // menu du dropdown de products a ajouter
     { name: "Produits", target: "", dropdown: true },
     { name: "Projets", target: "#projects" },
     { name: "Contact", target: "#contact" },
@@ -63,9 +63,10 @@ const Navbar = () => {
         className={styles.__nav_mobile_menu}
         onMouseEnter={() => triggerMenu()}
         onMouseLeave={() => triggerMenu()}
+        onClick={() => setShow(!show)}
       >
         <details open={isOpen}>
-          <summary className={`${styles.__summ} ${styles.__summ_products}`}>
+          <summary className={styles.__summ}>
             <img src={isOpen ? cross : menu} alt={isOpen ? "Menu" : "Cross"} />
           </summary>
           <div>

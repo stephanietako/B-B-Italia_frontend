@@ -30,10 +30,11 @@
     cursor: pointer;
     margin: 25px;
     details {
-      transition: 0s;
       .__summ {
         list-style-type: " "; //delete arrow
         text-align: end;
+        overflow-x: hidden;
+        transition: 0.5s;
         img {
           filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg)
             brightness(99%) contrast(107%);
@@ -52,19 +53,16 @@
           rgb(28, 27, 27) 0%,
           rgb(26, 23, 23) 100%
         );
-        transition-delay: 0s;
+        overflow-y: hidden;
+        transition: 0.5s;
+        overflow-y: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
       }
     }
-  }
-  //fa-bars
-  .menu_icon {
-    display: none;
-    color: #fff;
   }
 }
 
 // ############## RESPONSIVE  ###############
-
 @media screen and (max-width: 960px) {
   .navbar {
     .__nav_menu {
@@ -73,32 +71,17 @@
 
     .__nav_mobile_menu {
       display: block !important;
-      // summary {
-      //   list-style-type: " "; //delete arrow
-      //   text-align: start;
-      //   border: 2px solid red;
-      // }
       details {
-        // border: 2px solid white;
         display: flex;
-
-        // .__summ_products {
-        //   border: 2px solid blue;
-        // }
       }
 
-      // div {
-      //   border: 2px solid yellow;
-      // }
-    }
-
-    ul {
-      display: flex;
-      text-align: start;
-      position: relative;
-      align-self: flex-start;
-      // border: 2px solid red;
-      align-items: center;
+      ul {
+        display: flex;
+        text-align: start;
+        position: relative;
+        align-self: flex-start;
+        align-items: center;
+      }
     }
   }
 }

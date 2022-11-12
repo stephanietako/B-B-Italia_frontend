@@ -11,6 +11,7 @@
     font-size: 23px;
     &:hover {
       opacity: 0.75;
+      transition: 0.5s;
     }
   }
 }
@@ -24,12 +25,10 @@
   -ms-user-select: none; /* IE 10+ */
   user-select: none; /* Likely future */
   z-index: 777;
-
   summary {
     display: block;
     margin-top: 14px;
     font-size: 23px;
-
     &:hover {
       opacity: 0.75;
     }
@@ -40,13 +39,13 @@
     position: absolute;
     font-size: 20px;
     list-style-type: none;
+    margin-left: 45px;
     li {
       background: linear-gradient(
         90deg,
         rgb(28, 27, 27) 0%,
         rgb(26, 23, 23) 100%
       );
-
       padding: 12px 14px;
 
       a {
@@ -62,12 +61,12 @@
 
 // dropdown unitaire
 
-/* Pour personnaliser l'icon de la balise details
-details > summary {
-  list-style-type: "fermé";
-}
+// /* Pour personnaliser l'icon de la balise details
+// details > summary {
+//   list-style-type: "fermé";
+// }
 
-details[open] > summary {
-  list-style-type: "ouvert";
-}
-*/
+// details[open] > summary {
+//   list-style-type: "ouvert";
+// }
+//

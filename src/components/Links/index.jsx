@@ -9,11 +9,13 @@ const Links = ({ link, sublinks, dropdownPosition, closeMenu }) => {
   const [refresh, setRefresh] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
 
+  const [show, setShow] = useState(true);
+
   const triggerMenu = () => setRefresh(!refresh);
 
   const sublinksrender = sublinks[dropdownPosition]?.map((link) => (
     <li key={uuidv4()}>
-      <a href={link.target} onClick={() => closeMenu}>
+      <a href={link.target} onMouseLeave={() => closeMenu}>
         {link.name}
       </a>
     </li>
@@ -28,8 +30,9 @@ const Links = ({ link, sublinks, dropdownPosition, closeMenu }) => {
       <details
         open={isOpen}
         className={styles.dropdown}
-        onMouseEnter={() => triggerMenu()}
-        onMouseLeave={() => triggerMenu()}
+        onMouseEnter={() => triggerMenu(true)}
+        onMouseLeave={() => triggerMenu(false)}
+        onClick={() => setShow(!show)}
       >
         <summary>{name}</summary>
         <ul>{sublinksrender}</ul>
@@ -38,7 +41,7 @@ const Links = ({ link, sublinks, dropdownPosition, closeMenu }) => {
   } else {
     return (
       <li className={styles.link}>
-        <a href={target} onClick={() => closeMenu}>
+        <a href={target} onMouseLeave={() => closeMenu}>
           {name}
         </a>
       </li>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import arrowLeft from "../../assets/icon/arrowLeft.svg";
-import arrowRight from "../../assets/icon/arrowRight.svg";
+// import arrowLeft from "../../assets/icon/arrowLeft.svg";
+// import arrowRight from "../../assets/icon/arrowRight.svg";
+import arrow_left_circle from "../../assets/icon/arrow_left_circle.svg";
+import arrow_right_circle from "../../assets/icon/arrow_right_circle.svg";
 import styles from "./styles.module.scss";
 
 const ImgSlider = ({ slides }) => {
@@ -24,10 +26,18 @@ const ImgSlider = ({ slides }) => {
   return (
     <section className={styles.slider}>
       <div className={styles.__arrow_left}>
-        <img src={arrowLeft} alt={"arrow left symbol"} onClick={prevSlide} />
+        <img
+          src={arrow_left_circle}
+          alt={"arrow left symbol"}
+          onClick={prevSlide}
+        />
       </div>
       <div className={styles.__arrow_right}>
-        <img src={arrowRight} alt={"arrow right symbol"} onClick={nextSlide} />
+        <img
+          src={arrow_right_circle}
+          alt={"arrow right symbol"}
+          onClick={nextSlide}
+        />
       </div>
 
       {slides.map((slide, index) => {

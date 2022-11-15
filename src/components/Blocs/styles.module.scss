@@ -2,15 +2,17 @@
 
 .blocs {
   display: flex;
-  padding-top: 8rem;
-  // margin-bottom: 4rem;
+  border: 3px solid red;
+  width: 100vw;
+
   &__content {
     justify-content: flex-end;
     align-items: flex-end;
     flex-basis: 100%;
-    max-height: 55rem;
+    max-height: 35rem;
     // margin-top: 3rem;
     overflow: hidden;
+    width: 1000px;
   }
 
   &__img {
@@ -30,8 +32,8 @@
     &__box {
       display: flex;
       padding: 20px;
-      // justify-content: space-between;
-      // border: 2px solid blue;
+      justify-content: space-between;
+      border: 2px solid blue;
       width: 100%;
       max-width: 100%;
       p {
@@ -39,13 +41,13 @@
         // border: 2px solid yellow;
         display: block;
         width: 80%;
-        color: black;
         overflow: hidden;
-        padding: 4rem;
+        padding: 2rem;
         left: 22%;
-        font-size: 24px;
+        font-size: 18px;
         text-align: justify;
         line-height: 31px;
+        white-space: pre-wrap;
       }
     }
     .__logo {

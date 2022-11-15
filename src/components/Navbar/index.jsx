@@ -16,11 +16,12 @@ import styles from "./styles.module.scss";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [refresh, setRefresh] = useState(false);
+  // const [navbar, setNavbar] = useState(false);
 
   const [show, setShow] = useState(true);
 
   const links = [
-    { name: "Accueil", target: "#home" },
+    { name: "Accueil", target: "#welcome" },
     { name: "A propos", target: "#about" },
     { name: "Produits", target: "", dropdown: true },
     { name: "Projets", target: "#projects" },
@@ -51,6 +52,8 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
+      {/* <nav className={`${styles.navbar} ${navbar ? styles.__active : ""}`}>
+    <nav className={`${styles.navbar} ${styles.__active}`}> */}
       <Link to="/">
         <img
           className={styles.__logo}

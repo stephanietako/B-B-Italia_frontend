@@ -37,16 +37,16 @@
   ul {
     display: flex;
     position: absolute;
-    font-size: 20px;
+    font-size: 17px;
     list-style-type: none;
-    margin-left: 45px;
+    margin-left: 15px;
     li {
       background: linear-gradient(
         90deg,
         rgb(28, 27, 27) 0%,
         rgb(26, 23, 23) 100%
       );
-      padding: 12px 14px;
+      padding: 7px 9px;
 
       a {
         display: block;

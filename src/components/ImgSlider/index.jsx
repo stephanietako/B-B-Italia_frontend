@@ -17,14 +17,14 @@ const ImgSlider = ({ slides }) => {
     setCurrent(current === 0 ? sliderlength - 1 : current - 1);
   };
 
-  console.log(current);
+  // console.log(current);
 
   if (!Array.isArray(slides) || sliderlength <= 0) {
     return null;
   }
 
   return (
-    <section className={styles.slider}>
+    <div className={styles.slider}>
       <div className={styles.__arrow_left}>
         <img
           src={arrow_left_circle}
@@ -54,7 +54,7 @@ const ImgSlider = ({ slides }) => {
           </div>
         );
       })}
-    </section>
+    </div>
   );
 };
 

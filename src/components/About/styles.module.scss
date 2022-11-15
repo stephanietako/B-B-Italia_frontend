@@ -3,8 +3,6 @@
 .about {
   display: flex;
   border: 3px solid red;
-  // padding-top: 10rem;
-  // margin-bottom: 4rem;
   width: 100vw;
   .__content {
     flex-basis: 100%;
@@ -48,7 +46,6 @@
       max-width: 50%;
       max-height: 100%;
       justify-content: center;
-      margin-top: 20px;
       margin-left: auto;
       margin-right: auto;
     }

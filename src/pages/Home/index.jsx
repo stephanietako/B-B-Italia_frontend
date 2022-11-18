@@ -1,7 +1,8 @@
-import Welcome from "../../components/Welcome";
+// import Welcome from "../../components/Welcome";
 import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
+import WelcomeSlider from "../../components/WelcomeSlider";
 import styles from "./styles.module.scss";
 import Headband from "../../components/Headband";
 // Logos
@@ -38,6 +39,29 @@ const HomePage = () => {
     },
   ];
 
+  const WelcomeSliderData = [
+    {
+      image: images,
+      alt: "...",
+    },
+    {
+      image: test,
+      alt: "...",
+    },
+    {
+      image: test_1,
+      alt: "...",
+    },
+    {
+      image: test_2,
+      alt: "...",
+    },
+    {
+      image: test_3,
+      alt: "...",
+    },
+  ];
+
   return (
     <div className={styles.main}>
       <div className={styles.__container}>
@@ -62,7 +86,9 @@ const HomePage = () => {
           </ul>
           <Headband />
           <div className={styles.__banner}>
-            <Welcome />
+            {/* <Welcome /> */}
+            <WelcomeSlider imgs={WelcomeSliderData} />
+            {/* <ImgSlider slides={SliderData} /> */}
           </div>
         </div>
 

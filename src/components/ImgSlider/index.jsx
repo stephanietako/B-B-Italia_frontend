@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import arrowLeft from "../../assets/icon/arrowLeft.svg";
-// import arrowRight from "../../assets/icon/arrowRight.svg";
 import arrow_left_circle from "../../assets/icon/arrow_left_circle.svg";
 import arrow_right_circle from "../../assets/icon/arrow_right_circle.svg";
 import styles from "./styles.module.scss";

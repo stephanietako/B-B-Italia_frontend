@@ -3,15 +3,14 @@
 .blocs {
   display: flex;
   width: 100%;
-
   &__content {
     justify-content: flex-end;
     align-items: flex-end;
-    flex-basis: 100%;
-    max-height: 35rem;
-    // margin-top: 3rem;
+    max-height: 37.5rem;
     overflow: hidden;
-    width: 1000px;
+    width: 62.5rem;
+    border-radius: 10px;
+    margin: 0 auto;
   }
 
   &__img {
@@ -32,12 +31,10 @@
       display: flex;
       padding: 20px;
       justify-content: space-between;
-      border: 2px solid blue;
       width: 100%;
       max-width: 100%;
       p {
         position: relative;
-        // border: 2px solid yellow;
         display: block;
         width: 80%;
         overflow: hidden;

@@ -13,42 +13,54 @@
     .__welcome {
       display: flex;
       flex-direction: column;
-      border: 2px solid #000000;
       span {
         display: flex;
-        padding-top: 5rem;
-        border: 3px solid green;
+        padding-top: 2rem;
         .__logo {
           margin-left: auto;
           margin-right: auto;
           max-width: 20%;
-          border: 3px solid red;
         }
       }
       ul {
         display: flex;
+        justify-content: flex-end;
         li {
-          margin: 4px;
+          margin: 7px;
           list-style-type: none;
         }
       }
       .__banner {
         width: 100%;
         display: flex;
-        border: 4px solid red;
+        height: 37.5rem;
+        justify-content: center;
+        .__videoBloc {
+          border: 2px solid #000000;
+          border-radius: 10px;
+          .__video {
+            margin: 0 auto;
+            height: 100%;
+            width: 100%;
+            padding: 22px;
+            border-radius: 10px;
+          }
+        }
       }
     }
   }
   section {
-    border: 4px solid rgb(173, 64, 224);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     .sections {
       display: flex;
-      padding-top: 115px;
+      border: 2px solid #000000;
+      margin: 0 auto;
       width: 100%;
+      padding: 33px;
     }
   }
 }

@@ -11,10 +11,6 @@
   left: 0;
   z-index: 11;
   height: 87px;
-  // &.__active {
-  //   display: flex;
-  // }
-
   .__logo {
     max-height: 7rem;
   }
@@ -47,7 +43,7 @@
       div {
         display: block;
         width: 100vw;
-        margin-top: 55px;
+        margin-top: 28px;
         z-index: 100;
         opacity: 0.9;
         position: relative;
@@ -57,7 +53,6 @@
           rgb(28, 27, 27) 0%,
           rgb(26, 23, 23) 100%
         );
-        overflow-y: hidden;
         transition: 0.5s;
         overflow-y: hidden; /* Disable horizontal scroll */
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
@@ -69,6 +64,7 @@
 // ############## RESPONSIVE  ###############
 @media screen and (max-width: 960px) {
   .navbar {
+    white-space: nowrap;
     .__nav_menu {
       display: none !important;
     }

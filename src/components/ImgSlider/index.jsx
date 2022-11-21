@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+// Icons
+import arrowPlay from "../../assets/icon/arrowPlay.svg";
 import arrow_left_circle from "../../assets/icon/arrow_left_circle.svg";
 import arrow_right_circle from "../../assets/icon/arrow_right_circle.svg";
+// Style
 import styles from "./styles.module.scss";
 
 const ImgSlider = ({ slides }) => {
@@ -24,18 +27,10 @@ const ImgSlider = ({ slides }) => {
   return (
     <div className={styles.slider}>
       <div className={styles.__arrow_left}>
-        <img
-          src={arrow_left_circle}
-          alt={"arrow left symbol"}
-          onClick={prevSlide}
-        />
+        <img src={arrowPlay} alt={"arrow left symbol"} onClick={prevSlide} />
       </div>
       <div className={styles.__arrow_right}>
-        <img
-          src={arrow_right_circle}
-          alt={"arrow right symbol"}
-          onClick={nextSlide}
-        />
+        <img src={arrowPlay} alt={"arrow right symbol"} onClick={nextSlide} />
       </div>
 
       {slides.map((slide, index) => {
@@ -47,7 +42,10 @@ const ImgSlider = ({ slides }) => {
             }`}
           >
             {index === current && (
-              <img src={slide.image} alt="design" className={styles.__image} />
+              <div className={styles.__image}>
+                <img src={slide.image} alt="design" />
+              </div>
+              // <img src={slide.image} alt="design" className={styles.__image} />
             )}
           </div>
         );

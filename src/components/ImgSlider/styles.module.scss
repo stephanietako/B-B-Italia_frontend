@@ -3,18 +3,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 4px solid red;
   overflow: hidden;
-  // margin-top: 8rem;
-  // margin-top: 8rem;
-  flex-basis: 100%;
-  max-height: 30rem;
+  width: 74.5rem;
+  height: 37.5rem;
+  margin: 0 auto;
   .__image {
-    // width: 1000px;
-    // height: 600px;
-    width: 70vw;
-    border-radius: 10px;
-    object-fit: cover;
+    height: 30rem;
+    width: 50rem;
+    height: 34rem;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
   }
   .__slide {
     opacity: 0;
@@ -38,6 +40,8 @@
     user-select: none; /* Likely future */
     img {
       width: 7rem;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
     }
   }
   .__arrow_right {

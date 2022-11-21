@@ -1,8 +1,8 @@
-// import Welcome from "../../components/Welcome";
+import React, { useEffect, useRef } from "react";
 import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
-import WelcomeSlider from "../../components/WelcomeSlider";
+// import WelcomeSlider from "../../components/WelcomeSlider";
 import styles from "./styles.module.scss";
 import Headband from "../../components/Headband";
 // Logos
@@ -15,12 +15,22 @@ import test from "../../assets/images/leia.jpeg";
 import test_1 from "../../assets/images/leia.jpeg";
 import test_2 from "../../assets/images/leia.jpeg";
 import test_3 from "../../assets/images/leia.jpeg";
+//video
+import video from "../../assets/video/videoSlide.mp4";
 // Icons
 import at from "../../assets/icon/at.svg";
 import phone from "../../assets/icon/phone.svg";
 import instagram from "../../assets/icon/instagram.svg";
 
 const HomePage = () => {
+  const sectionScroll = useRef(null);
+
+  // useEffect(() => {
+  //   const sections = sectionScroll.current;
+  //   console.log(sections);
+  // }, [sectionScroll]);
+
+  // Data image du slide de la section projects
   const SliderData = [
     {
       image: images,
@@ -39,61 +49,67 @@ const HomePage = () => {
     },
   ];
 
-  const WelcomeSliderData = [
-    {
-      image: images,
-      alt: "...",
-    },
-    {
-      image: test,
-      alt: "...",
-    },
-    {
-      image: test_1,
-      alt: "...",
-    },
-    {
-      image: test_2,
-      alt: "...",
-    },
-    {
-      image: test_3,
-      alt: "...",
-    },
-  ];
+  // const WelcomeSliderData = [
+  //   {
+  //     image: images,
+  //     alt: "...",
+  //   },
+  //   {
+  //     image: test,
+  //     alt: "...",
+  //   },
+  //   {
+  //     image: test_1,
+  //     alt: "...",
+  //   },
+  //   {
+  //     image: test_2,
+  //     alt: "...",
+  //   },
+  //   {
+  //     image: test_3,
+  //     alt: "...",
+  //   },
+  // ];
 
   return (
     <div className={styles.main}>
       <div className={styles.__container}>
-        <div className={styles.__welcome} id="welcome">
-          <span>
-            <img
-              src={logo}
-              className={styles.__logo}
-              alt="logo B and B Italia"
-            />
-          </span>
-          <ul>
-            <li>
-              <img src={phone} alt={"phone symbol"} />
-            </li>
-            <li>
-              <img src={at} alt={"at symbol"} />
-            </li>
-            <li>
-              <img src={instagram} alt={"instagram symbol"} />
-            </li>
-          </ul>
-          <Headband />
-          <div className={styles.__banner}>
-            {/* <Welcome /> */}
-            <WelcomeSlider imgs={WelcomeSliderData} />
-            {/* <ImgSlider slides={SliderData} /> */}
-          </div>
-        </div>
+        <section ref={sectionScroll} id="welcome">
+          <div className={styles.__welcome}>
+            <span>
+              <img
+                src={logo}
+                className={styles.__logo}
+                alt="logo B and B Italia"
+              />
+            </span>
+            <ul>
+              <li>
+                <img src={phone} alt={"phone symbol"} />
+              </li>
+              <li>
+                <img src={at} alt={"at symbol"} />
+              </li>
+              <li>
+                <img src={instagram} alt={"instagram symbol"} />
+              </li>
+            </ul>
+            <Headband />
+            <div className={styles.__banner}>
+              <div className={styles.__videoBloc}>
+                <video muted autoPlay loop className={styles.__video}>
+                  <source src={video} type="video/webm" />
+                </video>
+              </div>
 
-        <section>
-          <div className={styles.sections} id="about">
+              {/* <WelcomeSlider imgs={WelcomeSliderData} /> */}
+            </div>
+          </div>
+        </section>
+
+        <section ref={sectionScroll} id="about">
+          <div className={styles.sections}>
             <About
               text="Tropézien depuis 25 ans, Christophe Papa vient de l’univers du luxe et de la mode. Ce sont les figures historiques; Le Corbusier, Charlotte Perriand, Florence Knoll, Eliel et Eero Saarinen, Alvar Aalto, Walter Gropius et Ludwig Mies van der Rohe; qui lui ont donné l’envie d’aller plus loin.
                 La rencontre avec un acteur majeur du design italien en France lui a permis de concrétiser, il ouvre en 2016 le 1er  showroom monomarque B&B Italia en France."
@@ -104,8 +120,8 @@ const HomePage = () => {
             />
           </div>
         </section>
-        <section>
-          <div className={styles.sections} id="bandb">
+        <section ref={sectionScroll} id="bandb">
+          <div className={styles.sections}>
             <Blocs
               text="Né en 1966 de la vision entrepreneuriale de Piero Ambrogio Busnelli, le Groupe a bâti son succès sur sa capacité à représenter la culture contemporaine à travers le design, la décoration et l’architecture, et à anticiper les tendances en cherchant constamment à répondre aux évolutions des goûts et des styles de vie.Depuis la célèbre marque italienne de mobilier contemporain n’a eu de cesse de créer les meubles design les plus innovants, emblématiques et intemporels, de développer une recherche et développement inégalée, un savoir-faire industriel et une qualité Made in Italy qui font de B&B Italia l`une des premières entreprises de design au monde.
                 Design Holding est un hub de design unique par sa taille et son envergure internationale, intégrant des marques emblématiques telles que B&B Italia, Maxalto, Azucena, Arclinea, Flos, Louis Poulsen, Fendi Casa, Menu, by Lassen et Lumens."
@@ -116,8 +132,8 @@ const HomePage = () => {
             />
           </div>
         </section>
-        <section>
-          <div className={styles.sections} id="maxalto">
+        <section ref={sectionScroll} id="maxalto">
+          <div className={styles.sections}>
             <Blocs
               text="Fondée en 1975 aux côtés de B&B Italia, Maxalto a rapidement développé une identité personnelle dans la production spécialisée de meubles artisanaux.
               La recherche des plus hauts standards de qualité en termes de matériaux et de fabrication est l'objectif d'excellence inhérent au nom même de la marque. 
@@ -129,8 +145,8 @@ const HomePage = () => {
             />
           </div>
         </section>
-        <section>
-          <div className={styles.sections} id="arclinea">
+        <section ref={sectionScroll} id="arclinea">
+          <div className={styles.sections}>
             <Blocs
               text="Arclinea, fabricant majeur de cuisine en Italie depuis 1925, 
               rejoint le groupe B&B Italia en 2016.  
@@ -143,13 +159,13 @@ const HomePage = () => {
             />
           </div>
         </section>
-        <section>
-          <div className={styles.sections} id="projects">
+        <section ref={sectionScroll} id="projects">
+          <div className={styles.sections}>
             <ImgSlider slides={SliderData} />
           </div>
         </section>
-        <section>
-          <div className={styles.sections} id="contact">
+        <section ref={sectionScroll} id="contact">
+          <div className={styles.sections}>
             <Blocs
               text={"This \n works"}
               img={images}

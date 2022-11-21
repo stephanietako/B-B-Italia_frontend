@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.__main_block}>
-        <div className={styles.__container_gif}>
+        <div className={styles.__container}>
           <img src={background} className={styles.background} alt="nasa" />
           <div className={styles.__text_block}>
             <p>Welcome to Mars ...</p>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
@@ -14,14 +14,15 @@ import Links from "../Links";
 import styles from "./styles.module.scss";
 
 const Navbar = () => {
-  const ref = useRef(null);
+  // const scrollToSection = (elementRef) => {
+  //   window.scrollTo({
+  //     top: elementRef.current.offsetTop,
+  //     behavior: "smooth",
+  //   });
+  // };
 
-  const handleClick = () => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
   const [isOpen, setIsOpen] = useState(true);
   const [refresh, setRefresh] = useState(false);
-  // const [navbar, setNavbar] = useState(false);
 
   const [show, setShow] = useState(true);
 
@@ -66,10 +67,9 @@ const Navbar = () => {
       </Link>
       {/* MOBILE MENU */}
       <div
-        ref={ref}
         className={styles.__nav_mobile_menu}
-        onMouseEnter={() => triggerMenu({ handleClick })}
-        onMouseLeave={() => triggerMenu({ handleClick })}
+        onMouseEnter={() => triggerMenu()}
+        onMouseLeave={() => triggerMenu()}
         onClick={() => setShow(!show)}
       >
         <details open={isOpen}>
@@ -91,7 +91,7 @@ const Navbar = () => {
         </details>
       </div>
       {/* DESKTOP MENU */}
-      <ul ref={ref} className={styles.__nav_menu}>
+      <ul className={styles.__nav_menu}>
         {links.map((link, index) => {
           let dropdownPosition = 0;
           const ddList = links.filter((lnk) => lnk.dropdown === true);

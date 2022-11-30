@@ -4,8 +4,6 @@
 @import "./style/scss-variables.scss";
 
 body {
-  border: 3px solid green;
-  // padding-top: 112px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -15,7 +13,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $color-white;
-  // background-color: var(--color-white);
   @include mobile {
     flex-direction: column;
   }

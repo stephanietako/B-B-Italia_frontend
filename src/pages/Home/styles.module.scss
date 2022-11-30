@@ -7,8 +7,7 @@
   background-color: transparent;
   justify-content: center;
   .__container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 85%;
     .__welcome {
       display: flex;
@@ -16,15 +15,22 @@
       span {
         display: flex;
         padding-top: 2rem;
+        border: 2px solid yellow;
         .__logo {
-          margin-left: auto;
-          margin-right: auto;
+          border: 2px solid blue;
+          margin: 0 auto;
           max-width: 20%;
+          display: inline-block;
+          vertical-align: top;
         }
       }
       ul {
         display: flex;
         justify-content: flex-end;
+        border: 2px solid red;
+        width: 8%;
+        align-self: flex-end;
+
         li {
           margin: 7px;
           list-style-type: none;
@@ -38,11 +44,11 @@
         .__videoBloc {
           border: 2px solid #000000;
           border-radius: 10px;
+          margin-top: 37px;
           .__video {
             margin: 0 auto;
-            height: 100%;
-            width: 100%;
-            padding: 22px;
+            max-height: 100%;
+            max-width: 100%;
             border-radius: 10px;
           }
         }
@@ -55,12 +61,15 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    border: 3px solid red;
     .sections {
       display: flex;
       border: 2px solid #000000;
       margin: 0 auto;
       width: 100%;
-      padding: 33px;
+      height: 70%;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

@@ -83,8 +83,19 @@ const HomePage = () => {
                 className={styles.__logo}
                 alt="logo B and B Italia"
               />
+              <ul>
+                <li>
+                  <img src={phone} alt={"phone symbol"} />
+                </li>
+                <li>
+                  <img src={at} alt={"at symbol"} />
+                </li>
+                <li>
+                  <img src={instagram} alt={"instagram symbol"} />
+                </li>
+              </ul>
             </span>
-            <ul>
+            {/* <ul>
               <li>
                 <img src={phone} alt={"phone symbol"} />
               </li>
@@ -94,7 +105,7 @@ const HomePage = () => {
               <li>
                 <img src={instagram} alt={"instagram symbol"} />
               </li>
-            </ul>
+            </ul> */}
             <Headband />
             <div className={styles.__banner}>
               <div className={styles.__videoBloc}>

@@ -3,6 +3,9 @@
 .blocs {
   display: flex;
   width: 100%;
+
+  border: 4px solid greenyellow;
+
   &__content {
     justify-content: flex-end;
     align-items: flex-end;

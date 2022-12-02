@@ -1,0 +1,44 @@
+.bottomToBtn {
+  position: relative;
+
+  .__icon_position {
+    position: fixed;
+    top: 132px;
+    right: 25px;
+    z-index: 20;
+    img {
+      background-color: #fff;
+      border: 2px solid #fff;
+      border-radius: 10%;
+      height: 50px;
+      width: 50px;
+      color: #fff;
+      cursor: pointer;
+      animation: movebtn 3s ease-in-out infinite;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        animation: none;
+        background: grey;
+        color: #551b54;
+        border: 2px solid grey;
+      }
+    }
+  }
+}
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

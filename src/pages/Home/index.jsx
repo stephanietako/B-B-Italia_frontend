@@ -24,6 +24,7 @@ import phone from "../../assets/icon/phone.svg";
 import instagram from "../../assets/icon/instagram.svg";
 
 import ScrollToTop from "../../components/ScrollToTop";
+import ScrollToBottom from "../../components/ScrollToBottom";
 
 const HomePage = () => {
   const sectionScroll = useRef(null);
@@ -49,6 +50,7 @@ const HomePage = () => {
   return (
     <div className={styles.main}>
       <div className={styles.__container}>
+        <ScrollToBottom />
         <section ref={sectionScroll} id="welcome">
           <div className={styles.__welcome}>
             <span>
@@ -77,8 +79,6 @@ const HomePage = () => {
                   <source src={video} type="video/webm" />
                 </video>
               </div>
-
-              {/* <WelcomeSlider imgs={WelcomeSliderData} /> */}
             </div>
           </div>
         </section>

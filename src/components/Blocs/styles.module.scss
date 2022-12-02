@@ -8,7 +8,7 @@
     align-items: flex-end;
     max-height: 37.5rem;
     overflow: hidden;
-    width: 62.5rem;
+    width: 75.5rem;
     border-radius: 10px;
     margin: 0 auto;
   }
@@ -26,10 +26,10 @@
   }
 
   &__text {
-    @include blocsTxt(auto, 100%, 50%);
+    @include blocsTxt(22rem, 100%, 50%);
     &__box {
       display: flex;
-      padding: 20px;
+      padding: 7px;
       justify-content: space-between;
       width: 100%;
       max-width: 100%;
@@ -38,7 +38,7 @@
         display: block;
         width: 80%;
         overflow: hidden;
-        padding: 2rem;
+        padding-right: 4rem;
         left: 22%;
         font-size: 18px;
         text-align: justify;

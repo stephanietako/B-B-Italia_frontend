@@ -3,13 +3,13 @@
 
   .__icon_position {
     position: fixed;
-    bottom: 40px;
+    bottom: 251px;
     right: 25px;
     z-index: 20;
     img {
-      background-color: grey;
+      background-color: #fff;
       border: 2px solid #fff;
-      border-radius: 50%;
+      border-radius: 10%;
       height: 50px;
       width: 50px;
       color: #fff;
@@ -18,9 +18,9 @@
       transition: all 0.5s ease-in-out;
       &:hover {
         animation: none;
-        background: #fff;
+        background: grey;
         color: #551b54;
-        border: 2px solid #551b54;
+        border: 2px solid grey;
       }
     }
   }

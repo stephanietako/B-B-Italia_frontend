@@ -19,13 +19,27 @@ const Footer = () => {
             />
           </Link>
         </div>
-
         <ul>
-          <Link to="/">Lien 1</Link>
-          <Link to="/">Lien 2</Link>
-          <Link to="/">Mentions légales</Link>
+          <li>adresse ...</li>
+          <li>phone ...</li>
+          <li>email ...</li>
+          <li>
+            <Link to="terms" className={styles.footer_lien}>
+              Mentions légales
+            </Link>
+          </li>
+          <li>
+            <Link to="test" className={styles.test}>
+              TEST
+            </Link>
+          </li>
         </ul>
-        <span>{currentYear}</span>
+        {/* Copyright (©) Symbol in HTML ===> HTML ENTITY: &copy;
+HTML CODE: &#169;*/}
+        <span>
+          {" "}
+          &#169; Copyright {currentYear} | TENTACLE | Tous droits réservés{" "}
+        </span>
       </footer>
     </div>
   );

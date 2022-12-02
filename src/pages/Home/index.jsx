@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
 // import WelcomeSlider from "../../components/WelcomeSlider";
+// Styles
 import styles from "./styles.module.scss";
 import Headband from "../../components/Headband";
 // Logos
@@ -22,15 +23,11 @@ import at from "../../assets/icon/at.svg";
 import phone from "../../assets/icon/phone.svg";
 import instagram from "../../assets/icon/instagram.svg";
 
+import ScrollToTop from "../../components/ScrollToTop";
+
 const HomePage = () => {
   const sectionScroll = useRef(null);
 
-  // useEffect(() => {
-  //   const sections = sectionScroll.current;
-  //   console.log(sections);
-  // }, [sectionScroll]);
-
-  // Data image du slide de la section projects
   const SliderData = [
     {
       image: images,
@@ -49,29 +46,6 @@ const HomePage = () => {
     },
   ];
 
-  // const WelcomeSliderData = [
-  //   {
-  //     image: images,
-  //     alt: "...",
-  //   },
-  //   {
-  //     image: test,
-  //     alt: "...",
-  //   },
-  //   {
-  //     image: test_1,
-  //     alt: "...",
-  //   },
-  //   {
-  //     image: test_2,
-  //     alt: "...",
-  //   },
-  //   {
-  //     image: test_3,
-  //     alt: "...",
-  //   },
-  // ];
-
   return (
     <div className={styles.main}>
       <div className={styles.__container}>
@@ -83,6 +57,7 @@ const HomePage = () => {
                 className={styles.__logo}
                 alt="logo B and B Italia"
               />
+
               <ul>
                 <li>
                   <img src={phone} alt={"phone symbol"} />
@@ -95,17 +70,6 @@ const HomePage = () => {
                 </li>
               </ul>
             </span>
-            {/* <ul>
-              <li>
-                <img src={phone} alt={"phone symbol"} />
-              </li>
-              <li>
-                <img src={at} alt={"at symbol"} />
-              </li>
-              <li>
-                <img src={instagram} alt={"instagram symbol"} />
-              </li>
-            </ul> */}
             <Headband />
             <div className={styles.__banner}>
               <div className={styles.__videoBloc}>
@@ -118,7 +82,6 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-
         <section ref={sectionScroll} id="about">
           <div className={styles.sections}>
             <About
@@ -186,6 +149,7 @@ const HomePage = () => {
             />
           </div>
         </section>
+        <ScrollToTop />
       </div>
     </div>
   );

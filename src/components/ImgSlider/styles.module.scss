@@ -33,7 +33,6 @@
     left: 32px;
     z-index: 10;
     cursor: pointer;
-    // user-select: none;
     -webkit-user-select: none; /* Chrome all / Safari all */
     -moz-user-select: none; /* Firefox all */
     -ms-user-select: none; /* IE 10+ */
@@ -53,8 +52,6 @@
     user-select: none;
     img {
       width: 7rem;
-      // filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
-      //   brightness(119%) contrast(119%);
     }
   }
 }

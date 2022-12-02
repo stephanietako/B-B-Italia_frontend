@@ -9,7 +9,7 @@ const About = ({ img, alt, text }) => {
         <div className={styles.__img}>
           <img src={img} alt={alt} />
           <span className={styles.__christophe}>
-            <p>CHRISTOPHE &agrave;blablablabla</p>
+            <p>CHRISTOPHE</p>
           </span>
           <div className={styles.__text}>
             <div className={styles.__box}>

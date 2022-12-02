@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.scss";
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./pages/Home";
 import About from "./components/About";
-import Welcome from "./components/Welcome";
+import MentionsLegales from "./components/MentionsLegales";
+import Test from "./pages/Test";
+// import MentionsLegalesPage from "./pages/MentionsLegalesPage";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,8 +22,12 @@ function App() {
           <Route path="/maxalto" element={HomePage} />
           <Route path="/arclinea" element={HomePage} />
           <Route path="/projects" element={HomePage} />
-          <Route path="/contact" element={HomePage} />
+          <Route path="/contact" element={<HomePage />} />
         </Route>
+        {/* <Route path="/terms" element={<MentionsLegales />} /> */}
+        <Route path="/terms" element={<MentionsLegales />} />
+        <Route path="/redirect" element={<Navigate to="/terms" />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </div>
   );

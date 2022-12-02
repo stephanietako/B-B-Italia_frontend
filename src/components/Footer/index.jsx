@@ -20,9 +20,6 @@ const Footer = () => {
           </Link>
         </div>
         <ul>
-          <li>adresse ...</li>
-          <li>phone ...</li>
-          <li>email ...</li>
           <li>
             <Link to="terms" className={styles.footer_lien}>
               Mentions légales
@@ -35,7 +32,7 @@ const Footer = () => {
           </li>
         </ul>
         {/* Copyright (©) Symbol in HTML ===> HTML ENTITY: &copy;
-HTML CODE: &#169;*/}
+        HTML CODE: &#169;*/}
         <span>
           {" "}
           &#169; Copyright {currentYear} | TENTACLE | Tous droits réservés{" "}

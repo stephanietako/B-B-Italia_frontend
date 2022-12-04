@@ -21,14 +21,16 @@ const Footer = () => {
         </div>
         <ul>
           <li>
-            <Link to="terms" className={styles.footer_lien}>
+            <a href="/terms">Mentions Légales</a>
+            {/* <Link to="terms" className={styles.footer_lien}>
               Mentions légales
-            </Link>
+            </Link> */}
           </li>
           <li>
-            <Link to="test" className={styles.test}>
+            <a href="/test">TEST</a>
+            {/* <Link to="test" className={styles.test}>
               TEST
-            </Link>
+            </Link> */}
           </li>
         </ul>
         {/* Copyright (©) Symbol in HTML ===> HTML ENTITY: &copy;

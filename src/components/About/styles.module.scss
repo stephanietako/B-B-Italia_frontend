@@ -2,9 +2,10 @@
 
 .about {
   display: flex;
-  width: 75.5rem;
+  // width: 75.5rem;
+  width: 100%;
   margin: 0 auto;
-  height: 37.5rem;
+  max-height: 31.5rem;
   .__content {
     flex-basis: 100%;
     overflow: hidden;
@@ -31,14 +32,16 @@
       flex-direction: column;
       padding-left: 40px;
       padding-right: 40px;
-      justify-content: space-evenly;
+      // justify-content: space-evenly;
       p {
+        position: relative;
         display: block;
         width: 100%;
         overflow: hidden;
-        font-size: 17px;
-        text-align: justify;
+        font-size: 18px;
+        // text-align: justify;
         line-height: 31px;
+        white-space: pre-wrap;
       }
     }
     .__logo {

@@ -14,13 +14,6 @@ import Links from "../Links";
 import styles from "./styles.module.scss";
 
 const Navbar = () => {
-  // const scrollToSection = (elementRef) => {
-  //   window.scrollTo({
-  //     top: elementRef.current.offsetTop,
-  //     behavior: "smooth",
-  //   });
-  // };
-
   const [isOpen, setIsOpen] = useState(true);
   const [refresh, setRefresh] = useState(false);
 
@@ -57,60 +50,65 @@ const Navbar = () => {
   }, [refresh]);
 
   return (
-    <nav className={styles.navbar}>
-      <Link to="/">
-        <img
-          className={styles.__logo}
-          src={logo}
-          alt="B&B Italia Saint-Tropez"
-        />
-      </Link>
-      {/* MOBILE MENU */}
-      <div
-        className={styles.__nav_mobile_menu}
-        onMouseEnter={() => triggerMenu()}
-        onMouseLeave={() => triggerMenu()}
-        onClick={() => setShow(!show)}
-      >
-        <details open={isOpen}>
-          <summary className={styles.__summ}>
-            <img src={isOpen ? cross : menu} alt={isOpen ? "Menu" : "Cross"} />
-          </summary>
-          <div>
-            {linksMobile.map((link, index) => {
-              return (
-                <Links
-                  key={uuidv4()}
-                  link={link}
-                  sublinks={sublinks}
-                  dropdownPosition={0}
-                />
-              );
-            })}
-          </div>
-        </details>
-      </div>
-      {/* DESKTOP MENU */}
-      <ul className={styles.__nav_menu}>
-        {links.map((link, index) => {
-          let dropdownPosition = 0;
-          const ddList = links.filter((lnk) => lnk.dropdown === true);
-          ddList.map((lnk, index) => {
-            if (link.name === lnk.name) dropdownPosition = index;
-            return null;
-          });
+    <div className={styles.nav_container}>
+      <nav className={styles.navbar}>
+        <Link to="/">
+          <img
+            className={styles.__logo}
+            src={logo}
+            alt="B&B Italia Saint-Tropez"
+          />
+        </Link>
+        {/* MOBILE MENU */}
+        <div
+          className={styles.__nav_mobile_menu}
+          onMouseEnter={() => triggerMenu()}
+          onMouseLeave={() => triggerMenu()}
+          onClick={() => setShow(!show)}
+        >
+          <details open={isOpen}>
+            <summary className={styles.__summ}>
+              <img
+                src={isOpen ? cross : menu}
+                alt={isOpen ? "Menu" : "Cross"}
+              />
+            </summary>
+            <div>
+              {linksMobile.map((link, index) => {
+                return (
+                  <Links
+                    key={uuidv4()}
+                    link={link}
+                    sublinks={sublinks}
+                    dropdownPosition={0}
+                  />
+                );
+              })}
+            </div>
+          </details>
+        </div>
+        {/* DESKTOP MENU */}
+        <ul className={styles.__nav_menu}>
+          {links.map((link, index) => {
+            let dropdownPosition = 0;
+            const ddList = links.filter((lnk) => lnk.dropdown === true);
+            ddList.map((lnk, index) => {
+              if (link.name === lnk.name) dropdownPosition = index;
+              return null;
+            });
 
-          return (
-            <Links
-              key={uuidv4()}
-              link={link}
-              sublinks={sublinks}
-              dropdownPosition={dropdownPosition}
-            />
-          );
-        })}
-      </ul>
-    </nav>
+            return (
+              <Links
+                key={uuidv4()}
+                link={link}
+                sublinks={sublinks}
+                dropdownPosition={dropdownPosition}
+              />
+            );
+          })}
+        </ul>
+      </nav>
+    </div>
   );
 };
 

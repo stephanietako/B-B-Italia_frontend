@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Navbar from "../Navbar";
+import ScrollToBottom from "../../components/ScrollToBottom";
 
 const Header = () => (
-  <header className={styles.container}>
+  // <ScrollToBottom />
+  <nav>
     <Navbar />
-  </header>
+  </nav>
 );
 
 export default Header;

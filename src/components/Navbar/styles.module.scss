@@ -1,14 +1,14 @@
-.navbar {
+nav {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  width: 100%;
+  max-width: 800px;
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
+  // right: 0;
+  // left: 0;
   z-index: 11;
   height: 87px;
   .__logo {
@@ -21,42 +21,41 @@
     list-style: none;
     margin-right: 15px;
   }
-
-  .__nav_mobile_menu {
-    display: none !important;
-    position: absolute;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    margin: 25px;
-    details {
-      .__summ {
-        list-style-type: " "; //delete arrow
-        text-align: end;
-        overflow-x: hidden;
-        transition: 0.5s;
-        img {
-          filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg)
-            brightness(99%) contrast(107%);
-        }
+}
+.__nav_mobile_menu {
+  display: none !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  margin: 25px;
+  details {
+    .__summ {
+      list-style-type: " "; //delete arrow
+      text-align: end;
+      overflow-x: hidden;
+      transition: 0.5s;
+      img {
+        filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg)
+          brightness(99%) contrast(107%);
       }
-      div {
-        display: block;
-        width: 100vw;
-        margin-top: 28px;
-        z-index: 100;
-        opacity: 0.9;
-        position: relative;
-        right: -25px;
-        background: linear-gradient(
-          90deg,
-          rgb(28, 27, 27) 0%,
-          rgb(26, 23, 23) 100%
-        );
-        transition: 0.5s;
-        overflow-y: hidden; /* Disable horizontal scroll */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-      }
+    }
+    div {
+      display: block;
+      width: 100vw;
+      margin-top: 28px;
+      z-index: 100;
+      opacity: 0.9;
+      position: relative;
+      right: -25px;
+      background: linear-gradient(
+        90deg,
+        rgb(28, 27, 27) 0%,
+        rgb(26, 23, 23) 100%
+      );
+      transition: 0.5s;
+      overflow-y: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
     }
   }
 }

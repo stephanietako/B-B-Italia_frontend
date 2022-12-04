@@ -12,10 +12,10 @@
       border-radius: 10%;
       height: 50px;
       width: 50px;
-      color: #fff;
+      //   color: #fff;
       cursor: pointer;
-      animation: movebtn 3s ease-in-out infinite;
-      transition: all 0.5s ease-in-out;
+      //   animation: movebtn 3s ease-in-out infinite;
+      //   transition: all 0.5s ease-in-out;
       &:hover {
         animation: none;
         background: grey;
@@ -25,20 +25,20 @@
     }
   }
 }
-@keyframes movebtn {
-  0% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(20px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
+// @keyframes movebtn {
+//   0% {
+//     transform: translateY(0px);
+//   }
+//   25% {
+//     transform: translateY(20px);
+//   }
+//   50% {
+//     transform: translateY(0px);
+//   }
+//   75% {
+//     transform: translateY(-20px);
+//   }
+//   100% {
+//     transform: translateY(0px);
+//   }
+// }

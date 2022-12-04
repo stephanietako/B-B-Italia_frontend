@@ -13,12 +13,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $color-white;
-  @include mobile {
-    flex-direction: column;
-  }
+  // @include mobile {
+  //   flex-direction: column;
+  // }
+}
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   list-style-type: none;
 }
+
+//}

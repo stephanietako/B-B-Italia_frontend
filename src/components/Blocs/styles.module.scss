@@ -6,9 +6,10 @@
   &__content {
     justify-content: flex-end;
     align-items: flex-end;
-    max-height: 37.5rem;
+    max-height: 31.5rem;
     overflow: hidden;
-    width: 75.5rem;
+    // width: 75.5rem;
+    width: 100%;
     border-radius: 10px;
     margin: 0 auto;
   }

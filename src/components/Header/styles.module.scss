@@ -2,7 +2,9 @@
 @import "../../style/css-variables";
 @import "../../style/scss-variables.scss";
 
-.container {
+nav {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  justify-items: center;
 }

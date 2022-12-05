@@ -6,18 +6,15 @@ import HomePage from "./pages/Home";
 import About from "./components/About";
 import MentionsLegales from "./components/MentionsLegales";
 import Test from "./pages/Test";
-import ScrollToBottom from "./components/ScrollToBottom";
-import ScrollToTop from "./components/ScrollToTop";
 
 // import MentionsLegalesPage from "./pages/MentionsLegalesPage";
 
 function App() {
   return (
     <div className="App">
-      <ScrollToBottom />
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/*" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/welcome" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<HomePage />} />
@@ -31,7 +28,6 @@ function App() {
         <Route path="/redirect" element={<Navigate to="/" />} />
         <Route path="/test" element={<Test />} />
       </Routes>
-      <ScrollToTop />
     </div>
   );
 }

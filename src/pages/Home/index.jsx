@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+// import React, { useRef } from "react";
+import React from "react";
 import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
@@ -25,17 +26,17 @@ import test_3 from "../../assets/images/leia.jpeg";
 import Test from "../Test";
 
 const HomePage = () => {
-  const welcome = useRef();
-  const about = useRef();
-  const bandb = useRef();
-  const maxalto = useRef();
-  const arclinea = useRef();
-  const projects = useRef();
-  const contact = useRef();
+  // const welcome = useRef();
+  // const about = useRef();
+  // const bandb = useRef();
+  // const maxalto = useRef();
+  // const arclinea = useRef();
+  // const projects = useRef();
+  // const contact = useRef();
   // Function to scroll on section
-  const scrollToSection = (section) => {
-    section.current.scrollInToView({ behavior: "smooth" });
-  };
+  // const scrollTo = (section) => {
+  //   section.current.scrollInToView({ behavior: "smooth" });
+  // };
 
   const SliderData = [
     {
@@ -58,14 +59,14 @@ const HomePage = () => {
   return (
     <div className={styles.main}>
       <div className={styles.__container}>
-        <Banner />
+        {/* <Banner /> */}
         <Welcome />
-        <section ref={welcome} id="welcome">
+        <section id="welcome">
           <div className={styles.sections}>
             <Video />
           </div>
         </section>
-        <section ref={about} id="about">
+        <section id="about">
           <div className={styles.sections}>
             <About
               text={
@@ -75,11 +76,11 @@ const HomePage = () => {
               alt="c'est Christophe"
               logo={logo}
               altLogo="logo B and B Italia"
-              scrollTo={scrollToSection}
+              // scrollTo={scrollTo}
             />
           </div>
         </section>
-        <section ref={bandb} id="bandb">
+        <section id="bandb">
           <div className={styles.sections}>
             <Blocs
               text={
@@ -89,11 +90,11 @@ const HomePage = () => {
               alt="c'est Leia"
               logo={logo}
               altLogo="logo B and B Italia"
-              scrollTo={scrollToSection}
+              // scrollTo={scrollTo}
             />
           </div>
         </section>
-        <section ref={maxalto} id="maxalto">
+        <section id="maxalto">
           <div className={styles.sections}>
             <Blocs
               text={
@@ -103,11 +104,11 @@ const HomePage = () => {
               alt="c'est Leia"
               logo={maxaltoLogo}
               altLogo="maxalto"
-              scrollTo={scrollToSection}
+              // scrollTo={scrollTo}
             />
           </div>
         </section>
-        <section ref={arclinea} id="arclinea">
+        <section id="arclinea">
           <div className={styles.sections}>
             <Blocs
               text={
@@ -117,16 +118,16 @@ const HomePage = () => {
               alt="c'est Leia"
               logo={arclineaLogo}
               altLogo="arclinea"
-              scrollTo={scrollToSection}
+              // scrollTo={scrollTo}
             />
           </div>
         </section>
-        <section ref={projects} id="projects">
+        <section id="projects">
           <div className={styles.sections}>
             <ImgSlider slides={SliderData} />
           </div>
         </section>
-        <section ref={contact} id="contact">
+        <section id="contact">
           <div className={styles.sections}>
             <Blocs
               text={"This \n works"}
@@ -134,7 +135,7 @@ const HomePage = () => {
               alt="c'est Leia"
               logo={logo}
               altLogo="logo B and B Italia"
-              scrollTo={scrollToSection}
+              // scrollTo={scrollTo}
             />
           </div>
         </section>

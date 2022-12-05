@@ -1,10 +1,12 @@
 .bottomToBtn {
   position: relative;
-
   .__icon_position {
     position: fixed;
-    top: 132px;
-    right: 25px;
+    justify-content: center;
+    align-items: center;
+    top: 170px;
+    // right: 25px;
+    justify-content: center;
     z-index: 20;
     img {
       background-color: #fff;

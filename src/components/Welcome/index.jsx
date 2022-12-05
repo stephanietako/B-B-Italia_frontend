@@ -9,7 +9,6 @@ const Welcome = () => {
   return (
     <div className={styles.welcome}>
       <div className={styles.__icons}>
-        <Headband />
         <ul>
           <li>
             <img src={phone} alt={"phone symbol"} />
@@ -22,6 +21,7 @@ const Welcome = () => {
           </li>
         </ul>
       </div>
+      <Headband />
     </div>
   );
 };

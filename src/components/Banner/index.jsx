@@ -2,13 +2,13 @@ import React from "react";
 import styles from "./styles.module.scss";
 // Logos
 import logo from "../../assets/logo/bb-logo-noir.png";
+import ScrollButton from "../ScrollToBottom";
 
 const Banner = () => {
+  <ScrollButton />;
   return (
-    <div>
-      <div className={styles.banner}>
-        <img src={logo} className={styles.__logo} alt="logo B and B Italia" />
-      </div>
+    <div className={styles.banner}>
+      <img src={logo} className={styles.__logo} alt="logo B and B Italia" />
     </div>
   );
 };

@@ -3,6 +3,8 @@ import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
 import Welcome from "../../components/Welcome";
+import Banner from "../../components/Banner";
+import Video from "../../components/Video";
 // Icons
 // import at from "../../assets/icon/at.svg";
 // import phone from "../../assets/icon/phone.svg";
@@ -20,7 +22,7 @@ import test_1 from "../../assets/images/leia.jpeg";
 import test_2 from "../../assets/images/leia.jpeg";
 import test_3 from "../../assets/images/leia.jpeg";
 // Components
-import ScrollToTop from "../../components/ScrollToTop";
+import Test from "../Test";
 
 const HomePage = () => {
   const welcome = useRef();
@@ -56,9 +58,13 @@ const HomePage = () => {
   return (
     <div className={styles.main}>
       <div className={styles.__container}>
-        {/* <section ref={welcome} id="welcome">
-          <div className={styles.sections}></div>
-        </section> */}
+        <Banner />
+        <Welcome />
+        <section ref={welcome} id="welcome">
+          <div className={styles.sections}>
+            <Video />
+          </div>
+        </section>
         <section ref={about} id="about">
           <div className={styles.sections}>
             <About
@@ -132,7 +138,6 @@ const HomePage = () => {
             />
           </div>
         </section>
-        <ScrollToTop />
       </div>
     </div>
   );

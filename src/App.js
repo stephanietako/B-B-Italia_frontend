@@ -7,6 +7,7 @@ import About from "./components/About";
 import MentionsLegales from "./components/MentionsLegales";
 import Test from "./pages/Test";
 import ScrollToBottom from "./components/ScrollToBottom";
+import ScrollToTop from "./components/ScrollToTop";
 
 // import MentionsLegalesPage from "./pages/MentionsLegalesPage";
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/redirect" element={<Navigate to="/" />} />
         <Route path="/test" element={<Test />} />
       </Routes>
+      <ScrollToTop />
     </div>
   );
 }

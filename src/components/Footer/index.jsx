@@ -21,10 +21,8 @@ const Footer = () => {
         </div>
         <ul>
           <li>
-            <a href="/terms">Mentions Légales</a>
-            {/* <Link to="terms" className={styles.footer_lien}>
-              Mentions légales
-            </Link> */}
+            {/* <a href="/terms">Mentions Légales</a> */}
+            <Link to="terms">Mentions légales</Link>
           </li>
           <li>
             <a href="/test">TEST</a>

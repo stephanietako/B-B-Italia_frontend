@@ -2,9 +2,13 @@ import React, { useRef } from "react";
 import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
+import Welcome from "../../components/Welcome";
+// Icons
+// import at from "../../assets/icon/at.svg";
+// import phone from "../../assets/icon/phone.svg";
+// import instagram from "../../assets/icon/instagram.svg";
 // Styles
 import styles from "./styles.module.scss";
-import Headband from "../../components/Headband";
 // Logos
 import logo from "../../assets/logo/bb-logo-noir.png";
 import arclineaLogo from "../../assets/logo/arclinea-logo.png";
@@ -15,17 +19,21 @@ import test from "../../assets/images/leia.jpeg";
 import test_1 from "../../assets/images/leia.jpeg";
 import test_2 from "../../assets/images/leia.jpeg";
 import test_3 from "../../assets/images/leia.jpeg";
-//video
-import video from "../../assets/video/videoSlide.mp4";
-// Icons
-import at from "../../assets/icon/at.svg";
-import phone from "../../assets/icon/phone.svg";
-import instagram from "../../assets/icon/instagram.svg";
-
+// Components
 import ScrollToTop from "../../components/ScrollToTop";
 
 const HomePage = () => {
-  const sectionScroll = useRef(null);
+  const welcome = useRef();
+  const about = useRef();
+  const bandb = useRef();
+  const maxalto = useRef();
+  const arclinea = useRef();
+  const projects = useRef();
+  const contact = useRef();
+  // Function to scroll on section
+  const scrollToSection = (section) => {
+    section.current.scrollInToView({ behavior: "smooth" });
+  };
 
   const SliderData = [
     {
@@ -48,40 +56,10 @@ const HomePage = () => {
   return (
     <div className={styles.main}>
       <div className={styles.__container}>
-        <section ref={sectionScroll} id="welcome">
-          <div className={styles.sections}>
-            <div className={styles.__welcome}>
-              <span>
-                <img
-                  src={logo}
-                  className={styles.__logo}
-                  alt="logo B and B Italia"
-                />
-
-                <ul>
-                  <li>
-                    <img src={phone} alt={"phone symbol"} />
-                  </li>
-                  <li>
-                    <img src={at} alt={"at symbol"} />
-                  </li>
-                  <li>
-                    <img src={instagram} alt={"instagram symbol"} />
-                  </li>
-                </ul>
-              </span>
-              <Headband />
-              <div className={styles.__banner}>
-                <div className={styles.__videoBloc}>
-                  <video muted autoPlay loop className={styles.__video}>
-                    <source src={video} type="video/webm" />
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section ref={sectionScroll} id="about">
+        {/* <section ref={welcome} id="welcome">
+          <div className={styles.sections}></div>
+        </section> */}
+        <section ref={about} id="about">
           <div className={styles.sections}>
             <About
               text={
@@ -91,10 +69,11 @@ const HomePage = () => {
               alt="c'est Christophe"
               logo={logo}
               altLogo="logo B and B Italia"
+              scrollTo={scrollToSection}
             />
           </div>
         </section>
-        <section ref={sectionScroll} id="bandb">
+        <section ref={bandb} id="bandb">
           <div className={styles.sections}>
             <Blocs
               text={
@@ -104,10 +83,11 @@ const HomePage = () => {
               alt="c'est Leia"
               logo={logo}
               altLogo="logo B and B Italia"
+              scrollTo={scrollToSection}
             />
           </div>
         </section>
-        <section ref={sectionScroll} id="maxalto">
+        <section ref={maxalto} id="maxalto">
           <div className={styles.sections}>
             <Blocs
               text={
@@ -117,10 +97,11 @@ const HomePage = () => {
               alt="c'est Leia"
               logo={maxaltoLogo}
               altLogo="maxalto"
+              scrollTo={scrollToSection}
             />
           </div>
         </section>
-        <section ref={sectionScroll} id="arclinea">
+        <section ref={arclinea} id="arclinea">
           <div className={styles.sections}>
             <Blocs
               text={
@@ -130,15 +111,16 @@ const HomePage = () => {
               alt="c'est Leia"
               logo={arclineaLogo}
               altLogo="arclinea"
+              scrollTo={scrollToSection}
             />
           </div>
         </section>
-        <section ref={sectionScroll} id="projects">
+        <section ref={projects} id="projects">
           <div className={styles.sections}>
             <ImgSlider slides={SliderData} />
           </div>
         </section>
-        <section ref={sectionScroll} id="contact">
+        <section ref={contact} id="contact">
           <div className={styles.sections}>
             <Blocs
               text={"This \n works"}
@@ -146,6 +128,7 @@ const HomePage = () => {
               alt="c'est Leia"
               logo={logo}
               altLogo="logo B and B Italia"
+              scrollTo={scrollToSection}
             />
           </div>
         </section>

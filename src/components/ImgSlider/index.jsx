@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 // Icons
 import arrowPlay from "../../assets/icon/arrowPlay.svg";
-import arrow_left_circle from "../../assets/icon/arrow_left_circle.svg";
-import arrow_right_circle from "../../assets/icon/arrow_right_circle.svg";
+
 // Style
 import styles from "./styles.module.scss";
 

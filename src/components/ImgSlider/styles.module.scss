@@ -4,15 +4,14 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  //   width: 75.5rem;
   width: 100%;
   height: 37.5rem;
   margin: 0 auto;
   border: 2px solid red;
   .__image {
-    height: 30rem;
-    width: 50rem;
-    height: 34rem;
+    height: 40rem;
+    width: 60rem;
+
     img {
       object-fit: cover;
       height: 100%;
@@ -32,7 +31,7 @@
   .__arrow_left {
     position: absolute;
     top: 50%;
-    left: 32px;
+    left: 15%;
     z-index: 10;
     cursor: pointer;
     -webkit-user-select: none; /* Chrome all / Safari all */
@@ -48,7 +47,7 @@
   .__arrow_right {
     position: absolute;
     top: 50%;
-    right: 32px;
+    right: 15%;
     z-index: 10;
     cursor: pointer;
     user-select: none;

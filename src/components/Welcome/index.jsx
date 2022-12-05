@@ -1,17 +1,26 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import background from "../../assets/images/nasa.gif";
+import Headband from "../../components/Headband";
+import at from "../../assets/icon/at.svg";
+import phone from "../../assets/icon/phone.svg";
+import instagram from "../../assets/icon/instagram.svg";
 
 const Welcome = () => {
   return (
-    <div className={styles.banner}>
-      <div className={styles.__main_block}>
-        <div className={styles.__container}>
-          <img src={background} className={styles.background} alt="nasa" />
-          <div className={styles.__text_block}>
-            <p>Welcome to Mars ...</p>
-          </div>
-        </div>
+    <div className={styles.welcome}>
+      <div className={styles.__icons}>
+        <Headband />
+        <ul>
+          <li>
+            <img src={phone} alt={"phone symbol"} />
+          </li>
+          <li>
+            <img src={at} alt={"at symbol"} />
+          </li>
+          <li>
+            <img src={instagram} alt={"instagram symbol"} />
+          </li>
+        </ul>
       </div>
     </div>
   );

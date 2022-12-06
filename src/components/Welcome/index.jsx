@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import Headband from "../../components/Headband";
 import at from "../../assets/icon/at.svg";
 import phone from "../../assets/icon/phone.svg";
 import instagram from "../../assets/icon/instagram.svg";
@@ -21,7 +20,6 @@ const Welcome = () => {
           </li>
         </ul>
       </div>
-      <Headband />
     </div>
   );
 };

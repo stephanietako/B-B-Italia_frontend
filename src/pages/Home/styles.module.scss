@@ -2,44 +2,32 @@
 @import "../../style/scss-variables.scss";
 
 .main {
+  position: relative;
   display: flex;
-  // flex-grow: 1;
   background-color: transparent;
   justify-content: center;
   .__container {
     position: relative;
-    overscroll-behavior-y: contain;
-    scroll-snap-type: mandatory;
-    position: relative;
-    overflow-y: auto;
-    height: 100vh;
     width: 100%;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  section {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    // border: 5px solid red;
-    // padding-top: 50px;
-    // margin-top: 24px;
-    align-items: center;
-    justify-content: center;
-    .sections {
-      border: 5px solid gray;
-      display: flex;
-      margin: 0 auto;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    section {
+      position: relative;
       height: 100vh;
       width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 185px;
+      .sections {
+        border: 5px solid gray;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+      }
     }
   }
 }

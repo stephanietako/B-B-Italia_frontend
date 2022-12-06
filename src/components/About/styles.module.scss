@@ -12,7 +12,6 @@
     position: relative;
     border-radius: 10px;
     margin: 0 auto;
-    border: 2px solid red;
   }
   .__img {
     display: flex;
@@ -34,7 +33,6 @@
       flex-direction: column;
       padding-left: 40px;
       padding-right: 40px;
-      // justify-content: space-evenly;
       p {
         position: relative;
         display: block;
@@ -61,5 +59,7 @@
     position: absolute;
     top: 88%;
     left: 80%;
+
+    color: #fff;
   }
 }

@@ -1,16 +1,19 @@
 nav {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: linear-gradient(90deg, #1c1b1b 0%, #1a1717 100%);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  // max-width: 800px;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 11;
   height: 87px;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 17rem;
+  padding-right: 18px;
   .__logo {
     max-height: 7rem;
   }

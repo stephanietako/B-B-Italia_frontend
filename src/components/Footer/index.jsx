@@ -10,33 +10,27 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <footer className={styles.__container}>
-        <div className={styles.__logo}>
-          <Link to="/">
-            <img
-              className={styles.__logo}
-              src={logo}
-              alt="B&B Italia Saint-Tropez"
-            />
-          </Link>
-        </div>
         <ul>
           <li>
-            {/* <a href="/terms">Mentions Légales</a> */}
+            <Link to="/">
+              <img
+                className={styles.__logo}
+                src={logo}
+                alt="B&B Italia Saint-Tropez"
+              />
+            </Link>
+          </li>
+          <li>
             <Link to="terms">Mentions légales</Link>
           </li>
           <li>
-            <a href="/test">TEST</a>
-            {/* <Link to="test" className={styles.test}>
-              TEST
-            </Link> */}
+            <span>
+              {" "}
+              &#169; Copyright {currentYear} | TENTACLE | Tous droits réservés{" "}
+            </span>
           </li>
+          <li></li>
         </ul>
-        {/* Copyright (©) Symbol in HTML ===> HTML ENTITY: &copy;
-        HTML CODE: &#169;*/}
-        <span>
-          {" "}
-          &#169; Copyright {currentYear} | TENTACLE | Tous droits réservés{" "}
-        </span>
       </footer>
     </div>
   );

@@ -4,12 +4,7 @@ import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
 import Welcome from "../../components/Welcome";
-import Banner from "../../components/Banner";
 import Video from "../../components/Video";
-// Icons
-// import at from "../../assets/icon/at.svg";
-// import phone from "../../assets/icon/phone.svg";
-// import instagram from "../../assets/icon/instagram.svg";
 // Styles
 import styles from "./styles.module.scss";
 // Logos
@@ -17,52 +12,43 @@ import logo from "../../assets/logo/bb-logo-noir.png";
 import arclineaLogo from "../../assets/logo/arclinea-logo.png";
 import maxaltoLogo from "../../assets/logo/maxalto-logo.png";
 // Images
-import images from "../../assets/images/leia.jpeg";
-import test from "../../assets/images/leia.jpeg";
-import test_1 from "../../assets/images/leia.jpeg";
-import test_2 from "../../assets/images/leia.jpeg";
-import test_3 from "../../assets/images/leia.jpeg";
+import arcade from "../../assets/images/arcade.webp";
+import arclinea from "../../assets/images/arclinea.webp";
+import maxalto from "../../assets/images/maxalto.webp";
+import christophe from "../../assets/images/christophe.webp";
+import slide1 from "../../assets/images/slide1.webp";
+import slide2 from "../../assets/images/slide2.webp";
+import slide3 from "../../assets/images/slide3.webp";
+import slide4 from "../../assets/images/slide4.webp";
+import vue from "../../assets/images/vue.webp";
 // Components
-import Test from "../Test";
+// import Test from "../Test";
+import ScrollToTop from "../../components/ScrollToTop";
+import Footer from "../../components/Footer";
 
 const HomePage = () => {
-  // const welcome = useRef();
-  // const about = useRef();
-  // const bandb = useRef();
-  // const maxalto = useRef();
-  // const arclinea = useRef();
-  // const projects = useRef();
-  // const contact = useRef();
-  // Function to scroll on section
-  // const scrollTo = (section) => {
-  //   section.current.scrollInToView({ behavior: "smooth" });
-  // };
-
   const SliderData = [
     {
-      image: images,
+      image: slide1,
     },
     {
-      image: test,
+      image: slide2,
     },
     {
-      image: test_1,
+      image: slide3,
     },
     {
-      image: test_2,
-    },
-    {
-      image: test_3,
+      image: slide4,
     },
   ];
 
   return (
     <div className={styles.main}>
       <div className={styles.__container}>
-        {/* <Banner /> */}
-        <Welcome />
+        <ScrollToTop />
         <section id="welcome">
           <div className={styles.sections}>
+            <Welcome />
             <Video />
           </div>
         </section>
@@ -72,11 +58,10 @@ const HomePage = () => {
               text={
                 "Tropézien depuis 25 ans, Christophe Papa vient de l’univers du luxe et de la mode.  \nCe sont les figures historiques:\nLe Corbusier, Charlotte Perriand, Florence Knoll, Eliel et Eero Saarinen, Alvar Aalto, Walter Gropius et Ludwig Mies van der Rohe; qui lui ont donné l’envie d’aller plus loin.\nLa rencontre avec un acteur majeur du design italien en France lui a permis de concrétiser, il ouvre en 2016 le 1er  showroom monomarque B&B Italia en France."
               }
-              img={images}
+              img={christophe}
               alt="c'est Christophe"
               logo={logo}
               altLogo="logo B and B Italia"
-              // scrollTo={scrollTo}
             />
           </div>
         </section>
@@ -86,11 +71,10 @@ const HomePage = () => {
               text={
                 "Né en 1966 de la vision entrepreneuriale de Piero Ambrogio Busnelli.\nLe Groupe a bâti son succès sur sa capacité à représenter la culture contemporaine à travers le design, la décoration et l’architecture et à anticiper les tendances en cherchant constamment à répondre aux évolutions des goûts et des styles de vie.\nDepuis la célèbre marque italienne de mobilier contemporain n’a eu de cesse de créer les meubles design les plus innovants, emblématiques et intemporels, de développer une recherche et développement inégalée, un savoir-faire industriel et une qualité Made in Italy qui font de B&B Italia l`une des premières entreprises de design au monde. \nDesign Holding est un hub de design unique par sa taille et son envergure internationale, intégrant des marques emblématiques telles que B&B Italia, Maxalto, Azucena, Arclinea, Flos, Louis Poulsen, Fendi Casa, Menu, by Lassen et Lumens."
               }
-              img={images}
+              img={arcade}
               alt="c'est Leia"
               logo={logo}
               altLogo="logo B and B Italia"
-              // scrollTo={scrollTo}
             />
           </div>
         </section>
@@ -100,11 +84,10 @@ const HomePage = () => {
               text={
                 "Fondée en 1975 aux côtés de B&B Italia, Maxalto a rapidement développé une identité personnelle dans la production spécialisée de meubles artisanaux.\nLa recherche des plus hauts standards de qualité en termes de matériaux et de fabrication est l'objectif d'excellence inhérent au nom même de la marque.\nEn effet, Maxalto dérive des termes dialectaux vénitiens massa alto, qui signifient le plus haut."
               }
-              img={images}
+              img={maxalto}
               alt="c'est Leia"
               logo={maxaltoLogo}
               altLogo="maxalto"
-              // scrollTo={scrollTo}
             />
           </div>
         </section>
@@ -114,11 +97,10 @@ const HomePage = () => {
               text={
                 "Arclinea, fabricant majeur de cuisine en Italie depuis 1925, rejoint le groupe B&B Italia en 2016.\nCe partenariat stratégique repose sur des valeurs communes de conception, d'innovation et de qualité, et sur une approche commune de la production et de l'industrie axée sur l'excellence.\nL'objectif d'Arclinea est de produire des projets qui durent, capables de générer à chaque fois la cuisine souhaitée.  \n Car si la perfection peut exister sur le papier, elle n'existe que lorsque le projet répond pleinement à toutes les exigences qui lui sont faites : une synthèse de valeurs conjuguées."
               }
-              img={images}
+              img={arclinea}
               alt="c'est Leia"
               logo={arclineaLogo}
               altLogo="arclinea"
-              // scrollTo={scrollTo}
             />
           </div>
         </section>
@@ -131,11 +113,10 @@ const HomePage = () => {
           <div className={styles.sections}>
             <Blocs
               text={"This \n works"}
-              img={images}
+              img={vue}
               alt="c'est Leia"
               logo={logo}
               altLogo="logo B and B Italia"
-              // scrollTo={scrollTo}
             />
           </div>
         </section>

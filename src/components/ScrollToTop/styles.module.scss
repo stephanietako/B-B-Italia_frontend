@@ -1,25 +1,24 @@
 .topToBtn {
   position: relative;
-
   .__icon_position {
     position: fixed;
-    bottom: 251px;
-    right: 25px;
+    bottom: 176px;
     z-index: 20;
+    left: 50%;
     img {
-      background-color: #fff;
-      border: 2px solid #fff;
+      background: #fff;
+      background: rgba(255, 255, 255, 0.75);
       border-radius: 10%;
+      border: 2px solid #fff;
       height: 50px;
       width: 50px;
-      color: #fff;
+      z-index: 2;
       cursor: pointer;
       animation: movebtn 3s ease-in-out infinite;
       transition: all 0.5s ease-in-out;
       &:hover {
         animation: none;
         background: grey;
-        color: #551b54;
         border: 2px solid grey;
       }
     }
@@ -31,12 +30,6 @@
   }
   25% {
     transform: translateY(20px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(-20px);
   }
   100% {
     transform: translateY(0px);

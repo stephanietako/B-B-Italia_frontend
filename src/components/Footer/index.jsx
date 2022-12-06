@@ -26,7 +26,7 @@ const Footer = () => {
           <li>
             <span>
               {" "}
-              &#169; Copyright {currentYear} | TENTACLE | Tous droits réservés{" "}
+              &#169; Copyright {currentYear} | TENTACLES | Tous droits réservés{" "}
             </span>
           </li>
           <li></li>

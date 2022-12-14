@@ -2,17 +2,14 @@
   position: relative;
   .__icon_position {
     position: fixed;
-    bottom: 176px;
-    z-index: 20;
-    left: 50%;
+    bottom: 135px;
+    z-index: 2;
+    right: 0;
     img {
-      background: #fff;
       background: rgba(255, 255, 255, 0.75);
       border-radius: 10%;
       border: 2px solid #fff;
-      height: 50px;
-      width: 50px;
-      z-index: 2;
+      height: 30px;
       cursor: pointer;
       animation: movebtn 3s ease-in-out infinite;
       transition: all 0.5s ease-in-out;

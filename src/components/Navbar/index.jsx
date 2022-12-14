@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
 // Assets
-import logo from "../../assets/logo/bandb-logo-blanc.png";
+import logo from "../../assets/logo/bb-logo-noir.png";
 import menu from "../../assets/icon/menu.svg";
 import cross from "../../assets/icon/cross.svg";
 
@@ -37,7 +37,7 @@ const Navbar = () => {
 
   const sublinks = [
     [
-      { name: "B&B", target: "#bandb" },
+      { name: "B&B Italia", target: "#bandb" },
       { name: "MaxAlto", target: "#maxalto" },
       { name: "Arclinea", target: "#arclinea" },
     ],

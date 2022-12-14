@@ -5,17 +5,16 @@ import styles from "./styles.module.scss";
 const Blocs = ({ img, alt, text, logo, altLogo }) => {
   return (
     <div className={styles.blocs}>
-      <div className={styles.blocs__content}>
-        <div className={styles.blocs__img}>
+      <div className={styles.__container}>
+        <div className={styles.__img}>
           <img src={img} alt={alt} />
-          {/*  */}
-          <div className={styles.blocs__text}>
-            <div className={styles.blocs__text__box}>
-              <div className={styles.__logo}>
-                <img src={logo} alt={altLogo} />
-              </div>
-              <p>{text}</p>
-            </div>
+        </div>
+        <div className={styles.__bloc}>
+          <div className={styles.__logo}>
+            <img src={logo} alt={altLogo} />
+          </div>
+          <div className={styles.__text}>
+            <p>{text}</p>
           </div>
         </div>
       </div>

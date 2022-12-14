@@ -5,19 +5,19 @@ import logo from "../../assets/logo/bb-logo-noir.png";
 const About = ({ img, alt, text }) => {
   return (
     <div className={styles.about}>
-      <div className={styles.__content}>
+      <div className={styles.__container}>
         <div className={styles.__img}>
           <img src={img} alt={alt} />
-          <span className={styles.__christophe}>
+        </div>
+        {/* <span className={styles.__christophe}>
             <p>CHRISTOPHE Papa</p>
-          </span>
+          </span> */}
+        <div className={styles.__about_content}>
+          <div className={styles.__logo}>
+            <img src={logo} alt=" logo B&B Italia Saint-Tropez" />
+          </div>
           <div className={styles.__text}>
-            <div className={styles.__box}>
-              <div className={styles.__logo}>
-                <img src={logo} alt=" logo B&B Italia Saint-Tropez" />
-              </div>
-              <p>{text}</p>
-            </div>
+            <p>{text}</p>
           </div>
         </div>
       </div>

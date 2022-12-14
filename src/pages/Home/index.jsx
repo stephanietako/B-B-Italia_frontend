@@ -4,7 +4,7 @@ import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
 import Welcome from "../../components/Welcome";
-import Video from "../../components/Video";
+import WelcomeGif from "../../components/WelcomeGif";
 // Styles
 import styles from "./styles.module.scss";
 // Logos
@@ -13,7 +13,7 @@ import logost from "../../assets/logo/bb.png";
 import arclineaLogo from "../../assets/logo/arclinea-logo.png";
 import maxaltoLogo from "../../assets/logo/maxalto-logo.png";
 // Images
-import map from "../../assets/images/map.jpeg";
+// import map from "../../assets/images/map.jpeg";
 import arclinea from "../../assets/images/arclinea.webp";
 import maxalto from "../../assets/images/maxalto.webp";
 import christophe from "../../assets/images/christophe.webp";
@@ -47,9 +47,9 @@ const HomePage = () => {
       <div className={styles.__container}>
         <ScrollToTop />
         <section id="welcome">
+          <Welcome />
           <div className={styles.sections}>
-            <Welcome />
-            <Video />
+            <WelcomeGif />
           </div>
         </section>
         <section id="about">

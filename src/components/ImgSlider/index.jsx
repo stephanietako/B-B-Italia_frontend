@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // Icons
-import arrowPlay from "../../assets/icon/arrowPlay.svg";
+import chevron_left from "../../assets/icon/chevron_left.svg";
+import chevron_right from "../../assets/icon/chevron_right.svg";
 
 // Style
 import styles from "./styles.module.scss";
@@ -26,10 +27,14 @@ const ImgSlider = ({ slides }) => {
   return (
     <div className={styles.slider}>
       <div className={styles.__arrow_left}>
-        <img src={arrowPlay} alt={"arrow left symbol"} onClick={prevSlide} />
+        <img src={chevron_left} alt={"arrow left symbol"} onClick={prevSlide} />
       </div>
       <div className={styles.__arrow_right}>
-        <img src={arrowPlay} alt={"arrow right symbol"} onClick={nextSlide} />
+        <img
+          src={chevron_right}
+          alt={"arrow right symbol"}
+          onClick={nextSlide}
+        />
       </div>
 
       {slides.map((slide, index) => {

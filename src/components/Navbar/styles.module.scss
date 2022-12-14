@@ -1,5 +1,7 @@
 nav {
-  background: linear-gradient(90deg, #1c1b1b 0%, #1a1717 100%);
+  // background: linear-gradient(90deg, #1c1b1b 0%, #1a1717 100%);
+  background: #fff;
+  background: rgba(255, 255, 255, 0.75);
   display: flex;
   align-items: center;
   font-size: 1.2rem;
@@ -51,11 +53,13 @@ nav {
       opacity: 0.9;
       position: relative;
       right: -25px;
-      background: linear-gradient(
-        90deg,
-        rgb(28, 27, 27) 0%,
-        rgb(26, 23, 23) 100%
-      );
+      // background: linear-gradient(
+      //   90deg,
+      //   rgb(28, 27, 27) 0%,
+      //   rgb(26, 23, 23) 100%
+      // );
+      background: #fff;
+      background: rgba(255, 255, 255, 0.75);
       transition: 0.5s;
       overflow-y: hidden; /* Disable horizontal scroll */
       transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */

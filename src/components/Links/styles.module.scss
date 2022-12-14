@@ -5,7 +5,7 @@
   height: 50px;
 
   a {
-    color: #ffffff;
+    color: #000;
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: 23px;
@@ -17,7 +17,7 @@
 }
 
 .dropdown {
-  color: #ffffff;
+  color: #000;
   padding: 0 10px 10px 10px;
   cursor: pointer;
   -webkit-user-select: none; /* Chrome all / Safari all */
@@ -42,16 +42,20 @@
     list-style-type: none;
     margin-left: 15px;
     li {
-      background: linear-gradient(
-        90deg,
-        rgb(28, 27, 27) 0%,
-        rgb(26, 23, 23) 100%
-      );
+      // background: linear-gradient(
+      //   90deg,
+      //   rgb(28, 27, 27) 0%,
+      //   rgb(26, 23, 23) 100%
+      // );
+      background: #fff;
+      background: rgba(255, 255, 255, 0.75);
       padding: 7px 9px;
+      color: red;
 
       a {
         display: block;
-        color: #ffffff;
+        // color: #ffffff;
+        color: #000;
         &:hover {
           opacity: 0.75;
         }

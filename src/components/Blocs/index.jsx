@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-const Blocs = ({ img, alt, text, logo, altLogo }) => {
+const Blocs = ({ img, alt, text, logo, altLogo, link }) => {
   return (
     <div className={styles.blocs}>
       <div className={styles.__container}>
@@ -10,7 +10,10 @@ const Blocs = ({ img, alt, text, logo, altLogo }) => {
         </div>
         <div className={styles.__bloc}>
           <div className={styles.__logo}>
-            <img src={logo} alt={altLogo} />
+            <a href={link}>
+              <img src={logo} alt={altLogo} />
+            </a>
+            {/* <img src={logo} alt={altLogo} /> */}
           </div>
           <div className={styles.__text}>
             <p>{text}</p>

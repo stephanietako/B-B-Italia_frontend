@@ -1,8 +1,10 @@
 .topToBtn {
   position: relative;
+  bottom: 40px;
+  right: 40px;
   .__icon_position {
     position: fixed;
-    bottom: 135px;
+    // bottom: 135px;
     z-index: 2;
     right: 0;
     img {

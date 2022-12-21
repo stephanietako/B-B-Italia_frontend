@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
 // Assets
@@ -19,22 +19,27 @@ const Navbar = () => {
 
   const [show, setShow] = useState(true);
 
+  // Main navbar menu
   const links = [
     { name: "Accueil", target: "#welcome" },
     { name: "A propos", target: "#about" },
+    { name: "Showroom", target: "#showroom" },
     { name: "Produits", target: "", dropdown: true },
     { name: "Projets", target: "#projects" },
     { name: "Contact", target: "#contact" },
   ];
 
+  // Main navbar menu for mobile
   const linksMobile = [
-    { name: "Accueil", target: "#home" },
+    { name: "Accueil", target: "#welcome" },
     { name: "A propos", target: "#about" },
+    { name: "Showroom", target: "#showroom" },
     { name: "Produits", target: "", dropdown: true },
     { name: "Projets", target: "#projects" },
     { name: "Contact", target: "#contact" },
   ];
 
+  // Sub links navbar menu
   const sublinks = [
     [
       { name: "B&B Italia", target: "#bandb" },
@@ -52,13 +57,13 @@ const Navbar = () => {
   return (
     <div className={styles.nav_container}>
       <nav className={styles.navbar}>
-        <Link to="/">
+        <a href="#welcome">
           <img
             className={styles.__logo}
             src={logo}
             alt="B&B Italia Saint-Tropez"
           />
-        </Link>
+        </a>
         {/* MOBILE MENU */}
         <div
           className={styles.__nav_mobile_menu}

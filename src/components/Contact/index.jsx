@@ -1,20 +1,31 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import logost from "../../assets/logo/bb.png";
+import logo from "../../assets/logo/bandb-logo-blanc.png";
 import map from "../../assets/images/map.jpeg";
 
-const Contact = () => {
+const Contact = ({ text }) => {
   return (
-    <div className={styles.hero_image}>
-      <img src={map} alt="plan" />
-      <div className={styles.hero_texte}>
-        <img src={logost} alt="Logo" />
-        <p>avenue FOCH</p>
-        <p>83990 Saint-Tropez</p>
-        <p>Accès direct par le Parking Foch</p>
-        <p>04 94 77 20</p>
-        <p>contact@bebsainttropez</p>
-        <button>Hire me</button>
+    <div className={styles.contact}>
+      <div className={styles.__heroSection}>
+        <div className={styles.__img}>
+          <img src={map} alt="plan" />
+        </div>
+        <div className={styles.__logo}>
+          <img src={logo} alt="Logo" />
+        </div>
+        <div className={styles.__container}>
+          <div className={styles.__text}>
+            <p>{text}</p>
+            <p>
+              {" "}
+              <a href="tel:+0494457720">04 94 45 77 20</a>
+            </p>
+            <p>
+              <a href="mailto:contact@bebsttropez.fr">contact@bebsttropez.fr</a>
+            </p>
+          </div>
+          <button className={styles.__btn_googlemap}>OUVRIR DANS MAPS</button>
+        </div>
       </div>
     </div>
   );

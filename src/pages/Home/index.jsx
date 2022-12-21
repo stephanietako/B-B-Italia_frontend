@@ -4,7 +4,6 @@ import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
 import Welcome from "../../components/Welcome";
-import WelcomeGif from "../../components/WelcomeGif";
 // Styles
 import styles from "./styles.module.scss";
 // Logos
@@ -12,6 +11,8 @@ import logo from "../../assets/logo/bb-logo-noir.png";
 import logost from "../../assets/logo/bb.png";
 import arclineaLogo from "../../assets/logo/arclinea-logo.png";
 import maxaltoLogo from "../../assets/logo/maxalto-logo.png";
+// Gif
+import welcomeGif from "../../assets/gif/SlideBeb.gif";
 // Images
 // import map from "../../assets/images/map.jpeg";
 import arclinea from "../../assets/images/arclinea.webp";
@@ -25,6 +26,7 @@ import vue from "../../assets/images/vue.webp";
 // Components
 // import Test from "../Test";
 import ScrollToTop from "../../components/ScrollToTop";
+import Contact from "../../components/Contact";
 
 const HomePage = () => {
   const SliderData = [
@@ -47,9 +49,11 @@ const HomePage = () => {
       <div className={styles.__container}>
         <ScrollToTop />
         <section id="welcome">
-          <Welcome />
           <div className={styles.sections}>
-            <WelcomeGif />
+            <Welcome />
+            <div className={styles.__welcomeGif}>
+              <img src={welcomeGif} alt={"Showroom Saint-Tropez"} />
+            </div>
           </div>
         </section>
         <section id="about">
@@ -63,6 +67,11 @@ const HomePage = () => {
               logo={logo}
               altLogo="logo B and B Italia"
             />
+          </div>
+        </section>
+        <section id="showroom">
+          <div className={styles.sections}>
+            <ImgSlider slides={SliderData} />
           </div>
         </section>
         <section id="bandb">
@@ -109,11 +118,15 @@ const HomePage = () => {
             <ImgSlider slides={SliderData} />
           </div>
         </section>
-        {/* <section id="contact">
+        <section id="contact">
           <div className={styles.sections}>
-            <Blocs text={"This \n works"} img={map} alt="plan" />
+            <Contact
+              text={
+                "avenue FOCH \n 83990 Saint-Tropez \n Accès direct par le Parking Foch "
+              }
+            />
           </div>
-        </section> */}
+        </section>
       </div>
     </div>
   );

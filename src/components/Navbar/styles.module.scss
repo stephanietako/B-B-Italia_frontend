@@ -1,28 +1,26 @@
 nav {
-  // background: linear-gradient(90deg, #1c1b1b 0%, #1a1717 100%);
-  background: #fff;
   background: rgba(255, 255, 255, 0.75);
+  //border: 4px solid blue;
   display: flex;
-  align-items: center;
   font-size: 1.2rem;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 11;
-  height: 87px;
+  max-height: 12.5;
   align-items: center;
   justify-content: flex-end;
-
-  gap: 17rem;
+  gap: 9rem;
   padding-right: 18px;
   .__logo {
-    max-height: 7rem;
+    //border: 3px solid red;
+    max-height: 12rem;
   }
 
   .__nav_menu {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(6, auto);
     list-style: none;
     margin-right: 15px;
   }
@@ -58,7 +56,6 @@ nav {
       //   rgb(28, 27, 27) 0%,
       //   rgb(26, 23, 23) 100%
       // );
-      background: #fff;
       background: rgba(255, 255, 255, 0.75);
       transition: 0.5s;
       overflow-y: hidden; /* Disable horizontal scroll */

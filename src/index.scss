@@ -1,32 +1,25 @@
-@import "./style/_mixins";
 @import "./style/css-variables";
 @import "./style/fonts.scss";
 @import "./style/scss-variables.scss";
 
 body {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   line-height: 1;
-  font-family: $roboto_font;
+  background-color: $color-white;
+  //font-family: "Roboto Condensed", sans-serif;
+  //font-family: "Krona One", sans-serif;
+  font-family: "Georama", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $color-white;
-  // @include mobile {
-  //   flex-direction: column;
-  // }
+  font-weight: 400;
 }
-// #root {
-//   // flex-grow: 1;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
 
 a {
   text-decoration: none;
   list-style-type: none;
 }
-
-//}

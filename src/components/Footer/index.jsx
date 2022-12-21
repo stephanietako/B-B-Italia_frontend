@@ -12,24 +12,21 @@ const Footer = () => {
       <footer className={styles.__container}>
         <ul>
           <li>
-            <Link to="/">
+            <a href="#welcome">
               <img
                 className={styles.__logo}
                 src={logo}
                 alt="B&B Italia Saint-Tropez"
               />
-            </Link>
+            </a>
           </li>
           <li>
             <Link to="terms">Mentions légales</Link>
           </li>
-          <li>
-            <span>
-              {" "}
-              &#169; Copyright {currentYear} | TENTACLES | Tous droits réservés{" "}
-            </span>
-          </li>
-          <li></li>
+          <div className={styles.__copyright}>
+            {" "}
+            &#169; Copyright {currentYear} | TENTACLES | Tous droits réservés{" "}
+          </div>
         </ul>
       </footer>
     </div>

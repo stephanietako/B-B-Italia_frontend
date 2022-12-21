@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   height: 50px;
-
   a {
     color: #000;
     text-decoration: none;
@@ -18,7 +17,7 @@
 
 .dropdown {
   color: #000;
-  padding: 0 10px 10px 10px;
+  // padding: 0 10px 10px 10px;
   cursor: pointer;
   -webkit-user-select: none; /* Chrome all / Safari all */
   -moz-user-select: none; /* Firefox all */
@@ -29,7 +28,8 @@
     display: block;
     margin-top: 14px;
     font-size: 23px;
-    padding-left: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
     &:hover {
       opacity: 0.75;
     }
@@ -40,21 +40,10 @@
     position: absolute;
     font-size: 17px;
     list-style-type: none;
-    margin-left: 15px;
     li {
-      // background: linear-gradient(
-      //   90deg,
-      //   rgb(28, 27, 27) 0%,
-      //   rgb(26, 23, 23) 100%
-      // );
-      background: #fff;
-      background: rgba(255, 255, 255, 0.75);
-      padding: 7px 9px;
-      color: red;
-
+      padding: 7px 9px 0 9px;
       a {
         display: block;
-        // color: #ffffff;
         color: #000;
         &:hover {
           opacity: 0.75;

@@ -6,23 +6,76 @@
   display: flex;
   background-color: transparent;
   justify-content: center;
+  width: 100%;
   .__container {
+    display: block;
     position: relative;
     width: 100%;
     section {
+      padding-top: 5%;
       position: relative;
       height: 100vh;
       width: 100%;
-      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
       .sections {
+        position: relative;
         display: flex;
         justify-content: center;
         height: 100%;
         width: 100%;
+        .__welcomeGif {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          position: relative;
+          img {
+            width: 100%;
+            max-height: 100%;
+            padding-top: 6%;
+          }
+        }
       }
     }
   }
 }
+
+// @media screen and (min-width: 1400px) {
+//   .container {
+//     width: 1370px;
+//   }
+// }
+// @media screen and (min-width: 1600px) {
+//   .container {
+//     width: 1570px;
+//   }
+// }
+// @media screen and (min-width: 1900px) {
+//   .container {
+//     width: 1870px;
+//   }
+// }
+// @media (min-width: 599px) {
+//   .main {
+//     width: 49%;
+//     margin: 0 2% 1em 0;
+//   }
+// }
+
+// @media (min-width: 599px) and (max-width: 1024px) {
+//   .main:nth-child(2n + 2) {
+//     margin: 0 0 1em 0;
+//   }
+// }
+
+// @media (min-width: 1024px) {
+//   .mains {
+//     width: 24%;
+//     margin: 0 1.3333333333% 1em 0;
+//   }
+//   .main:nth-child(4n + 4) {
+//     margin: 0 0 1em 0;
+//   }
+// }

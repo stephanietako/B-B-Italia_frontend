@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-// c'est là que ça se passe pour les textes(je me comprends bonjour)
 
 const Blocs = ({ img, alt, text, logo, altLogo }) => {
   return (

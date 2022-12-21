@@ -1,3 +1,5 @@
+@import "../../style/scss-variables";
+
 .welcome {
   display: flex;
   flex-direction: column;
@@ -7,19 +9,17 @@
   .__icons {
     position: fixed;
     display: flex;
-    background: #fff;
     background: rgba(255, 255, 255, 0.75);
     border-radius: 10px;
     z-index: 100;
     right: 30px;
-    top: 112px;
+    top: 9.5rem;
 
     ul {
       display: flex;
       li {
         padding: 5px;
         list-style-type: none;
-
         img {
           width: 20px;
         }

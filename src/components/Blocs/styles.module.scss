@@ -6,18 +6,17 @@
   max-height: 100%;
   justify-content: center;
   align-items: center;
+  padding-top: 5%;
   .__container {
-    justify-content: flex-end;
-    align-items: flex-end;
-    max-height: 44.5rem;
+    max-height: 40.5rem;
     overflow: hidden;
     width: 100%;
-    border-radius: 10px;
     margin: 0 auto;
     height: 100%;
-    position: relative;
+    //position: relative;
     display: block;
     .__img {
+      //border: 4px solid red;
       display: block;
       width: 100%;
       height: 100%;
@@ -30,15 +29,18 @@
     }
     .__bloc {
       @include blocsTxt(22rem, 100%, 50%);
-      display: flex;
       padding: 7px;
-      width: 100%;
       max-width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+      top: 57%;
       .__logo {
         display: flex;
         max-width: 20%;
         align-self: center;
+        padding-right: 14px;
         img {
+          justify-content: center;
           max-width: 100%;
           object-fit: cover;
           display: block;
@@ -69,8 +71,6 @@
     display: flex;
     width: 100%;
     &__content {
-      justify-content: flex-end;
-      align-items: flex-end;
       overflow: hidden;
       width: 100%;
       border-radius: 10px;

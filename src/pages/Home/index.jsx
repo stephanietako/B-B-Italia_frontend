@@ -65,8 +65,10 @@ const HomePage = () => {
         <section id="welcome">
           <div className={styles.sections}>
             <Welcome />
-            <div className={styles.__welcomeGif}>
-              <img src={welcomeGif} alt={"Showroom Saint-Tropez"} />
+            <div className={styles.__gif_content}>
+              <div className={styles.__gif}>
+                <img src={welcomeGif} alt={"Showroom Saint-Tropez"} />
+              </div>
             </div>
           </div>
         </section>

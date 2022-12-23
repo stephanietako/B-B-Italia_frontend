@@ -14,7 +14,6 @@ import maxaltoLogo from "../../assets/logo/maxalto-logo.png";
 // Gif
 import welcomeGif from "../../assets/gif/SlideBeb.gif";
 // Images
-// import map from "../../assets/images/map.jpeg";
 import arclinea from "../../assets/images/arclinea.webp";
 import maxalto from "../../assets/images/maxalto.webp";
 import christophe from "../../assets/images/christophe.webp";
@@ -29,7 +28,22 @@ import ScrollToTop from "../../components/ScrollToTop";
 import Contact from "../../components/Contact";
 
 const HomePage = () => {
-  const SliderData = [
+  const SliderDataProjects = [
+    {
+      image: slide1,
+    },
+    {
+      image: slide2,
+    },
+    {
+      image: slide3,
+    },
+    {
+      image: slide4,
+    },
+  ];
+
+  const SliderDataShowroom = [
     {
       image: slide1,
     },
@@ -71,7 +85,7 @@ const HomePage = () => {
         </section>
         <section id="showroom">
           <div className={styles.sections}>
-            <ImgSlider slides={SliderData} />
+            <ImgSlider slides={SliderDataShowroom} />
           </div>
         </section>
         <section id="bandb">
@@ -84,6 +98,7 @@ const HomePage = () => {
               alt="B and B Italia"
               logo={logost}
               altLogo="logo B and B Italia"
+              link="https://www.google.com/"
             />
           </div>
         </section>
@@ -115,7 +130,7 @@ const HomePage = () => {
         </section>
         <section id="projects">
           <div className={styles.sections}>
-            <ImgSlider slides={SliderData} />
+            <ImgSlider slides={SliderDataProjects} />
           </div>
         </section>
         <section id="contact">

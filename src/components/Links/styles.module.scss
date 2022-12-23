@@ -3,10 +3,11 @@
   display: flex;
   align-items: center;
   height: 50px;
+  padding: 22px;
+
   a {
     color: #000;
     text-decoration: none;
-    padding: 0.5rem 1rem;
     font-size: 23px;
     &:hover {
       opacity: 0.75;
@@ -17,7 +18,8 @@
 
 .dropdown {
   color: #000;
-  // padding: 0 10px 10px 10px;
+  padding: 0 10px 10px 10px;
+  flex-wrap: wrap;
   cursor: pointer;
   -webkit-user-select: none; /* Chrome all / Safari all */
   -moz-user-select: none; /* Firefox all */
@@ -30,18 +32,20 @@
     font-size: 23px;
     padding-left: 9px;
     padding-right: 9px;
+    padding-bottom: 5px;
     &:hover {
       opacity: 0.75;
     }
   }
 
   ul {
+    flex-wrap: wrap;
     display: flex;
     position: absolute;
     font-size: 17px;
     list-style-type: none;
     li {
-      padding: 7px 9px 0 9px;
+      padding: 5px 7px 0 7px;
       a {
         display: block;
         color: #000;

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import logo from "../../assets/logo/bandb-logo-blanc.png";
-import map from "../../assets/images/map.jpeg";
+import logo from "../../assets/logo/bandb-logo-blanc-crop.png";
+import map from "../../assets/images/map.webp";
 
 const Contact = ({ text }) => {
   return (

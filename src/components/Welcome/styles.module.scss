@@ -9,16 +9,16 @@
   .__icons {
     position: fixed;
     display: flex;
-    background: rgba(255, 255, 255, 0.75);
+    // background: rgba(255, 255, 255, 0.75);
     border-radius: 10px;
     z-index: 100;
     right: 30px;
-    top: 9.5rem;
+    top: 11rem;
 
     ul {
       display: flex;
       li {
-        padding: 5px;
+        padding: 4px;
         list-style-type: none;
         img {
           width: 20px;

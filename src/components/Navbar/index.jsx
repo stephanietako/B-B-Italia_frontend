@@ -1,22 +1,17 @@
 import React, { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-
 // Assets
 import logo from "../../assets/logo/bb-logo-noir.png";
 import menu from "../../assets/icon/menu.svg";
 import cross from "../../assets/icon/cross.svg";
-
 // Cmp
 import Links from "../Links";
-
 // Styles
 import styles from "./styles.module.scss";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [refresh, setRefresh] = useState(false);
-
   const [show, setShow] = useState(true);
 
   // Main navbar menu
@@ -55,15 +50,22 @@ const Navbar = () => {
   }, [refresh]);
 
   return (
-    <div className={styles.nav_container}>
-      <nav className={styles.navbar}>
+    <nav className={styles.navbar}>
+      <div className={styles.box}>
         <a href="#welcome">
           <img
             className={styles.__logo}
             src={logo}
             alt="B&B Italia Saint-Tropez"
           />
+
+          {/* <img
+          className={styles.__logo}
+          src={logo}
+          alt="B&B Italia Saint-Tropez"
+        /> */}
         </a>
+
         {/* MOBILE MENU */}
         <div
           className={styles.__nav_mobile_menu}
@@ -112,8 +114,8 @@ const Navbar = () => {
             );
           })}
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 

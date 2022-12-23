@@ -49,7 +49,6 @@ const ImgSlider = ({ slides }) => {
               <div className={styles.__image}>
                 <img src={slide.image} alt="design" />
               </div>
-              // <img src={slide.image} alt="design" className={styles.__image} />
             )}
           </div>
         );

@@ -14,7 +14,7 @@
     section {
       padding-top: 5%;
       position: relative;
-      height: 100vh;
+      // height: 100vh;
       width: 100%;
       display: flex;
       align-items: center;
@@ -26,6 +26,7 @@
         justify-content: center;
         height: 100%;
         width: 100%;
+        margin-top: 25px;
         .__welcomeGif {
           display: flex;
           height: 100%;

@@ -10,12 +10,14 @@
   .__heroSection {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    //position: absolute;
+    position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     width: 100%;
     max-height: 40.5rem;
     height: 100%;
     align-items: center;
+    margin-bottom: 131px;
     overflow: hidden;
     .__img {
       position: absolute;

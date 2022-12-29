@@ -17,11 +17,17 @@ import welcomeGif from "../../assets/gif/SlideBeb.gif";
 import arclinea from "../../assets/images/arclinea.webp";
 import maxalto from "../../assets/images/maxalto.webp";
 import christophe from "../../assets/images/christophe.webp";
+// Images Slide Projects
 import slide1 from "../../assets/images/slide1.webp";
 import slide2 from "../../assets/images/slide2.webp";
 import slide3 from "../../assets/images/slide3.webp";
 import slide4 from "../../assets/images/slide4.webp";
 import vue from "../../assets/images/vue.webp";
+// Images Slide Showroom
+import showroom1 from "../../assets/images/showroom1.webp";
+import showroom2 from "../../assets/images/showroom2.webp";
+import showroom3 from "../../assets/images/showroom3.webp";
+import showroom4 from "../../assets/images/showroom4.webp";
 // Components
 // import Test from "../Test";
 import ScrollToTop from "../../components/ScrollToTop";
@@ -45,16 +51,16 @@ const HomePage = () => {
 
   const SliderDataShowroom = [
     {
-      image: slide1,
+      image: showroom1,
     },
     {
-      image: slide2,
+      image: showroom2,
     },
     {
-      image: slide3,
+      image: showroom3,
     },
     {
-      image: slide4,
+      image: showroom4,
     },
   ];
 

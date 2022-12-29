@@ -2,7 +2,6 @@ import React, { useState } from "react";
 // Icons
 import chevron_left from "../../assets/icon/chevron_left.svg";
 import chevron_right from "../../assets/icon/chevron_right.svg";
-
 // Style
 import styles from "./styles.module.scss";
 
@@ -47,7 +46,7 @@ const ImgSlider = ({ slides }) => {
           >
             {index === current && (
               <div className={styles.__image}>
-                <img src={slide.image} alt="design" />
+                <img src={slide.image} alt="mobilier design" />
               </div>
             )}
           </div>

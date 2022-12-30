@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 // Styles
 import styles from "./styles.module.scss";
 
-const Links = ({ link, sublinks, dropdownPosition, closeMenu }) => {
+const Links = ({ link, sublinks, dropdownPosition }) => {
   const { name, target, dropdown } = link;
 
   const [isOpen, setIsOpen] = useState(true);

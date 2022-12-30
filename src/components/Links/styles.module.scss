@@ -30,11 +30,9 @@ details {
     display: block;
     margin-top: 10px;
     font-size: 19px;
-    details > summary {
-      list-style-type: none;
-    }
     summary::-webkit-details-marker {
       display: none;
+      list-style-type: none;
     }
     &:hover {
       opacity: 0.75;

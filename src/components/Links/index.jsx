@@ -40,7 +40,7 @@ const Links = ({ link, sublinks, dropdownPosition }) => {
         className={styles.dropdown}
         onClick={() => setMenuVisible(true)}
       >
-        <summary>{name}</summary>
+        <summary onClick={() => setIsOpen(!isOpen)}>{name}</summary>
         {menuVisible && (
           <ul className="menu" onClick={hideMenu}>
             {sublinksrender}

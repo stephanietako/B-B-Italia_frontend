@@ -28,7 +28,7 @@ const Links = ({ link, sublinks, dropdownPosition }) => {
   if (dropdown) {
     return (
       <details open={isOpen} className={styles.dropdown} onClick={handleClick}>
-        <summary onClick={toggleMenu}>{name}</summary>
+        <summary onMouseLeave={toggleMenu}>{name}</summary>
         <ul className={menuVisible ? "menu-visible" : "menu-hidden"}>
           {sublinksrender}
         </ul>

@@ -21,7 +21,7 @@ nav {
   }
   .__logo {
     height: 10rem;
-    margin: auto;
+    margin-top: 4px;
     right: 0;
     left: 0;
     justify-content: flex-end;
@@ -83,6 +83,7 @@ nav {
     }
   }
 }
+
 // ############## RESPONSIVE  ###############
 // screen under
 @media screen and (max-width: 1200px) {

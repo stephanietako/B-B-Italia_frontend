@@ -6,47 +6,39 @@ import styles from "./styles.module.scss";
 const Links = ({ link, sublinks, dropdownPosition, closeMenu }) => {
   const { name, target, dropdown } = link;
 
-  const [refresh, setRefresh] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
+  /////
+  const [click, setClick] = useState(false);
+  // const [dropdown, setDropdown] = useState(false);
 
-  const [show, setShow] = useState(true);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-  const triggerMenu = () => setRefresh(!refresh);
+  // const triggerMenu = () => setRefresh(!refresh);
 
   const sublinksrender = sublinks[dropdownPosition]?.map((link) => (
     <li key={uuidv4()}>
-      <a href={link.target} onMouseLeave={() => closeMenu}>
+      <a href={link.target} onClick={closeMobileMenu}>
         {link.name}
       </a>
     </li>
   ));
 
-  useEffect(() => {
-    setIsOpen(!isOpen);
-  }, [refresh]);
-
   if (dropdown) {
     return (
-      <details
-        open={isOpen}
-        className={styles.dropdown}
-        onMouseEnter={() => triggerMenu(true)}
-        onMouseLeave={() => triggerMenu(false)}
-        onClick={() => setShow(!show)}
-      >
-        <summary>{name}</summary>
+      <details open={isOpen} className={styles.dropdown}>
+        <summary onClick={() => setIsOpen(!isOpen)}>{name}</summary>
         <ul>{sublinksrender}</ul>
       </details>
     );
   } else {
     return (
       <li className={styles.link}>
-        <a href={target} onMouseLeave={() => closeMenu}>
+        <a href={target} onClick={handleClick}>
           {name}
         </a>
       </li>
     );
   }
 };
-
 export default Links;

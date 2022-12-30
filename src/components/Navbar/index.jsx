@@ -12,7 +12,7 @@ import styles from "./styles.module.scss";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [refresh, setRefresh] = useState(false);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   // Main navbar menu
   const links = [

@@ -16,7 +16,7 @@
   }
 }
 
-.dropdown {
+details {
   color: #000;
   padding: 0 10px 10px 10px;
   flex-wrap: wrap;
@@ -28,9 +28,14 @@
   z-index: 777;
   summary {
     display: block;
-    display: block;
     margin-top: 10px;
     font-size: 19px;
+    details > summary {
+      list-style-type: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
     &:hover {
       opacity: 0.75;
     }

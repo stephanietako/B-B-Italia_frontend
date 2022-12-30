@@ -10,6 +10,12 @@ const Links = ({ link, sublinks, dropdownPosition }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  ////////////////:
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
 
   const sublinksrender = sublinks[dropdownPosition]?.map((link) => (
     <li key={uuidv4()}>
@@ -21,15 +27,17 @@ const Links = ({ link, sublinks, dropdownPosition }) => {
 
   if (dropdown) {
     return (
-      <details open={isOpen} className={styles.dropdown}>
-        <summary onClick={() => closeMobileMenu(setClick)}>{name}</summary>
-        <ul>{sublinksrender}</ul>
+      <details open={isOpen} className={styles.dropdown} onClick={handleClick}>
+        <summary onClick={toggleMenu}>{name}</summary>
+        <ul className={menuVisible ? "menu-visible" : "menu-hidden"}>
+          {sublinksrender}
+        </ul>
       </details>
     );
   } else {
     return (
       <li className={styles.link}>
-        <a href={target} onClick={handleClick}>
+        <a href={target} onClick={() => setIsOpen(!isOpen)}>
           {name}
         </a>
       </li>

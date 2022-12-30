@@ -30,32 +30,33 @@ details {
     display: block;
     margin-top: 10px;
     font-size: 19px;
-    opacity: 0;
-    visibility: hidden;
+    list-style-type: none;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &:hover {
+      opacity: 0.75;
+    }
   }
-  &:hover {
-    opacity: 0.75;
-  }
-}
 
-ul {
-  flex-wrap: wrap;
-  display: flex;
-  position: absolute;
-  font-size: 17px;
-  list-style-type: none;
-  li {
-    padding: 5px 7px 0 7px;
-    a {
-      display: block;
-      color: #000;
-      &:hover {
-        opacity: 0.75;
+  ul {
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    font-size: 17px;
+    list-style-type: none;
+    li {
+      padding: 5px 7px 0 7px;
+      a {
+        display: block;
+        color: #000;
+        &:hover {
+          opacity: 0.75;
+        }
       }
     }
   }
 }
-
 // ############## RESPONSIVE  ###############
 @media screen and (max-width: 1440px) {
   .link {

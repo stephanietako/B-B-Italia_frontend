@@ -31,8 +31,8 @@ details {
     margin-top: 10px;
     font-size: 19px;
     summary::-webkit-details-marker {
-      display: none;
-      list-style-type: none;
+      opacity: 0;
+      visibility: hidden;
     }
     &:hover {
       opacity: 0.75;

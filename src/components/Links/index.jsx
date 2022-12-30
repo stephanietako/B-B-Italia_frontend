@@ -18,7 +18,7 @@ const Links = ({ link, sublinks, dropdownPosition }) => {
 
   const sublinksrender = sublinks[dropdownPosition]?.map((link) => (
     <li key={uuidv4()}>
-      <a href={link.target} onClick={closeMobileMenu}>
+      <a href={link.target} onMouseLeave={closeMobileMenu}>
         {link.name}
       </a>
     </li>

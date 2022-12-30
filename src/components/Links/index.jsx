@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 // Styles
 import styles from "./styles.module.scss";
@@ -7,39 +7,51 @@ const Links = ({ link, sublinks, dropdownPosition }) => {
   const { name, target, dropdown } = link;
 
   const [isOpen, setIsOpen] = useState(true);
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-  ////////////////:
+  // const [click, setClick] = useState(false);
+  // const handleClick = () => setClick(!click);
+  // const closeMobileMenu = () => setClick(false);
+  ////////////////Make the menu visible or not after clicked
   const [menuVisible, setMenuVisible] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
+  const hideMenu = () => {
+    setMenuVisible(false);
   };
-
+  useEffect(() => {
+    const handleClick = (event) => {
+      if (!event.target.closest("menu")) {
+        hideMenu();
+      }
+    };
+    document.addEventListener("click", handleClick);
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
   const sublinksrender = sublinks[dropdownPosition]?.map((link) => (
     <li key={uuidv4()}>
-      <a href={link.target} onMouseLeave={closeMobileMenu}>
-        {link.name}
-      </a>
+      <a href={link.target}>{link.name}</a>
     </li>
   ));
 
   if (dropdown) {
     return (
-      <details open={isOpen} className={styles.dropdown} onClick={handleClick}>
-        <summary onMouseLeave={toggleMenu}>{name}</summary>
-        <ul className={menuVisible ? "menu-visible" : "menu-hidden"}>
-          {sublinksrender}
-        </ul>
+      <details
+        open={isOpen}
+        className={styles.dropdown}
+        onClick={() => setMenuVisible(true)}
+      >
+        <summary>{name}</summary>
+        {menuVisible && (
+          <ul className="menu" onClick={hideMenu}>
+            {sublinksrender}
+          </ul>
+        )}
       </details>
     );
   } else {
     return (
       <li className={styles.link}>
-        <a href={target} onClick={() => setIsOpen(!isOpen)}>
-          {name}
-        </a>
+        <a href={target}>{name} </a>
       </li>
     );
   }

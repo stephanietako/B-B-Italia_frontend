@@ -26,17 +26,7 @@ details {
   -ms-user-select: none; /* IE 10+ */
   user-select: none; /* Likely future */
   z-index: 777;
-  summary {
-    display: block;
-    margin-top: 10px;
-    font-size: 19px;
-    list-style-type: none;
-    &::-webkit-details-marker {
-      display: none;
-    }
-    &:hover {
-      opacity: 0.75;
-    }
+  ul {
     &.menu-visible {
       /* define the transition properties here */
       transition: all 0.5s ease;
@@ -49,6 +39,19 @@ details {
       /* define the final state of the menu when it is hidden */
       transform: translateY(-100%);
       opacity: 0;
+    }
+  }
+
+  summary {
+    display: block;
+    margin-top: 10px;
+    font-size: 19px;
+    list-style-type: none;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &:hover {
+      opacity: 0.75;
     }
   }
 

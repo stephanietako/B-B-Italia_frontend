@@ -26,21 +26,6 @@ details {
   -ms-user-select: none; /* IE 10+ */
   user-select: none; /* Likely future */
   z-index: 777;
-  ul {
-    &.menu-visible {
-      /* define the transition properties here */
-      transition: all 0.5s ease;
-      /* define the initial state of the menu when it is visible */
-      transform: translateY(0);
-      opacity: 1;
-    }
-
-    &.menu-hidden {
-      /* define the final state of the menu when it is hidden */
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-  }
 
   summary {
     display: block;

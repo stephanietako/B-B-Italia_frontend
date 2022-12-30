@@ -9,10 +9,14 @@ import cross from "../../assets/icon/cross.svg";
 import Links from "../Links";
 // Styles
 import styles from "./styles.module.scss";
+
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [refresh, setRefresh] = useState(false);
-  const [show, setShow] = useState(false);
+  const [isNavVisible, setNavVisibility] = useState(false);
+  const toggleNav = () => {
+    setNavVisibility(!isNavVisible);
+  };
 
   // Main navbar menu
   const links = [
@@ -63,9 +67,10 @@ const Navbar = () => {
         {/* MOBILE MENU */}
         <div
           className={styles.__nav_mobile_menu}
+          onClick={() => triggerMenu()}
           onMouseEnter={() => triggerMenu()}
           onMouseLeave={() => triggerMenu()}
-          onClick={() => setShow(!show)}
+          // onClick={() => setShow(!show)}
         >
           <details open={isOpen}>
             <summary className={styles.__summ}>

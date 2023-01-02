@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 // Assets
 import logo from "../../assets/logo/bb-logo-noir.png";
@@ -11,12 +10,7 @@ import Links from "../Links";
 import styles from "./styles.module.scss";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [refresh, setRefresh] = useState(false);
-  const [isNavVisible, setNavVisibility] = useState(false);
-  const toggleNav = () => {
-    setNavVisibility(!isNavVisible);
-  };
+  const [isOpen, setOpen] = useState(false);
 
   // Main navbar menu
   const links = [
@@ -47,11 +41,7 @@ const Navbar = () => {
     ],
   ];
 
-  const triggerMenu = () => setRefresh(!refresh);
-
-  useEffect(() => {
-    setIsOpen(!isOpen);
-  }, [refresh]);
+  const toggleMenu = () => setOpen(!isOpen);
 
   return (
     <nav className={styles.navbar}>
@@ -65,20 +55,11 @@ const Navbar = () => {
         </a>
 
         {/* MOBILE MENU */}
-        <div
-          className={styles.__nav_mobile_menu}
-          onClick={() => triggerMenu()}
-          onMouseEnter={() => triggerMenu()}
-          onMouseLeave={() => triggerMenu()}
-          // onClick={() => setShow(!show)}
-        >
-          <details open={isOpen}>
-            <summary className={styles.__summ}>
-              <img
-                src={isOpen ? cross : menu}
-                alt={isOpen ? "Menu" : "Cross"}
-              />
-            </summary>
+        <div className={styles.__nav_mobile_menu}>
+          <button className={styles.__summ} onClick={toggleMenu}>
+            <img src={isOpen ? cross : menu} alt={isOpen ? "Menu" : "Cross"} />
+          </button>
+          {isOpen && (
             <div>
               {linksMobile.map((link, index) => {
                 return (
@@ -91,7 +72,7 @@ const Navbar = () => {
                 );
               })}
             </div>
-          </details>
+          )}
         </div>
         {/* DESKTOP MENU */}
         <ul className={styles.__nav_menu}>

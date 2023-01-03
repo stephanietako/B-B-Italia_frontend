@@ -67,7 +67,6 @@
       background: none;
       cursor: pointer;
       width: 34%;
-      /* align-items: end; */
       justify-content: flex-end;
       display: flex;
       width: 100%;
@@ -84,7 +83,7 @@
       flex-direction: column;
       /* width: 100%; */
       width: 100vw;
-      margin-top: 122px;
+      margin-top: 116px;
       z-index: 100;
       opacity: 0.9;
       position: relative;
@@ -102,21 +101,22 @@
 @media screen and (max-width: 960px) {
   .navbar {
     white-space: nowrap;
-    // .box {
-    //   height: 167px;
-    // }
+    .box {
+      height: 120px;
+    }
+    .__logo {
+      height: 7rem;
+      padding-top: 12px;
+    }
     .__nav_menu {
       display: none !important;
     }
 
     .__nav_mobile_menu {
       display: block !important;
-      // border: 3px solid red;
-      details {
+      .__summ {
         display: flex;
-        //   div {
-        //     margin-top: 74px;
-        //   }
+        padding: 12px;
       }
 
       ul {
@@ -130,6 +130,7 @@
     }
   }
 }
+
 // Desktop-large(pour les très grands écrans)
 // @media (min-width: 1900px) {
 //   .navbar {

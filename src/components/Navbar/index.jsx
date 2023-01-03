@@ -12,6 +12,8 @@ import styles from "./styles.module.scss";
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
 
+  const toggleMenu = () => setOpen(!isOpen);
+
   // Main navbar menu
   const links = [
     { name: "Accueil", target: "#welcome" },
@@ -41,8 +43,6 @@ const Navbar = () => {
     ],
   ];
 
-  const toggleMenu = () => setOpen(!isOpen);
-
   return (
     <nav className={styles.navbar}>
       <div className={styles.box}>
@@ -68,6 +68,7 @@ const Navbar = () => {
                     link={link}
                     sublinks={sublinks}
                     dropdownPosition={0}
+                    onClick={toggleMenu}
                   />
                 );
               })}
@@ -90,6 +91,7 @@ const Navbar = () => {
                 link={link}
                 sublinks={sublinks}
                 dropdownPosition={dropdownPosition}
+                onClick={toggleMenu}
               />
             );
           })}

@@ -4,19 +4,23 @@
   right: 40px;
   .__icon_position {
     position: fixed;
-    // bottom: 135px;
-    z-index: 76;
-    right: 0;
+    bottom: 40px;
+    right: 25px;
+    z-index: 20;
+    // position: fixed;
+    // // bottom: 135px;
+    // z-index: 76;
+    // right: 0;
     img {
       background: rgba(255, 255, 255, 0.75);
       border-radius: 10%;
       border: 2px solid #fff;
-      height: 30px;
+      height: 40px;
       cursor: pointer;
-      animation: movebtn 3s ease-in-out infinite;
-      transition: all 0.5s ease-in-out;
+      animation: movebtn 3s alternate ease infinite;
+      // transition: all 0.5s ease-in-out;
       &:hover {
-        animation: none;
+        // animation: none;
         background: grey;
         border: 2px solid grey;
       }
@@ -24,13 +28,25 @@
   }
 }
 @keyframes movebtn {
-  0% {
-    transform: translateY(0px);
+  from {
+    transform: translateY(10px);
   }
-  25% {
-    transform: translateY(20px);
+  to {
+    transform: translateY(-3px);
   }
-  100% {
-    transform: translateY(0px);
-  }
+  // 0% {
+  //   transform: translateY(0px);
+  // }
+  // 25% {
+  //   transform: translateY(20px);
+  // }
+  // 50% {
+  //   transform: translateY(0px);
+  // }
+  // 75% {
+  //   transform: translateY(-20px);
+  // }
+  // 100% {
+  //   transform: translateY(0px);
+  // }
 }

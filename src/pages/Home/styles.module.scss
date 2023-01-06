@@ -8,50 +8,32 @@
   justify-content: center;
   width: 100%;
   .__container {
+    // border: 4px solid red;
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
-
-    // object-fit: fill;
-    // width: 100%;
-    // height: 950px;
-    // margin-top: -55px;
     section {
-      // padding-top: 200px;
-      position: relative;
-      // height: 100vh;
-      width: 100%;
+      margin-bottom: 43px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      overflow: hidden;
+      border: 4px solid green;
+      position: relative;
+      width: 100%;
+      height: 750px;
       .sections {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        height: 100%;
         width: 100%;
-        margin-top: 35px;
+        display: block;
+        height: 100%;
         .__gif_content {
-          display: block;
-          overflow: hidden;
+          display: flex;
           width: 100%;
-          height: 892px;
-          margin-top: -8px;
-
-          .__gif {
-            display: block;
+          height: 100%;
+          img {
+            object-fit: cover;
             width: 100%;
             height: 100%;
-            position: relative;
-            // max-height: 40.5rem;
-            img {
-              object-fit: cover;
-              width: 100%;
-              height: 100%;
-              object-position: 30% 136%;
-            }
+            object-position: center right;
           }
         }
       }
@@ -60,17 +42,18 @@
 }
 // ############## RESPONSIVE  ###############
 // Tablet
-@media (max-width: 850px) {
+@media (max-width: 960px) {
   .__container {
     section {
-      padding-top: 7%;
+      // padding-top: 7%;
       .sections {
-        margin-top: 15%;
+        // margin-top: 15%;
         .__gif_content {
           padding-top: 3%;
 
           .__gif {
             img {
+              height: 500px;
               object-fit: cover;
             }
           }
@@ -83,11 +66,12 @@
 @media (min-width: 501px) {
   .__container {
     section {
-      padding-top: 7%;
+      // padding-top: 7%;
+
       .sections {
-        margin-top: 15%;
+        // margin-top: 15%;
         .__gif_content {
-          padding-top: 3%;
+          // padding-top: 3%;
 
           .__gif {
             // padding-top: 3%;
@@ -104,11 +88,11 @@
 @media (max-width: 850px) and (min-width: 650px) {
   .__container {
     section {
-      padding-top: 7%;
+      // padding-top: 7%;
       .sections {
-        margin-top: 15%;
+        // margin-top: 15%;
         .__gif_content {
-          padding-top: 3%;
+          // padding-top: 3%;
 
           .__gif {
             // padding-top: 3%;
@@ -125,11 +109,11 @@
 @media (max-width: 850px) and (min-width: 750px) {
   .__container {
     section {
-      padding-top: 7%;
+      // padding-top: 7%;
       .sections {
-        margin-top: 15%;
+        // margin-top: 15%;
         .__gif_content {
-          padding-top: 3%;
+          // padding-top: 3%;
 
           .__gif {
             // padding-top: 3%;
@@ -146,11 +130,11 @@
 @media (min-width: 500px) {
   .__container {
     section {
-      padding-top: 7%;
+      // padding-top: 7%;
       .sections {
-        margin-top: 15%;
+        // margin-top: 15%;
         .__gif_content {
-          padding-top: 3%;
+          // padding-top: 3%;
 
           .__gif {
             // padding-top: 3%;
@@ -167,11 +151,11 @@
 @media (max-width: 500px) and (min-width: 400px) {
   .__container {
     section {
-      padding-top: 7%;
+      // padding-top: 7%;
       .sections {
-        margin-top: 15%;
+        // margin-top: 15%;
         .__gif_content {
-          padding-top: 3%;
+          // padding-top: 3%;
 
           .__gif {
             // padding-top: 3%;
@@ -188,11 +172,11 @@
 @media (max-width: 500px) and (min-width: 450px) {
   .__container {
     section {
-      padding-top: 7%;
+      // padding-top: 7%;
       .sections {
-        margin-top: 15%;
+        // margin-top: 15%;
         .__gif_content {
-          padding-top: 3%;
+          // padding-top: 3%;
 
           .__gif {
             // padding-top: 3%;

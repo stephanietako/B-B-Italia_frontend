@@ -9,8 +9,6 @@
   .__icons {
     position: fixed;
     display: flex;
-    // background: rgba(255, 255, 255, 0.75);
-    // border-radius: 10px;
     z-index: 100;
     right: 30px;
     top: 8rem;
@@ -34,7 +32,7 @@
     .__icons {
       right: 25px;
       top: 9rem;
-      border: 3px solid red;
+      // border: 3px solid red;
     }
   }
 }
@@ -44,7 +42,7 @@
     .__icons {
       right: 7px;
       top: 9rem;
-      border: 3px solid green;
+      // border: 3px solid green;
     }
   }
 }
@@ -52,8 +50,8 @@
 @media (max-width: 501px) {
   .welcome {
     .__icons {
-      border: 3px solid turquoise;
-      right: 25px;
+      // border: 3px solid turquoise;
+      right: 11px;
       top: 8rem;
     }
   }
@@ -62,7 +60,7 @@
 @media (max-width: 1200px) and (min-width: 650px) {
   .welcome {
     .__icons {
-      border: 3px solid pink;
+      // border: 3px solid pink;
       right: 25px;
       top: 8rem;
     }
@@ -72,27 +70,27 @@
 @media (max-width: 850px) and (min-width: 750px) {
   .welcome {
     .__icons {
-      border: 3px solid orangered;
+      // border: 3px solid orangered;
       right: 7px;
-      top: 5rem;
+      top: 9rem;
     }
   }
 }
 // Mobile
-// @media (min-width: 500px) {
-//   .welcome {
-//     .__icons {
-//       border: 3px solid violet;
-//       right: 25px;
-//       top: 8rem;
-//     }
-//   }
-// }
+@media (min-width: 500px) {
+  .welcome {
+    .__icons {
+      // border: 3px solid violet;
+      right: 12px;
+      top: 8rem;
+    }
+  }
+}
 //Mobile-Medium
 @media (max-width: 500px) and (min-width: 400px) {
   .welcome {
     .__icons {
-      border: 3px solid blue;
+      // border: 3px solid blue;
       right: 25px;
       top: 7.5rem;
     }
@@ -102,9 +100,9 @@
 @media (max-width: 501px) and (min-width: 320px) {
   .welcome {
     .__icons {
-      border: 3px solid yellow;
+      // border: 3px solid yellow;
       right: 7px;
-      top: 5rem;
+      top: 8rem;
     }
   }
 }

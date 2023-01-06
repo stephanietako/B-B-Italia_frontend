@@ -2,38 +2,37 @@
   background: rgba(255, 255, 255, 0.75);
   // border: 4px solid blue;
   display: flex;
-  font-size: 1.2rem;
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
   z-index: 11;
   align-items: center;
-  justify-content: flex-end;
   border: 3px solid transparent;
+  height: 175px;
+  align-items: center;
 
-  .box {
-    // border: 3px solid yellow;
+  .navigation {
+    // border: 3px solid blue;
     position: relative;
     display: flex;
     width: 100%;
     height: 170px;
   }
   .__logo {
+    // border: 3px solid pink;
     max-height: 9rem;
-    margin-top: 4px;
+    top: 0;
     right: 0;
     left: 0;
     justify-content: flex-end;
-    right: 50%;
     display: flex;
     position: absolute;
-    left: 0;
-    right: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 14px;
+    cursor: pointer;
   }
-
   .__nav_menu {
     left: 50%;
     // border: 3px solid red;
@@ -47,21 +46,18 @@
     height: 35%;
     top: 45px;
     justify-content: center;
-    padding-right: 10px;
+    padding-right: 1px;
     justify-content: flex-end;
   }
 
   .__nav_mobile_menu {
     display: none !important;
-    border: 4px solid red;
+    // border: 4px solid red;
     width: 100%;
-    // right: 0;
-    // top: 0;
     cursor: pointer;
-    // margin: 25px;
     .__summ {
       font-display: block;
-      border: 3px solid yellow;
+      // border: 3px solid yellow;
       display: block;
       position: absolute;
       background: none;
@@ -70,38 +66,33 @@
       justify-content: flex-end;
       display: flex;
       width: 100%;
-
       button {
         margin-left: auto;
       }
     }
 
     div {
-      border: 3px solid blue;
-      /* display: block; */
+      // border: 3px solid blue;
       display: flex;
       flex-direction: column;
-      /* width: 100%; */
       width: 100vw;
       margin-top: 116px;
       z-index: 100;
       opacity: 0.9;
       position: relative;
       right: 6px;
-      /* padding-left: 5px; */
       background: rgba(255, 255, 255, 0.75);
       transition: 0.5s;
       overflow-y: hidden;
     }
   }
 }
-
 // ############## RESPONSIVE  ###############
 // screen under
 @media screen and (max-width: 960px) {
   .navbar {
     white-space: nowrap;
-    .box {
+    .navigation {
       height: 120px;
     }
     .__logo {
@@ -117,6 +108,7 @@
       .__summ {
         display: flex;
         padding: 12px;
+        border: none;
       }
 
       ul {
@@ -125,7 +117,6 @@
         position: relative;
         align-self: flex-start;
         align-items: center;
-        border: 4px solid red;
       }
     }
   }
@@ -134,7 +125,7 @@
 // Desktop-large(pour les très grands écrans)
 // @media (min-width: 1900px) {
 //   .navbar {
-//     .box {
+//     .navigation {
 //       border: 3px solid blue;
 //       position: relative;
 //       display: flex;

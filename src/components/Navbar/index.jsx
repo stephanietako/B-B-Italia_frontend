@@ -10,9 +10,9 @@ import Links from "../Links";
 import styles from "./styles.module.scss";
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false);
-
-  const toggleMenu = () => setOpen(!isOpen);
+  // menu state change management
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   // Main navbar menu
   const links = [
@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.box}>
+      <div className={styles.navigation}>
         <a href="#welcome">
           <img
             className={styles.__logo}
@@ -53,10 +53,13 @@ const Navbar = () => {
             alt="B&B Italia Saint-Tropez"
           />
         </a>
-
         {/* MOBILE MENU */}
         <div className={styles.__nav_mobile_menu}>
-          <button className={styles.__summ} onClick={toggleMenu}>
+          <button
+            className={styles.__summ}
+            onClick={toggleMenu}
+            onMouseEnter={toggleMenu}
+          >
             <img src={isOpen ? cross : menu} alt={isOpen ? "Menu" : "Cross"} />
           </button>
           {isOpen && (

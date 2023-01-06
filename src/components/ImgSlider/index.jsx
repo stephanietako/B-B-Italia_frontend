@@ -17,8 +17,6 @@ const ImgSlider = ({ slides }) => {
     setCurrent(current === 0 ? sliderlength - 1 : current - 1);
   };
 
-  // console.log(current);
-
   if (!Array.isArray(slides) || sliderlength <= 0) {
     return null;
   }

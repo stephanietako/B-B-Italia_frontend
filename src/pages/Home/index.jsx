@@ -12,7 +12,7 @@ import logost from "../../assets/logo/bb.png";
 import arclineaLogo from "../../assets/logo/arclinea-logo.png";
 import maxaltoLogo from "../../assets/logo/maxalto-logo.png";
 // Gif
-import welcomeGif from "../../assets/gif/SlideBeb.gif";
+import welcomeGif from "../../assets/gif/slidebnb.gif";
 // Images
 import arclinea from "../../assets/images/arclinea.webp";
 import maxalto from "../../assets/images/maxalto.webp";
@@ -72,9 +72,7 @@ const HomePage = () => {
           <div className={styles.sections}>
             <Welcome />
             <div className={styles.__gif_content}>
-              <div className={styles.__gif}>
-                <img src={welcomeGif} alt={"Showroom Saint-Tropez"} />
-              </div>
+              <img src={welcomeGif} alt={"Showroom à Saint-Tropez"} />
             </div>
           </div>
         </section>

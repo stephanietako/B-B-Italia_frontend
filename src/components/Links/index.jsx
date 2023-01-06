@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 // Styles
 import styles from "./styles.module.scss";
 
-const Links = ({ link, sublinks, dropdownPosition, onClick, toogleMenu }) => {
+const Links = ({ link, sublinks, dropdownPosition, onClick }) => {
   const { name, target, dropdown } = link;
 
   const [isOpen, setIsOpen] = useState(false);

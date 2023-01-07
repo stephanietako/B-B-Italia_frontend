@@ -1,14 +1,12 @@
 import React from "react";
 import "./App.scss";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./pages/Home";
 import About from "./components/About";
 import MentionsLegales from "./components/MentionsLegales";
 import Test from "./pages/Test";
 import ScrollToTop from "./components/ScrollToTop";
-
-// import MentionsLegalesPage from "./pages/MentionsLegalesPage";
 
 function App() {
   return (
@@ -28,7 +26,6 @@ function App() {
           <Route path="/contact" element={<HomePage />} />
         </Route>
         <Route path="/terms" element={<MentionsLegales />} />
-        <Route path="/redirect" element={<Navigate to="/" />} />
         <Route path="/test" element={<Test />} />
       </Routes>
     </div>

@@ -6,14 +6,14 @@ import HomePage from "./pages/Home";
 import About from "./components/About";
 import MentionsLegales from "./components/MentionsLegales";
 import Test from "./pages/Test";
-import ScrollTopSection from "./components/ScrollToTopSection";
+import ScrollToTop from "./components/ScrollToTop";
 
 // import MentionsLegalesPage from "./pages/MentionsLegalesPage";
 
 function App() {
   return (
     <div className="App">
-      <ScrollTopSection />
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />

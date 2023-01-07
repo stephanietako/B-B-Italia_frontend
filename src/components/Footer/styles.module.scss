@@ -8,7 +8,6 @@
   height: 100%;
   .__container {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     bottom: 0;
     width: 100%;
@@ -23,12 +22,11 @@
       flex-wrap: wrap;
       color: $light-grey;
       font-size: 10px;
+      width: 100%;
     }
     ul {
       display: flex;
       align-items: center;
-      max-width: 37%;
-      justify-content: flex-start;
       text-decoration: none;
       list-style-type: none;
 

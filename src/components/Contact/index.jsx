@@ -1,20 +1,21 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import logo from "../../assets/logo/bandb-logo-blanc-crop.png";
-import map from "../../assets/images/map.webp";
+// import map from "../../assets/images/map.webp";
+import GoogleMap from "../../components/GoogleMap";
 
 const Contact = ({ text }) => {
   return (
     <div className={styles.contact}>
       <div className={styles.__heroSection}>
-        <div className={styles.__img}>
+        {/* <div className={styles.__img}>
           <img src={map} alt="plan" />
-        </div>
+        </div> */}
         <div className={styles.__logo}>
           <img src={logo} alt="Logo" />
         </div>
         <div className={styles.__container}>
-          <div className={styles.__text}>
+          {/* <div className={styles.__text}>
             <p>{text}</p>
             <p>
               {" "}
@@ -23,9 +24,10 @@ const Contact = ({ text }) => {
             <p>
               <a href="mailto:contact@bebsttropez.fr">contact@bebsttropez.fr</a>
             </p>
-          </div>
+          </div> */}
           <button className={styles.__btn_googlemap}>OUVRIR DANS MAPS</button>
         </div>
+        <GoogleMap />
       </div>
     </div>
   );

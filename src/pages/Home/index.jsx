@@ -33,7 +33,6 @@ import showroom3 from "../../assets/images/showroom3.webp";
 import showroom4 from "../../assets/images/showroom4.webp";
 // Components
 // import Test from "../Test";
-import ScrollToTop from "../../components/ScrollToTop";
 import Contact from "../../components/Contact";
 
 const HomePage = () => {
@@ -69,10 +68,8 @@ const HomePage = () => {
 
   return (
     <>
-      {/* <header> */}
       <NavBar />
       <Welcome />
-      {/* </header> */}
       <section id="welcome">
         <div className={styles.sections}>
           <HeroSection />

@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "REACT_APP_MODE_MAINTENANCE=true react-scripts build"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [

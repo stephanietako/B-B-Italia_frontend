@@ -17,6 +17,7 @@ const Navbar = () => {
   let navigationHeight = 0;
   useEffect(() => {
     // This effect will only run after the navbar element has been rendered
+    // eslint-disable-next-line
     navigationHeight = navbarElement.current.offsetHeight;
     console.log(navbarElement.current.offsetHeight);
     console.log(navbarElement);

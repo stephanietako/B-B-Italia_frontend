@@ -12,13 +12,17 @@ const GoogleMap = () => {
     },
     zoom: 12,
   };
+
   return (
-    // Important! Always set the container height explicitly
-    <div style={{ height: "100vh", width: "100%" }}>
+    // Important! Always set the container height explicitly or map will not display
+    // <div style={{ height: "100vh", width: "100%" }}>
+    <div style={{ height: 400, width: 500, margin: "auto", marginTop: 40 }}>
       <GoogleMapReact
+        className={styles.react_map}
         bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
+        // center={{}}
       >
         <GooglePin
           lat={43.26997027608313}
@@ -26,7 +30,7 @@ const GoogleMap = () => {
           text="B&B Italia Showroom Saint-Tropez"
         />
       </GoogleMapReact>
-      <div className={styles.windowBubble}>render(){}</div>
+      <div className={styles.windowBubble}>WINDOW ICI</div>
     </div>
     // The marker, positioned at Uluru
   );

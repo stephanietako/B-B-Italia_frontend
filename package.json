@@ -12,7 +12,8 @@
     "uuid": "^9.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "REACT_APP_MODE_MAINTENANCE=true react-scripts start",
     "build": "react-scripts build"
   },
   "eslintConfig": {

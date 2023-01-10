@@ -1,0 +1,24 @@
+@import "../../style/_mixins";
+@import "../../style/scss-variables.scss";
+
+.maintenance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  div {
+    margin-top: 15%;
+    :nth-child(2) {
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  div > img {
+    width: 200px;
+  }
+}

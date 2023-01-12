@@ -2,11 +2,17 @@ import React, { useState } from "react";
 import GoogleMapReact from "google-map-react";
 import { getUserLocation } from "../../helpers/getUserLocation.js";
 import { v4 as uuidv4 } from "uuid";
-
+// Icon
+import markerIcon from "../../assets/icon/markerIcon.svg";
 // Styles
 import styles from "./styles.module.scss";
 
-const GooglePin = ({ text }) => <div>{text}</div>;
+const GooglePin = ({ text, icon, alt }) => (
+  <div>
+    {text}
+    <img src={icon} alt={alt} />;
+  </div>
+);
 
 const GoogleMap = () => {
   const [currentCenter, setCurrentCenter] = useState(null);
@@ -54,6 +60,8 @@ const GoogleMap = () => {
             lat={43.26997027608313}
             lng={6.644160284509654}
             text="B&B Italia"
+            icon={markerIcon}
+            alt="logo BB"
           />
           {currentCenter && (
             <GooglePin
@@ -61,13 +69,12 @@ const GoogleMap = () => {
               lat={currentCenter.center.lat}
               lng={currentCenter.center.lng}
               text="USER"
+              icon={markerIcon}
+              alt="logo user"
             />
           )}
         </GoogleMapReact>
-        {/* Bouton centermyLocation */}
       </div>
-      {/* </div> */}
-
       <button onClick={() => centerMyLocation()}>MY LOCATION</button>
     </>
   );

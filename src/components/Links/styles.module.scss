@@ -2,12 +2,15 @@
 .link {
   display: flex;
   align-items: center;
-  padding-bottom: 7px;
+  // padding-bottom: 7px;
+  // border: 4px solid red;
   a {
     color: #000;
     text-decoration: none;
-    font-size: 17px;
-    padding: 4px;
+    font-size: 12px;
+    // padding: 4px;
+    padding-right: 4px;
+    // border: 2px solid blue;
     &:hover {
       opacity: 0.75;
     }
@@ -16,7 +19,8 @@
 
 details {
   color: #000;
-  padding: 0 0px 7px 0px;
+  // padding: 0 0px 7px 0px;
+  padding-right: 4px;
   flex-wrap: wrap;
   cursor: pointer;
   -webkit-user-select: none; /* Chrome all / Safari all */
@@ -27,7 +31,7 @@ details {
 
   summary {
     display: block;
-    font-size: 17px;
+    font-size: 12px;
     list-style-type: none;
     &::-webkit-details-marker {
       display: none;
@@ -41,14 +45,17 @@ details {
     flex-wrap: wrap;
     flex-direction: column;
     display: flex;
-    position: absolute;
-    font-size: 16px;
     list-style-type: none;
+    position: absolute;
+
     li {
-      padding: 5px 7px 5px 7px;
+      display: block;
+      padding-top: 5px;
+      // padding: 5px 7px 5px 7px;
+      // padding: 7px 0 1px 0;
       width: 100%;
+      font-size: 11px;
       a {
-        display: block;
         color: #000;
         &:hover {
           opacity: 0.75;
@@ -58,22 +65,35 @@ details {
   }
 }
 //############## RESPONSIVE  ###############
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
+  .link {
+    padding-left: 10px;
+    width: 100%;
+  }
   details {
-    .link {
-      padding-left: 6px;
-    }
     summary {
-      padding: 5px 0 7px 7px;
+      // padding: 5px 0 7px 8px;
+      padding-left: 8px;
       list-style-type: none;
-
+      color: red;
+      border: 2px solid blue;
       &::-webkit-details-marker {
         display: none;
       }
     }
+    ul {
+      position: relative;
+      // border: 3px solid blue;
+      // width: 100%;
+      li {
+        background-color: aquamarine;
+        border: 1px solid red;
+        // padding: 5px 7px 5px 7px;
+        padding-left: 10px;
+      }
+    }
   }
 }
-
 // dropdown unitaire
 // /* Pour personnaliser l'icon de la balise details
 // details > summary {

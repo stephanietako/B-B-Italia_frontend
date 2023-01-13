@@ -5,17 +5,14 @@
   .__icon_position {
     position: fixed;
     bottom: 40px;
-    right: 25px;
+    right: 10px;
     z-index: 20;
-    // position: fixed;
-    // // bottom: 135px;
-    // z-index: 76;
-    // right: 0;
     img {
       background: rgba(255, 255, 255, 0.75);
       border-radius: 10%;
       border: 2px solid #fff;
-      height: 40px;
+      height: 12px;
+      width: 12px;
       cursor: pointer;
       animation: movebtn 3s alternate ease infinite;
       // transition: all 0.5s ease-in-out;

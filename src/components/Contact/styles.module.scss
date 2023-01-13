@@ -54,21 +54,23 @@
       // }
     }
     button {
-      outline: 0;
-      display: inline-block;
-      padding: 26px;
-      text-align: center;
-      cursor: pointer;
-      margin: auto;
-      background-color: transparent;
-      border: 2px solid #fff;
-      color: #fff;
-      font-size: 23px;
-      color: black;
-      border: 2px solid #000;
-      &:hover {
-        background-color: $light-grey;
+      &.__btn_googlemap {
+        outline: 0;
+        display: inline-block;
+        padding: 26px;
+        text-align: center;
+        cursor: pointer;
+        margin: auto;
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 23px;
         color: #000;
+        border: 2px solid #000;
+        &:hover {
+          background-color: $light-grey;
+          color: #000;
+        }
       }
     }
   }

@@ -3,14 +3,15 @@ import GoogleMapReact from "google-map-react";
 import { getUserLocation } from "../../helpers/getUserLocation.js";
 import { v4 as uuidv4 } from "uuid";
 // Icon
-import markerIcon from "../../assets/icon/markerIcon.svg";
+import marker from "../../assets/icon/marqueur.svg";
+import markeruser from "../../assets/icon/markerIcon.svg";
 // Styles
 import styles from "./styles.module.scss";
 
 const GooglePin = ({ text, icon, alt }) => (
-  <div>
+  <div className={styles.__googlePin}>
+    <img className={styles.__location_icon} src={icon} alt={alt} />
     {text}
-    <img src={icon} alt={alt} />;
   </div>
 );
 
@@ -36,7 +37,6 @@ const GoogleMap = () => {
   };
   return (
     <>
-      {/* <div className={styles.__map}> */}
       {/* Important! Always set the container height explicitly or map will not display */}
       <div style={{ height: "100%", width: "100%" }}>
         <GoogleMapReact
@@ -48,9 +48,7 @@ const GoogleMap = () => {
           }}
           defaultZoom={12}
           center={{ lat: 43.26997027608313, lng: 6.644160284509654 }}
-          // onChange={e => setCurrentCenter(e.target.value)}
           onChange={({ center, zoom }) => {
-            // setCurrentCenter({ center: center, zoom: zoom });
             console.log("CENTER", center);
             console.log("ZOOM", zoom);
           }}
@@ -59,8 +57,8 @@ const GoogleMap = () => {
             key={uuidv4()}
             lat={43.26997027608313}
             lng={6.644160284509654}
-            text="B&B Italia"
-            icon={markerIcon}
+            text=" B&B Italia"
+            icon={marker}
             alt="logo BB"
           />
           {currentCenter && (
@@ -69,13 +67,18 @@ const GoogleMap = () => {
               lat={currentCenter.center.lat}
               lng={currentCenter.center.lng}
               text="USER"
-              icon={markerIcon}
+              icon={marker}
               alt="logo user"
             />
           )}
         </GoogleMapReact>
       </div>
-      <button onClick={() => centerMyLocation()}>MY LOCATION</button>
+      <button
+        className={styles.__btnPosition}
+        onClick={() => centerMyLocation()}
+      >
+        OÙ SUIS-JE ?
+      </button>
     </>
   );
 };

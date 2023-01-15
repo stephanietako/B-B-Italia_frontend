@@ -1,4 +1,5 @@
 @import "../../style/scss-variables";
+
 button {
   &.__btnPosition {
     padding: 26px;
@@ -28,6 +29,7 @@ button {
 
 .__googlePin {
   color: red;
+  cursor: pointer;
 }
 
 .__location_icon {

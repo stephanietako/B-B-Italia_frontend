@@ -2,28 +2,27 @@
 
 button {
   &.__btnPosition {
-    padding: 26px;
-    text-align: center;
+    background-color: transparent;
     cursor: pointer;
-    border: 2px solid #fff;
-    color: #000;
     display: block;
     position: absolute;
-    padding: 2px;
+    padding: 12px;
     text-align: center;
-    background-color: red;
-    font-size: 10px;
-    color: #fff;
     border: 2px solid #000;
     margin: 0 auto;
-    top: 80%;
-    left: 50%;
+    top: 118px;
+    left: 84%;
+    z-index: 999;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    &:hover {
-      background-color: $light-grey;
-      color: #000;
-    }
+    font-weight: bold;
+    border-radius: 8px;
+    color: #fff;
+    align-items: center;
+  }
+  &:hover {
+    background-color: $light-grey;
+    color: #000;
   }
 }
 
@@ -36,4 +35,65 @@ button {
   width: 22px;
   filter: invert(14%) sepia(57%) saturate(7246%) hue-rotate(358deg)
     brightness(105%) contrast(120%);
+}
+
+button {
+  &.__btn_modale {
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #000;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    z-index: 999;
+    text-align: center;
+    top: 118px;
+    left: 15%;
+    border-radius: 8px;
+    color: #fff;
+    &:hover {
+      background-color: $light-grey;
+      color: #000;
+    }
+  }
+}
+
+// ############## RESPONSIVE  ###############
+@media (max-width: 960px) {
+  button {
+    &.__btnPosition {
+      padding: 7px;
+      top: 21%;
+      left: 84%;
+      font-size: 9px;
+      color: #000;
+    }
+  }
+  .__location_icon {
+    width: 18px;
+    filter: invert(14%) sepia(57%) saturate(7246%) hue-rotate(358deg)
+      brightness(105%) contrast(120%);
+  }
+  button {
+    &.__btn_modale {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      padding: 6px;
+      text-align: center;
+      border: 2px solid #000;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      z-index: 999;
+      text-align: center;
+      top: 8%;
+      left: 17%;
+      border-radius: 8px;
+    }
+  }
 }

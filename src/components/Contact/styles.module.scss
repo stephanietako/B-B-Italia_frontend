@@ -1,7 +1,6 @@
 @import "../../style/scss-variables";
 
 .contact {
-  border: 2px solid red;
   display: flex;
   width: 100%;
   height: 100%;
@@ -16,57 +15,66 @@
     height: 100%;
     max-height: 100%;
     align-items: center;
-    // .__img {
-    //   position: absolute;
-    //   width: 100%;
-    //   z-index: -1;
-    //   height: 100%;
-    //   opacity: 0.3;
-    //   img {
-    //     width: 100%;
-    //     height: 100%;
-    //     object-fit: cover;
-    //   }
-    // }
 
     .__container {
-      border: 4px solid blue;
       display: flex;
       text-align: center;
       flex-direction: column;
-      height: 70%;
-      width: 70%;
+      height: 65%;
       margin-top: 50px;
-      // .__text {
-      //   text-align: center;
-      //   justify-content: center;
-      //   color: #fff;
-      //   font-size: 30px;
-      //   font-weight: bold;
-      //   line-height: 34px;
-      //   white-space: pre-wrap;
-      //   a {
-      //     color: #fff;
-      //     &:hover {
-      //       color: #000;
-      //     }
-      //   }
-      // }
+      width: 90%;
+      height: 100%;
+      .box {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        // border: 4px solid red;
+        width: 90%;
+        position: absolute;
+        z-index: 999;
+        margin: auto;
+
+        .__text {
+          text-align: center;
+          justify-content: center;
+          color: #fff;
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 34px;
+          white-space: pre-wrap;
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+          a {
+            color: #000;
+            &:hover {
+              color: gray;
+            }
+          }
+        }
+      }
+      .map_box {
+        flex-direction: column;
+        display: flex;
+        flex: 2;
+        width: 100%;
+      }
     }
+
     button {
       &.__btn_googlemap {
         outline: 0;
         display: inline-block;
-        padding: 26px;
+        padding: 12px;
         text-align: center;
         cursor: pointer;
         margin: auto;
         background-color: transparent;
         border: 2px solid #fff;
         color: #fff;
-        font-size: 23px;
+        font-size: 14px;
         color: #000;
         border: 2px solid #000;
+        font-weight: bold;
+        border-radius: 8px;
         &:hover {
           background-color: $light-grey;
           color: #000;
@@ -77,53 +85,36 @@
 }
 
 // ############## RESPONSIVE  ###############
-// @media screen and (max-width: 1200px) {
-//   .contact {
-//     .__heroSection {
-//       margin-top: 93px;
-//       .__img {
-//         position: absolute;
-//         width: 100%;
-//         z-index: -1;
-//         height: 100%;
-//         opacity: 0.3;
-//         img {
-//           width: 100%;
-//           height: 100%;
-//           object-fit: cover;
-//         }
-//       }
-//       .__logo {
-//         display: flex;
-//         max-width: 15%;
-//         align-self: center;
-//         padding-top: 9px;
-//         img {
-//           object-fit: cover;
-//           width: 100%;
-//         }
-//       }
-//       .__container {
-//         display: flex;
-//         text-align: center;
-//         flex-direction: column;
-//         gap: 30px;
-//         .__text {
-//           font-size: 20px;
-//           line-height: 23px;
-//           a {
-//             color: #fff;
-//             &:hover {
-//               color: #000;
-//             }
-//           }
-//         }
-//         button {
-//           width: 49%;
-//           font-size: 13px;
-//           padding: 16px;
-//         }
-//       }
-//     }
-//   }
-// }
+@media (max-width: 960px) {
+  .contact {
+    .__heroSection {
+      .__container {
+        margin-top: 15px;
+        .box {
+          .__text {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 24px;
+          }
+        }
+        .map_box {
+          flex-direction: column;
+          display: flex;
+          flex: 2;
+          width: 100%;
+        }
+      }
+
+      button {
+        &.__btn_googlemap {
+          padding: 2px;
+          top: 8%;
+          left: 28%;
+          top: 116px;
+          position: absolute;
+          top: 18%;
+        }
+      }
+    }
+  }
+}

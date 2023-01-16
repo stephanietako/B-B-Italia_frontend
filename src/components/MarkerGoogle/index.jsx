@@ -4,16 +4,14 @@ import { v4 as uuidv4 } from "uuid";
 import styles from "./styles.module.scss";
 
 const Marker = (elMarker) => {
-  const { color, name, text } = elMarker;
+  const { color, name } = elMarker;
   return (
     <div
-      className={`${styles.pin} ${styles.bounce} ${styles.pulse}`}
+      className={`${styles.pin} ${styles.bounce} ${styles.pulse} `}
       style={{ backgroundColor: color }}
       title={name}
       key={uuidv4()}
-    >
-      <span className={styles.marker_label}>{text}</span>
-    </div>
+    ></div>
   );
 };
 

@@ -2,14 +2,11 @@
 .link {
   display: flex;
   align-items: center;
-  // padding-bottom: 7px;
-  // border: 4px solid red;
   a {
     color: #000;
     text-decoration: none;
     font-size: 12px;
-    // padding: 4px;
-    padding-right: 4px;
+    padding: 5px;
     // border: 2px solid blue;
     &:hover {
       opacity: 0.75;
@@ -51,8 +48,6 @@ details {
     li {
       display: block;
       padding-top: 5px;
-      // padding: 5px 7px 5px 7px;
-      // padding: 7px 0 1px 0;
       width: 100%;
       font-size: 11px;
       a {
@@ -71,25 +66,25 @@ details {
     width: 100%;
   }
   details {
+    padding-top: 9px;
+    padding-bottom: 5px;
     summary {
       // padding: 5px 0 7px 8px;
-      padding-left: 8px;
+      padding-left: 17px;
       list-style-type: none;
-      color: red;
-      border: 2px solid blue;
+      // color: red;
+      // border: 2px solid blue;
       &::-webkit-details-marker {
         display: none;
       }
     }
     ul {
       position: relative;
-      // border: 3px solid blue;
-      // width: 100%;
+      margin-left: 29px;
       li {
-        background-color: aquamarine;
-        border: 1px solid red;
-        // padding: 5px 7px 5px 7px;
-        padding-left: 10px;
+        // background-color: aquamarine;
+        // border: 1px solid red;
+        padding-top: 9px;
       }
     }
   }

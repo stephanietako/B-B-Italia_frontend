@@ -1,6 +1,6 @@
 .navbar {
-  //background: #fff;
-  background: yellow;
+  background: #fff;
+  // background: yellow;
   display: flex;
   position: sticky;
   top: 0;
@@ -16,7 +16,7 @@
     z-index: 11;
   }
   .__logo {
-    border: 3px solid pink;
+    // border: 3px solid pink;
     max-height: 7rem;
     top: 0;
     right: 0;
@@ -37,9 +37,6 @@
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    // justify-content: stretch;
-    // height: 35%;
-    // justify-content: center;
     padding-right: 1px;
     justify-content: flex-end;
     margin: 0;
@@ -67,11 +64,11 @@
     }
 
     div {
-      border: 3px solid blue;
+      // border: 3px solid blue;
       display: flex;
       flex-direction: column;
       width: 100%;
-      margin-top: 469px;
+      margin-top: 312px;
       z-index: 100;
       opacity: 0.9;
       position: relative;
@@ -79,7 +76,7 @@
       transition: 0.5s;
       overflow-y: hidden;
       // padding-left: 9px;
-      height: 280px;
+      height: 210px;
     }
   }
 }
@@ -100,31 +97,3 @@
     }
   }
 }
-// screen under
-//   @media screen and (max-width: 960px) {
-//     .navbar {
-//       white-space: nowrap;
-//       width: 100%;
-
-//       .__logo {
-//         height: 7rem;
-//         padding-top: 12px;
-//       }
-//       .__nav_menu {
-//         display: none !important;
-//       }
-
-//       .__nav_mobile_menu {
-//         display: block !important;
-
-//         ul {
-//           display: flex;
-//           text-align: start;
-//           position: relative;
-//           align-self: flex-start;
-//           align-items: center;
-//         }
-//       }
-//     }
-//   }
-// }

@@ -3,11 +3,13 @@ import GoogleMapReact from "google-map-react";
 import Marker from "../MarkerGoogle";
 import { getUserLocation } from "../../helpers/getUserLocation.js";
 import { v4 as uuidv4 } from "uuid";
+import Modal from "../ModalWindow";
 // Styles
 import styles from "./styles.module.scss";
 // Icon
 import marker from "../../assets/icon/marqueur.svg";
 
+// Google map Pin
 const GooglePinUser = ({ name, icon, alt }) => (
   <div className={styles.__googlePin}>
     <img className={styles.__location_icon} src={icon} alt={alt} />
@@ -17,6 +19,8 @@ const GooglePinUser = ({ name, icon, alt }) => (
 
 const GoogleMap = () => {
   const [currentCenter, setCurrentCenter] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [bubbleContent, setBubbleContent] = useState("");
   // User Location
   const centerMyLocation = async () => {
     try {
@@ -35,7 +39,6 @@ const GoogleMap = () => {
       console.error("POSITION NON RÉCUPÉRÉE");
     }
   };
-
   return (
     <>
       <div style={{ height: "100%", width: "100%" }}>
@@ -58,7 +61,8 @@ const GoogleMap = () => {
             lng={6.644160284509654}
             name="B&B Italia Saint-Tropez"
             color="blue"
-            text={"B&B Italia Showroom"}
+            text={"B&B Italia Showroom Saint-tropez"}
+            onClick={() => setShowModal(true)}
           />
 
           {currentCenter && (
@@ -79,6 +83,22 @@ const GoogleMap = () => {
       >
         OÙ SUIS-JE ?
       </button>
+      <button
+        className={styles.__btn_modale}
+        onClick={() => {
+          setShowModal(true);
+          setBubbleContent("Contenu de la fenêtre modale");
+        }}
+      >
+        Contact
+      </button>
+      {showModal && (
+        <Modal
+          bubbleContent={bubbleContent}
+          show={showModal}
+          onClose={() => setShowModal(false)}
+        />
+      )}
     </>
   );
 };

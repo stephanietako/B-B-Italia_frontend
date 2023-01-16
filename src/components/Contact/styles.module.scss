@@ -61,6 +61,7 @@
 
     button {
       &.__btn_googlemap {
+        position: absolute;
         outline: 0;
         display: inline-block;
         padding: 12px;
@@ -75,6 +76,8 @@
         border: 2px solid #000;
         font-weight: bold;
         border-radius: 8px;
+        top: 88%;
+        right: 10%;
         &:hover {
           background-color: $light-grey;
           color: #000;
@@ -109,10 +112,10 @@
         &.__btn_googlemap {
           padding: 2px;
           top: 8%;
-          left: 28%;
           top: 116px;
           position: absolute;
-          top: 18%;
+          top: 89%;
+          right: 113px;
         }
       }
     }

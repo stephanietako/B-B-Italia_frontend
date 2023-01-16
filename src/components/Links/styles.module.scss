@@ -2,6 +2,8 @@
 .link {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
   a {
     color: #000;
     text-decoration: none;
@@ -44,7 +46,6 @@ details {
     display: flex;
     list-style-type: none;
     position: absolute;
-
     li {
       display: block;
       padding-top: 5px;
@@ -66,7 +67,7 @@ details {
     width: 100%;
   }
   details {
-    padding-top: 9px;
+    padding-top: 4px;
     padding-bottom: 5px;
     summary {
       // padding: 5px 0 7px 8px;
@@ -80,11 +81,9 @@ details {
     }
     ul {
       position: relative;
-      margin-left: 29px;
       li {
-        // background-color: aquamarine;
-        // border: 1px solid red;
-        padding-top: 9px;
+        padding-top: 11px;
+        padding-left: 26px;
       }
     }
   }

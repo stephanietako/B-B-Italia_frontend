@@ -97,7 +97,7 @@ const HomePage = () => {
         <div className={styles.sections}>
           <Blocs
             text={
-              "Né en 1966 de la vision entrepreneuriale de Piero Ambrogio Busnelli.\nLe Groupe a bâti son succès sur sa capacité à représenter la culture contemporaine à travers le design, la décoration et l’architecture et à anticiper les tendances en cherchant constamment à répondre aux évolutions des goûts et des styles de vie.\nDepuis la célèbre marque italienne de mobilier contemporain n’a eu de cesse de créer les meubles design les plus innovants, emblématiques et intemporels, de développer une recherche et développement inégalée, un savoir-faire industriel et une qualité Made in Italy qui font de B&B Italia l`une des premières entreprises de design au monde. \nDesign Holding est un hub de design unique par sa taille et son envergure internationale, intégrant des marques emblématiques telles que B&B Italia, Maxalto, Azucena, Arclinea, Flos, Louis Poulsen, Fendi Casa, Menu, by Lassen et Lumens."
+              "Né en 1966 de la vision entrepreneuriale de Piero Ambrogio Busnelli.\nLe Groupe a bâti son succès sur sa capacité à anticiper les tendances en cherchant à répondre aux évolutions des goûts et des styles de vie.\nDepuis la célèbre marque italienne de mobilier contemporain n’a eu de cesse de créer les meubles design les plus innovants, emblématiques et intemporels, un savoir-faire industriel et une qualité Made in Italy qui font de B&B Italia l`une des premières entreprises de design au monde. "
             }
             img={vue}
             alt="B and B Italia"

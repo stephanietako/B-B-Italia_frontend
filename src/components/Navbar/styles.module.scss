@@ -39,11 +39,12 @@
     position: relative;
     padding-right: 1px;
     justify-content: flex-end;
-    margin: 0;
   }
 
   .__nav_mobile_menu {
     display: none !important;
+    padding-left: 0;
+    padding-right: 0;
     // border: 4px solid red;
     width: 100%;
     cursor: pointer;
@@ -64,10 +65,7 @@
     }
 
     div {
-      // border: 3px solid blue;
-      display: flex;
       flex-direction: column;
-      width: 100%;
       margin-top: 312px;
       z-index: 100;
       opacity: 0.9;
@@ -76,6 +74,8 @@
       transition: 0.5s;
       overflow-y: hidden;
       height: 210px;
+      width: 100%;
+      display: block;
     }
   }
 }

@@ -50,14 +50,13 @@
       position: relative;
       display: flex;
       width: 100%;
-      padding: 20px;
-      height: auto;
+      height: 100%;
       p {
         position: relative;
         display: block;
         width: 100%;
         overflow: hidden;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 31px;
         white-space: pre-wrap;
       }
@@ -68,40 +67,43 @@
 @media only screen and (max-width: 600px) {
   .about {
     .__container {
-      .__about_content {
-        @include blocsTxt(100%, 40%, 20%);
-        max-width: 100%;
-        flex-direction: column;
-        padding-left: 12px;
-        padding-right: 12px;
-        .__logo {
-          display: flex;
-          max-width: 45%;
-          align-self: center;
-          img {
-            justify-content: center;
-            max-width: 100%;
-            object-fit: cover;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+      .__img {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 53% 53%;
+        }
+        .__about_content {
+          @include blocsTxt(100%, 40%, 20%);
+          max-width: 100%;
+          flex-direction: column;
+          padding-left: 12px;
+          padding-right: 12px;
+          .__logo {
+            display: flex;
+            max-width: 45%;
+            align-self: center;
+            img {
+              justify-content: center;
+              max-width: 100%;
+              object-fit: cover;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
           }
         }
-      }
-      .__text {
-        position: relative;
-        display: flex;
-        width: 100%;
-        padding: 20px;
-        height: 100%;
-        p {
-          position: relative;
-          display: block;
-          width: 100%;
-          overflow: hidden;
-          font-size: 14px;
-          line-height: 31px;
-          white-space: pre-wrap;
+        .__text {
+          p {
+            position: relative;
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            font-size: 14px;
+            line-height: 31px;
+            white-space: pre-wrap;
+          }
         }
       }
     }

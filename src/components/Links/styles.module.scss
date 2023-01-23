@@ -4,12 +4,13 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  border: 2px solid blue;
   a {
     color: #000;
     text-decoration: none;
-    font-size: 12px;
-    padding: 5px;
-    // border: 2px solid blue;
+    font-size: 17px;
+    padding: 7px;
+    width: 100%;
     &:hover {
       opacity: 0.75;
     }
@@ -18,8 +19,10 @@
 
 details {
   color: #000;
+  padding-left: 11px;
+  padding-top: 4px;
+  padding-bottom: 5px;
   // padding: 0 0px 7px 0px;
-  padding-right: 4px;
   flex-wrap: wrap;
   cursor: pointer;
   -webkit-user-select: none; /* Chrome all / Safari all */
@@ -30,8 +33,9 @@ details {
 
   summary {
     display: block;
-    font-size: 12px;
+    font-size: 17px;
     list-style-type: none;
+    padding: 7px;
     &::-webkit-details-marker {
       display: none;
     }
@@ -45,12 +49,13 @@ details {
     flex-direction: column;
     display: flex;
     list-style-type: none;
-    position: absolute;
+    // position: absolute;
     li {
       display: block;
-      padding-top: 5px;
+      padding-left: 17px;
+      padding-bottom: 7px;
       width: 100%;
-      font-size: 11px;
+      font-size: 14px;
       a {
         color: #000;
         &:hover {
@@ -60,8 +65,63 @@ details {
     }
   }
 }
+
 //############## RESPONSIVE  ###############
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 1224px) {
+  .link {
+    padding-left: 10px;
+    width: 100%;
+  }
+  details {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    summary {
+      // padding: 5px 0 7px 8px;
+      // padding-left: 17px;
+      list-style-type: none;
+      // color: red;
+      // border: 2px solid blue;
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+    ul {
+      // li {
+      //   padding-top: 11px;
+      //   padding-left: 26px;
+      // }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .link {
+    // padding-left: 10px;
+    width: 100%;
+  }
+  details {
+    // padding-top: 4px;
+    // padding-bottom: 5px;
+    summary {
+      // padding: 5px 0 7px 8px;
+      padding-left: 17px;
+      list-style-type: none;
+      // color: red;
+      // border: 2px solid blue;
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+    ul {
+      // li {
+      //   padding-top: 11px;
+      //   padding-left: 26px;
+      // }
+    }
+  }
+}
+
+@media (max-width: 960px) {
   .link {
     padding-left: 10px;
     width: 100%;
@@ -80,20 +140,91 @@ details {
       }
     }
     ul {
-      position: relative;
-      li {
-        padding-top: 11px;
-        padding-left: 26px;
-      }
+      // li {
+      //   padding-top: 11px;
+      //   padding-left: 26px;
+      // }
     }
   }
 }
-// dropdown unitaire
-// /* Pour personnaliser l'icon de la balise details
-// details > summary {
-//   list-style-type: "fermé";
-// }
-// details[open] > summary {
-//   list-style-type: "ouvert";
-// }
-//
+
+@media (max-width: 501px) {
+  .link {
+    padding-left: 10px;
+    width: 100%;
+  }
+  details {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    summary {
+      // padding: 5px 0 7px 8px;
+      padding-left: 17px;
+      list-style-type: none;
+      // color: red;
+      // border: 2px solid blue;
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+    ul {
+      // li {
+      //   padding-top: 11px;
+      //   padding-left: 26px;
+      // }
+    }
+  }
+}
+
+@media (max-width: 500px) and (min-width: 400px) {
+  .link {
+    padding-left: 10px;
+    width: 100%;
+  }
+  details {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    summary {
+      // padding: 5px 0 7px 8px;
+      padding-left: 17px;
+      list-style-type: none;
+      // color: red;
+      // border: 2px solid blue;
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+    ul {
+      // li {
+      //   padding-top: 11px;
+      //   padding-left: 26px;
+      // }
+    }
+  }
+}
+
+@media (max-width: 501px) and (min-width: 320px) {
+  .link {
+    padding-left: 10px;
+    width: 100%;
+  }
+  details {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    summary {
+      // padding: 5px 0 7px 8px;
+      padding-left: 17px;
+      list-style-type: none;
+      // color: red;
+      // border: 2px solid blue;
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+    ul {
+      // li {
+      //   padding-top: 11px;
+      //   padding-left: 26px;
+      // }
+    }
+  }
+}

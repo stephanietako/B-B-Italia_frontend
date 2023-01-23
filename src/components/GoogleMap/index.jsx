@@ -3,7 +3,6 @@ import GoogleMapReact from "google-map-react";
 import Marker from "../MarkerGoogle";
 import { getUserLocation } from "../../helpers/getUserLocation.js";
 import { v4 as uuidv4 } from "uuid";
-import Modal from "../ModalWindow";
 // Styles
 import styles from "./styles.module.scss";
 // Icon
@@ -20,7 +19,7 @@ const GooglePinUser = ({ name, icon, alt }) => (
 const GoogleMap = () => {
   const [currentCenter, setCurrentCenter] = useState(null);
   const [showModal, setShowModal] = useState(false);
-  const [bubbleContent, setBubbleContent] = useState("");
+
   // User Location
   const centerMyLocation = async () => {
     try {
@@ -81,24 +80,8 @@ const GoogleMap = () => {
         className={styles.__btnPosition}
         onClick={() => centerMyLocation()}
       >
-        OÙ SUIS-JE ?
+        <img src={marker} alt="logo marker's map" />
       </button>
-      <button
-        className={styles.__btn_modale}
-        onClick={() => {
-          setShowModal(true);
-          setBubbleContent("Contenu de la fenêtre modale");
-        }}
-      >
-        Contact
-      </button>
-      {showModal && (
-        <Modal
-          bubbleContent={bubbleContent}
-          show={showModal}
-          onClose={() => setShowModal(false)}
-        />
-      )}
     </>
   );
 };

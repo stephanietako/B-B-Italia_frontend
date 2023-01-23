@@ -13,7 +13,6 @@ const Blocs = ({ img, alt, text, logo, altLogo, link }) => {
             <a href={link}>
               <img src={logo} alt={altLogo} />
             </a>
-            {/* <img src={logo} alt={altLogo} /> */}
           </div>
           <div className={styles.__text}>
             <p>{text}</p>

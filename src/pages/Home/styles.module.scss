@@ -26,8 +26,13 @@ section {
         object-position: center right;
       }
     }
+
+    a {
+      color: red;
+    }
   }
 }
+
 // ############## RESPONSIVE  ###############
 // Tablet
 @media (max-width: 960px) {

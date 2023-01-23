@@ -16,6 +16,7 @@
     background: linear-gradient(90deg, #1c1b1b 0%, #1a1717 100%);
     .__logo {
       max-height: 4rem;
+      // border: 2px solid red;
     }
     .__copyright {
       display: flex;
@@ -29,12 +30,18 @@
       align-items: center;
       text-decoration: none;
       list-style-type: none;
+      width: 100%;
+      // border: 2px solid yellow;
+      height: auto;
 
       li {
-        padding: 10px;
+        // border: 2px solid palevioletred;
+        padding: 3px;
         font-size: small;
+
         a {
           color: #fff;
+          font-size: 11px;
           &:hover {
             color: $light-grey;
           }

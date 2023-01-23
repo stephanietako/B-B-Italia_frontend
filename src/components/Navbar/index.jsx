@@ -43,14 +43,14 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   // Main navbar menu
-  const links = [
-    { name: "Accueil", target: "#welcome" },
-    { name: "A propos", target: "#about" },
-    { name: "Showroom", target: "#showroom" },
-    { name: "Produits", target: "", dropdown: true },
-    { name: "Projets", target: "#projects" },
-    { name: "Contact", target: "#contact" },
-  ];
+  // const links = [
+  //   { name: "Accueil", target: "#welcome" },
+  //   { name: "A propos", target: "#about" },
+  //   { name: "Showroom", target: "#showroom" },
+  //   { name: "Produits", target: "", dropdown: true },
+  //   { name: "Projets", target: "#projects" },
+  //   { name: "Contact", target: "#contact" },
+  // ];
 
   // Main navbar menu for mobile
   const linksMobile = [
@@ -109,7 +109,7 @@ const Navbar = () => {
         )}
       </div>
       {/* DESKTOP MENU */}
-      <ul className={styles.__nav_menu}>
+      {/* <ul className={styles.__nav_menu}>
         {links.map((link, index) => {
           let dropdownPosition = 0;
           const ddList = links.filter((lnk) => lnk.dropdown === true);
@@ -128,7 +128,7 @@ const Navbar = () => {
             />
           );
         })}
-      </ul>
+      </ul> */}
     </nav>
   );
 };

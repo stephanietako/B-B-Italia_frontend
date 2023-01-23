@@ -141,14 +141,20 @@ const HomePage = () => {
       <section id="contact">
         <div className={styles.sections}>
           <Contact
-            text={
+            address={
               "avenue FOCH \n 83990 Saint-Tropez \n Accès direct par le Parking Foch "
             }
+            phone={<a href="tel:+0494457720">04 94 45 77 20</a>}
+            mail={
+              <a href="mailto:contact@bebsttropez.fr">contact@bebsttropez.fr</a>
+            }
           />
+
+          <a href="tel:+0494457720">04 94 45 77 20</a>
+          <a href="mailto:contact@bebsttropez.fr">contact@bebsttropez.fr</a>
         </div>
       </section>
     </>
-    // </div>
   );
 };
 

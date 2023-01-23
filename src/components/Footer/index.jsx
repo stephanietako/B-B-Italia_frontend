@@ -23,10 +23,11 @@ const Footer = () => {
           <li>
             <Link to="terms">Mentions légales</Link>
           </li>
-          <div className={styles.__copyright}>
-            {" "}
-            &#169; Copyright {currentYear} | TENTACLES | Tous droits réservés{" "}
-          </div>
+          <li>
+            <div className={styles.__copyright}>
+              &#169; Copyright {currentYear} | TENTACLES | Tous droits réservés{" "}
+            </div>
+          </li>
         </ul>
       </footer>
     </div>

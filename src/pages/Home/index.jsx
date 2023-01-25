@@ -14,8 +14,6 @@ import logo from "../../assets/logo/bb-logo-noir.png";
 import logost from "../../assets/logo/bb.png";
 import arclineaLogo from "../../assets/logo/arclinea-logo.png";
 import maxaltoLogo from "../../assets/logo/maxalto-logo.png";
-// Gif
-// import welcomeGif from "../../assets/gif/slidebnb.gif";
 // Images
 import arclinea from "../../assets/images/arclinea.webp";
 import maxalto from "../../assets/images/maxalto.webp";
@@ -144,14 +142,11 @@ const HomePage = () => {
             address={
               "avenue FOCH \n 83990 Saint-Tropez \n Accès direct par le Parking Foch "
             }
-            phone={<a href="tel:+0494457720">04 94 45 77 20</a>}
+            phone={<a href="tel:+33494457720">04 94 45 77 20</a>}
             mail={
               <a href="mailto:contact@bebsttropez.fr">contact@bebsttropez.fr</a>
             }
           />
-
-          <a href="tel:+0494457720">04 94 45 77 20</a>
-          <a href="mailto:contact@bebsttropez.fr">contact@bebsttropez.fr</a>
         </div>
       </section>
     </>

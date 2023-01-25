@@ -1,26 +1,71 @@
 @import "../../style/scss-variables";
+.__btn_box {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  border: 4px solid green;
 
-button {
-  &.__btnPosition {
-    background-color: transparent;
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    padding: 12px;
-    border: 2px solid #000;
-    left: 12%;
-    font-weight: bold;
-    border-radius: 8px;
-    bottom: 185px;
+  button {
+    &.__btnPosition {
+      display: flex;
+      cursor: pointer;
+      width: 28px;
+      height: 33px;
+      left: 129px;
+      position: absolute;
+      top: 50%;
+      right: 22px;
+      transform: translateY(-50%);
+      img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 21px;
+      }
+    }
+    &:hover {
+      background-color: $light-grey;
+    }
   }
-  &:hover {
-    background-color: $light-grey;
-    color: #000;
+  button {
+    &.__btn_googlemap {
+      justify-content: center;
+      display: flex;
+      padding: 4px;
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 14px;
+      border: 1px solid #000;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      right: 22px;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      &:hover {
+        background-color: $light-grey;
+        color: #000;
+      }
+    }
+  }
+  p {
+    display: flex;
+    width: 8rem;
+    padding: 7px;
+    height: 33px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 22px;
+    font-weight: bold;
   }
 }
 
 .__googlePin {
-  color: red;
+  color: #000;
   cursor: pointer;
 }
 
@@ -30,63 +75,20 @@ button {
     brightness(105%) contrast(120%);
 }
 
-// button {
-//   &.__btn_modale {
-//     background-color: transparent;
-//     cursor: pointer;
-//     display: block;
-//     position: absolute;
-//     padding: 12px;
-//     text-align: center;
-//     border: 2px solid #000;
-//     margin: 0 auto;
-//     transform: translate(-50%, -50%);
-//     font-weight: bold;
-//     z-index: 999;
-//     text-align: center;
-//     top: 118px;
-//     left: 15%;
-//     border-radius: 8px;
-//     color: #000;
-//     &:hover {
-//       background-color: $light-grey;
+// ############## RESPONSIVE  ###############
+// @media (max-width: 960px) {
+//   button {
+//     &.__btnPosition {
+//       padding: 7px;
+//       top: 29%;
+//       left: 84%;
+//       font-size: 9px;
 //       color: #000;
 //     }
 //   }
+//   .__location_icon {
+//     width: 18px;
+//     filter: invert(14%) sepia(57%) saturate(7246%) hue-rotate(358deg)
+//       brightness(105%) contrast(120%);
+//   }
 // }
-
-// ############## RESPONSIVE  ###############
-@media (max-width: 960px) {
-  button {
-    &.__btnPosition {
-      padding: 7px;
-      top: 29%;
-      left: 84%;
-      font-size: 9px;
-      color: #000;
-    }
-  }
-  .__location_icon {
-    width: 18px;
-    filter: invert(14%) sepia(57%) saturate(7246%) hue-rotate(358deg)
-      brightness(105%) contrast(120%);
-  }
-  // button {
-  //   &.__btn_modale {
-  //     cursor: pointer;
-  //     display: block;
-  //     position: absolute;
-  //     padding: 6px;
-  //     text-align: center;
-  //     border: 2px solid #000;
-  //     margin: 0 auto;
-  //     transform: translate(-50%, -50%);
-  //     font-weight: bold;
-  //     z-index: 999;
-  //     text-align: center;
-  //     top: 8%;
-  //     left: 17%;
-  //     border-radius: 8px;
-  //   }
-  // }
-}

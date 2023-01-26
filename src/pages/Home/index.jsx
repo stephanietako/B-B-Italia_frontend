@@ -140,7 +140,7 @@ const HomePage = () => {
         <div className={styles.sections}>
           <Contact
             address={
-              "avenue FOCH \n 83990 Saint-Tropez \n Accès direct par le Parking Foch "
+              "avenue FOCH \n 83990 \n Saint-Tropez \n Accès direct par le Parking Foch "
             }
             phone={<a href="tel:+33494457720">04 94 45 77 20</a>}
             mail={

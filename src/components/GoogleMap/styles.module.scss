@@ -1,28 +1,32 @@
 @import "../../style/scss-variables";
+.map {
+  border: 4px solid $light-grey;
+  border-bottom: transparent;
+}
 .__btn_box {
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
   width: 100%;
-  height: 5rem;
-  border: 4px solid green;
+  height: auto;
+  border: 4px solid $light-grey;
+  justify-content: space-around;
 
   button {
     &.__btnPosition {
+      position: relative;
+      align-items: center;
+      padding: 6px 9px;
       display: flex;
       cursor: pointer;
-      width: 28px;
-      height: 33px;
-      left: 129px;
-      position: absolute;
-      top: 50%;
-      right: 22px;
-      transform: translateY(-50%);
+      flex-basis: 11%;
+      justify-content: space-between;
+      height: auto;
+      font-weight: bold;
+      margin: 12px 0 12px 0;
       img {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 21px;
+        margin-left: 20px;
       }
     }
     &:hover {
@@ -31,39 +35,21 @@
   }
   button {
     &.__btn_googlemap {
+      flex: 1;
       justify-content: center;
       display: flex;
-      padding: 4px;
+      padding: 10px;
       cursor: pointer;
       background-color: transparent;
-      font-size: 14px;
+      font-size: 12px;
       border: 1px solid #000;
       font-weight: bold;
-      position: absolute;
-      top: 50%;
-      right: 22px;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
       &:hover {
         background-color: $light-grey;
-        color: #000;
       }
     }
   }
-  p {
-    display: flex;
-    width: 8rem;
-    padding: 7px;
-    height: 33px;
-    border: 1px solid #000;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 22px;
-    font-weight: bold;
-  }
 }
-
 .__googlePin {
   color: #000;
   cursor: pointer;
@@ -74,21 +60,3 @@
   filter: invert(14%) sepia(57%) saturate(7246%) hue-rotate(358deg)
     brightness(105%) contrast(120%);
 }
-
-// ############## RESPONSIVE  ###############
-// @media (max-width: 960px) {
-//   button {
-//     &.__btnPosition {
-//       padding: 7px;
-//       top: 29%;
-//       left: 84%;
-//       font-size: 9px;
-//       color: #000;
-//     }
-//   }
-//   .__location_icon {
-//     width: 18px;
-//     filter: invert(14%) sepia(57%) saturate(7246%) hue-rotate(358deg)
-//       brightness(105%) contrast(120%);
-//   }
-// }

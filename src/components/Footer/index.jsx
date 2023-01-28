@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
-import logo from "../../assets/logo/bandb-logo-blanc.png";
+import logo from "../../assets/logo/bandb-logo-blanc.webp";
 
 const Footer = () => {
   const date = new Date();
@@ -25,7 +25,8 @@ const Footer = () => {
           </li>
           <li>
             <div className={styles.__copyright}>
-              &#169; Copyright {currentYear} | TENTACLES | Tous droits réservés{" "}
+              &#169; Copyright {currentYear} | Lise Braun & Stéphanietako | Tous
+              droits réservés{" "}
             </div>
           </li>
         </ul>

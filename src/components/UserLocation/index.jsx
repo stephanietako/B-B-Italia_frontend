@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import GoogleMap from "../GoogleMap";
+// Styles
 import styles from "./styles.module.scss";
 
 const UserLocation = () => {
@@ -28,8 +29,7 @@ const UserLocation = () => {
       });
     }
   };
-  // Replaces componentDidMount
-  // componentDiMount = () => {this.getuserLocation()}
+
   useEffect(() => {
     getUserLocation.setCurrentPosition("");
     return () => {

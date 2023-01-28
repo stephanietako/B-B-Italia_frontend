@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 // Icons
 import chevron_left from "../../assets/icon/chevron_left.svg";
 import chevron_right from "../../assets/icon/chevron_right.svg";
-// Style
+// Styles
 import styles from "./styles.module.scss";
 
 const ImgSlider = ({ slides }) => {

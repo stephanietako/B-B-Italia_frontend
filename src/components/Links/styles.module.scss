@@ -2,14 +2,12 @@
 .link {
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  border: 2px solid blue;
+  padding-left: 8px;
   a {
     color: #000;
     text-decoration: none;
     font-size: 17px;
-    padding: 7px;
+    padding: 18px 7px 13px 7px;
     width: 100%;
     &:hover {
       opacity: 0.75;
@@ -19,10 +17,9 @@
 
 details {
   color: #000;
-  padding-left: 11px;
-  padding-top: 4px;
-  padding-bottom: 5px;
-  // padding: 0 0px 7px 0px;
+  padding-left: 8px;
+  padding-top: 15px;
+  margin-bottom: 14px;
   flex-wrap: wrap;
   cursor: pointer;
   -webkit-user-select: none; /* Chrome all / Safari all */
@@ -35,7 +32,8 @@ details {
     display: block;
     font-size: 17px;
     list-style-type: none;
-    padding: 7px;
+    // padding: 7px;
+    padding-left: 7px;
     &::-webkit-details-marker {
       display: none;
     }
@@ -49,10 +47,11 @@ details {
     flex-direction: column;
     display: flex;
     list-style-type: none;
-    // position: absolute;
+    padding-top: 14px;
+    margin-bottom: 0;
     li {
       display: block;
-      padding-left: 17px;
+      padding-left: 7px;
       padding-bottom: 7px;
       width: 100%;
       font-size: 14px;
@@ -67,56 +66,36 @@ details {
 }
 
 //############## RESPONSIVE  ###############
+// Desktop
 @media only screen and (min-width: 1224px) {
   .link {
     padding-left: 10px;
     width: 100%;
   }
   details {
-    padding-top: 4px;
-    padding-bottom: 5px;
     summary {
-      // padding: 5px 0 7px 8px;
-      // padding-left: 17px;
       list-style-type: none;
-      // color: red;
-      // border: 2px solid blue;
+      padding-left: 7px;
+      // margin-left: 0;
       &::-webkit-details-marker {
         display: none;
       }
-    }
-    ul {
-      // li {
-      //   padding-top: 11px;
-      //   padding-left: 26px;
-      // }
     }
   }
 }
 
+// Tablet
 @media (max-width: 768px) {
   .link {
-    // padding-left: 10px;
     width: 100%;
   }
   details {
-    // padding-top: 4px;
-    // padding-bottom: 5px;
     summary {
-      // padding: 5px 0 7px 8px;
-      padding-left: 17px;
+      padding-top: 0;
       list-style-type: none;
-      // color: red;
-      // border: 2px solid blue;
       &::-webkit-details-marker {
         display: none;
       }
-    }
-    ul {
-      // li {
-      //   padding-top: 11px;
-      //   padding-left: 26px;
-      // }
     }
   }
 }
@@ -127,27 +106,17 @@ details {
     width: 100%;
   }
   details {
-    padding-top: 4px;
-    padding-bottom: 5px;
+    padding-top: 14px;
     summary {
-      // padding: 5px 0 7px 8px;
-      padding-left: 17px;
       list-style-type: none;
-      // color: red;
-      // border: 2px solid blue;
       &::-webkit-details-marker {
         display: none;
       }
     }
-    ul {
-      // li {
-      //   padding-top: 11px;
-      //   padding-left: 26px;
-      // }
-    }
   }
 }
 
+// Mobile
 @media (max-width: 501px) {
   .link {
     padding-left: 10px;
@@ -157,20 +126,11 @@ details {
     padding-top: 4px;
     padding-bottom: 5px;
     summary {
-      // padding: 5px 0 7px 8px;
-      padding-left: 17px;
+      // padding-left: 17px;
       list-style-type: none;
-      // color: red;
-      // border: 2px solid blue;
       &::-webkit-details-marker {
         display: none;
       }
-    }
-    ul {
-      // li {
-      //   padding-top: 11px;
-      //   padding-left: 26px;
-      // }
     }
   }
 }
@@ -181,23 +141,14 @@ details {
     width: 100%;
   }
   details {
-    padding-top: 4px;
-    padding-bottom: 5px;
+    padding-top: 14px;
+    padding-bottom: 0;
     summary {
-      // padding: 5px 0 7px 8px;
-      padding-left: 17px;
+      // padding-left: 17px;
       list-style-type: none;
-      // color: red;
-      // border: 2px solid blue;
       &::-webkit-details-marker {
         display: none;
       }
-    }
-    ul {
-      // li {
-      //   padding-top: 11px;
-      //   padding-left: 26px;
-      // }
     }
   }
 }
@@ -208,23 +159,14 @@ details {
     width: 100%;
   }
   details {
-    padding-top: 4px;
-    padding-bottom: 5px;
+    padding-top: 14px;
+    padding-bottom: 0;
     summary {
-      // padding: 5px 0 7px 8px;
-      padding-left: 17px;
+      // padding-left: 17px;
       list-style-type: none;
-      // color: red;
-      // border: 2px solid blue;
       &::-webkit-details-marker {
         display: none;
       }
-    }
-    ul {
-      // li {
-      //   padding-top: 11px;
-      //   padding-left: 26px;
-      // }
     }
   }
 }

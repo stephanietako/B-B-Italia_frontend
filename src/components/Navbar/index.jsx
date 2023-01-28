@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 // Assets
-import logo from "../../assets/logo/bb-logo-noir.png";
+import logo from "../../assets/logo/bb-logo-noir.webp";
 import menu from "../../assets/icon/menu.svg";
 import cross from "../../assets/icon/cross.svg";
 // Cmp

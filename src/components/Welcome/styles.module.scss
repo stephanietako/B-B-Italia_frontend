@@ -26,62 +26,54 @@
   }
 }
 // ############## RESPONSIVE  ###############
-//Desktop-large(pour les très grands écrans)
+// Desktop-Large
 @media (min-width: 1900px) {
   .welcome {
     .__icons {
-      border: 2px solid blue;
       right: 20px;
-      // top: 8rem;
-    }
-  }
-}
-// // Tablet
-@media (min-width: 768px) and (max-width: 1900px) {
-  .welcome {
-    .__icons {
-      border: 2px solid red;
-      right: 20px;
-      // top: 8rem;
-    }
-  }
-}
-@media (max-width: 768px) {
-  .welcome {
-    .__icons {
-      border: 2px solid pink;
-      right: 20px;
-      // top: 8rem;
     }
   }
 }
 
-// Tablet
+@media (min-width: 768px) and (max-width: 1900px) {
+  .welcome {
+    .__icons {
+      right: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    .__icons {
+      right: 20px;
+    }
+  }
+}
+
+// Moble
 @media (max-width: 501px) {
   .welcome {
     .__icons {
       right: 20px;
-      // top: 9rem;
     }
   }
 }
 
-//Mobile-Medium
+// Mobile-Medium
 @media (max-width: 500px) and (min-width: 400px) {
   .welcome {
     .__icons {
       right: 20px;
-      // top: 9em;
     }
   }
 }
 
-//Mobile-Small
+// Mobile-Small
 @media (max-width: 501px) and (min-width: 320px) {
   .welcome {
     .__icons {
       right: 20px;
-      // top: 9rem;
     }
   }
 }

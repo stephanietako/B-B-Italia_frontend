@@ -4,16 +4,15 @@ import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
 import Welcome from "../../components/Welcome";
-import HeroSection from "../../components/HeroSection";
 import NavBar from "../../components/Navbar";
-
+import SliderHome from "../../components/SliderHome";
 // Styles
 import styles from "./styles.module.scss";
 // Logos
-import logo from "../../assets/logo/bb-logo-noir.png";
-import logost from "../../assets/logo/bb.png";
-import arclineaLogo from "../../assets/logo/arclinea-logo.png";
-import maxaltoLogo from "../../assets/logo/maxalto-logo.png";
+import logo from "../../assets/logo/bb-logo-noir.webp";
+import logost from "../../assets/logo/bb.webp";
+import arclineaLogo from "../../assets/logo/arclinea-logo.webp";
+import maxaltoLogo from "../../assets/logo/maxalto-logo.webp";
 // Images
 import arclinea from "../../assets/images/arclinea.webp";
 import maxalto from "../../assets/images/maxalto.webp";
@@ -29,8 +28,11 @@ import showroom1 from "../../assets/images/showroom1.webp";
 import showroom2 from "../../assets/images/showroom2.webp";
 import showroom3 from "../../assets/images/showroom3.webp";
 import showroom4 from "../../assets/images/showroom4.webp";
-// Components
-// import Test from "../Test";
+// Images Slide Home
+import home1 from "../../assets/images/home1.webp";
+import home2 from "../../assets/images/home2.webp";
+import home3 from "../../assets/images/home3.webp";
+import home4 from "../../assets/images/home4.webp";
 import Contact from "../../components/Contact";
 
 const HomePage = () => {
@@ -64,13 +66,28 @@ const HomePage = () => {
     },
   ];
 
+  const SliderDataHome = [
+    {
+      image: home1,
+    },
+    {
+      image: home2,
+    },
+    {
+      image: home3,
+    },
+    {
+      image: home4,
+    },
+  ];
+
   return (
     <>
       <NavBar />
       <Welcome />
       <section id="welcome">
         <div className={styles.sections}>
-          <HeroSection />
+          <SliderHome slides={SliderDataHome} />
         </div>
       </section>
       <section id="about">

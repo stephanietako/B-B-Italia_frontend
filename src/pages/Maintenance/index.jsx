@@ -1,5 +1,5 @@
 // Assets
-import logo from "../../assets/logo/bb-logo-noir.png";
+import logo from "../../assets/logo/bb-logo-noir.webp";
 
 // Styles
 import styles from "./styles.module.scss";

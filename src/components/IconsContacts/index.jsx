@@ -5,18 +5,18 @@ import phone from "../../assets/icon/phone.svg";
 import instagram from "../../assets/icon/instagram.svg";
 import { v4 as uuidv4 } from "uuid";
 
-const Welcome = () => {
+const IconsContacts = () => {
   const contactLinks = [
-    { logo: phone, alt: "Phone symbol", link: "tel:+0494457720" },
+    { logo: phone, alt: "Phone symbol", link: "tel:+33494457720" },
     { logo: at, alt: "Mail symbol", link: "mailto:contact@bebsttropez.fr" },
     {
       logo: instagram,
       alt: "Instagram symbol",
-      link: "https://www.google.com",
+      link: "https://www.instagram.com/bebitalia_sttropez/?hl=fr",
     },
   ];
   return (
-    <div className={styles.welcome}>
+    <div className={styles.icons_contacts}>
       <div className={styles.__icons}>
         <ul>
           {contactLinks.map(({ logo, alt, link } = contactLinks) => (
@@ -31,7 +31,7 @@ const Welcome = () => {
     </div>
   );
 };
-export default Welcome;
+export default IconsContacts;
 
 // https://faq.whatsapp.com/425247423114725/?locale=fr_FR&cms_platform=iphone
 // Lien wa : https://wa.me/15551234567

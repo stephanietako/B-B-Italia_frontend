@@ -1,5 +1,36 @@
-.container {
+@import "../../style/scss-variables";
+
+.terms_section {
   display: flex;
-  width: 70%;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  padding: 4rem;
+  margin-left: auto;
+  background-color: #faf9f6;
+  h2 {
+    padding: 22px;
+    text-align: center;
+  }
+  button {
+    display: flex;
+    &.__btn_home {
+      width: 9rem;
+      justify-content: center;
+      padding: 7px;
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid gray;
+      margin-left: auto;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+  .__container {
+    width: 100%;
+    height: 100%;
+  }
 }

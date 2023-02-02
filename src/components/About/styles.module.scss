@@ -3,7 +3,6 @@
 .about {
   display: flex;
   width: 100%;
-  justify-content: center;
   align-items: center;
   height: 100%;
   .__container {
@@ -30,11 +29,10 @@
       @include blocsTxt(100%, 40%, 20%);
       max-width: 100%;
       flex-direction: column;
-      padding-left: 40px;
-      padding-right: 40px;
+      justify-content: space-evenly;
       .__logo {
         display: flex;
-        max-width: 45%;
+        width: 37%;
         align-self: center;
         img {
           justify-content: center;
@@ -45,26 +43,43 @@
           margin-right: auto;
         }
       }
-    }
-    .__text {
-      position: relative;
-      display: flex;
-      width: 100%;
-      height: 100%;
-      p {
+      .__text {
         position: relative;
         display: block;
         width: 100%;
-        overflow: hidden;
-        font-size: 14px;
-        line-height: 31px;
-        white-space: pre-wrap;
+        height: auto;
+        p {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          font-size: 18px;
+          line-height: 22px;
+          white-space: pre-wrap;
+          padding: 33px;
+        }
+      }
+      .__text_mobile {
+        display: none;
+        position: relative;
+        display: none;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 12px;
+        p {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          font-size: 16px;
+          line-height: 24px;
+          white-space: pre-wrap;
+        }
       }
     }
   }
 }
 //////// Responsive /////////
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 960px) {
   .about {
     .__container {
       .__img {
@@ -72,38 +87,24 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          object-position: 53% 53%;
+          object-position: 53% 36%;
         }
-        .__about_content {
-          @include blocsTxt(100%, 40%, 20%);
-          max-width: 100%;
-          flex-direction: column;
-          padding-left: 12px;
-          padding-right: 12px;
-          .__logo {
-            display: flex;
-            max-width: 45%;
-            align-self: center;
-            img {
-              justify-content: center;
-              max-width: 100%;
-              object-fit: cover;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-            }
-          }
+      }
+      .__about_content {
+        //$height, $width, $left
+        @include blocsTxt(48%, 100%, 50%);
+        top: 67%;
+        flex-direction: row;
+        .__logo {
+          width: 7rem;
+          align-self: center;
+          padding-right: 2px;
         }
         .__text {
-          p {
-            position: relative;
-            display: block;
-            width: 100%;
-            overflow: hidden;
-            font-size: 14px;
-            line-height: 31px;
-            white-space: pre-wrap;
-          }
+          display: none;
+        }
+        .__text_mobile {
+          display: block;
         }
       }
     }

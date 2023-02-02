@@ -32,9 +32,9 @@ const GoogleMap = () => {
           lng: userLocation.lng,
         },
       });
-      console.log("USERLOCATION", userLocation);
+      console.info("USER'S LOCATION:", userLocation);
     } catch (error) {
-      console.error("POSITION NON RÉCUPÉRÉE");
+      console.warn("POSITION NOT RETRIEVED:", error);
     }
   };
   return (
@@ -47,11 +47,11 @@ const GoogleMap = () => {
             lat: 43.26997027608313,
             lng: 6.644160284509654,
           }}
-          defaultZoom={12}
+          defaultZoom={15}
           center={{ lat: 43.26997027608313, lng: 6.644160284509654 }}
           onChange={({ center, zoom }) => {
-            console.log("CENTER", center);
-            console.log("ZOOM", zoom);
+            console.info("CENTER:", center);
+            console.info("ZOOM:", zoom);
           }}
         >
           <Marker

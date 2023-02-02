@@ -7,7 +7,7 @@
   align-items: center;
   width: 100%;
   height: 180px;
-  // Transition pour le sous-style .fixed
+  // Transition for sub-style .fixed
   transition: 0.3s ease-in-out;
   &.fixed {
     background: rgba(255, 255, 255, 0.75);
@@ -27,13 +27,11 @@
     cursor: pointer;
   }
 
-  .__nav_mobile_menu {
+  .__nav_hamburger_menu {
     width: 100%;
-    // height:100%;
+    height: auto;
     cursor: pointer;
     .__summ {
-      padding-left: 0;
-      padding-right: 0;
       font-display: block;
       border: none;
       position: absolute;
@@ -41,7 +39,7 @@
       cursor: pointer;
       display: flex;
       top: 22px;
-      right: 29px;
+      right: 19px;
       width: auto;
       img {
         width: 35px;
@@ -59,7 +57,9 @@
       overflow-y: hidden;
       width: 100%;
       height: auto;
-      display: block;
+      display: flex;
+      text-align: end;
+      padding-right: 14px;
     }
   }
 }
@@ -71,7 +71,7 @@
       display: none !important;
     }
 
-    .__nav_mobile_menu {
+    .__nav_hamburger_menu {
       display: block !important;
       .__summ {
         img {
@@ -92,7 +92,7 @@
       display: none !important;
     }
 
-    .__nav_mobile_menu {
+    .__nav_hamburger_menu {
       display: block !important;
     }
   }
@@ -107,7 +107,7 @@
     .__nav_menu {
       display: none !important;
     }
-    .__nav_mobile_menu {
+    .__nav_hamburger_menu {
       display: block !important;
     }
   }
@@ -122,7 +122,7 @@
     .__nav_menu {
       display: none !important;
     }
-    .__nav_mobile_menu {
+    .__nav_hamburger_menu {
       display: block !important;
     }
   }
@@ -137,7 +137,7 @@
     .__nav_menu {
       display: none !important;
     }
-    .__nav_mobile_menu {
+    .__nav_hamburger_menu {
       display: block !important;
     }
   }
@@ -152,7 +152,7 @@
     .__nav_menu {
       display: none !important;
     }
-    .__nav_mobile_menu {
+    .__nav_hamburger_menu {
       display: block !important;
     }
   }
@@ -167,7 +167,7 @@
     .__nav_menu {
       display: none !important;
     }
-    .__nav_mobile_menu {
+    .__nav_hamburger_menu {
       display: block !important;
     }
   }

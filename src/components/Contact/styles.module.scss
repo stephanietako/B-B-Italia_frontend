@@ -38,69 +38,32 @@
     .__map_box {
       display: flex;
       text-align: center;
-      width: 60%;
+      // width: 60%;
       height: 100%;
       width: 70%;
     }
   }
-
-  // button {
-  //   &.__btn_googlemap {
-  //     position: absolute;
-  //     outline: 0;
-  //     display: inline-block;
-  //     padding: 12px;
-  //     text-align: center;
-  //     cursor: pointer;
-  //     margin: auto;
-  //     background-color: transparent;
-  //     border: 2px solid #fff;
-  //     color: red;
-  //     font-size: 14px;
-  //     border: 2px solid #000;
-  //     font-weight: bold;
-  //     border-radius: 8px;
-  //     top: 88%;
-  //     right: 10%;
-  //     &:hover {
-  //       background-color: $light-grey;
-  //       color: #000;
-  //     }
-  //   }
-  // }
 }
 
 // ############## RESPONSIVE  ###############
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .contact {
-    .__heroSection {
-      .__container {
-        margin-top: 15px;
-        .box {
-          .__text {
-            font-size: 11px;
-            font-weight: bold;
-            line-height: 19px;
-            padding: 18px;
-          }
-        }
-        .map_box {
-          flex-direction: column;
-          display: flex;
-          flex: 2;
-          width: 100%;
-        }
+    .__contact_container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      .__text_box {
+        text-align: center;
+        line-height: 21px;
+        white-space: pre-wrap;
+        width: 100%;
+        height: auto;
       }
-
-      button {
-        &.__btn_googlemap {
-          padding: 2px;
-          top: 8%;
-          top: 116px;
-          position: absolute;
-          top: 89%;
-          right: 113px;
-        }
+      .__map_box {
+        display: flex;
+        height: 100%;
+        width: 100%;
       }
     }
   }

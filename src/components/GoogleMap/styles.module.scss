@@ -11,7 +11,6 @@
   height: auto;
   border: 1px solid $light-grey;
   justify-content: space-around;
-
   button {
     &.__btnPosition {
       position: relative;
@@ -57,4 +56,15 @@
 
 .__location_icon {
   width: 22px;
+}
+
+// ############## RESPONSIVE  ###############
+@media (max-width: 600px) {
+  .__btn_box {
+    button {
+      &.__btnPosition {
+        flex-basis: 40%;
+      }
+    }
+  }
 }

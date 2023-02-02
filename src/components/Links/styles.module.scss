@@ -2,12 +2,11 @@
 .link {
   display: flex;
   align-items: center;
-  padding-left: 8px;
   a {
     color: #000;
     text-decoration: none;
-    font-size: 17px;
-    padding: 18px 7px 13px 7px;
+    font-size: 18px;
+    padding: 4px 7px 11px 0px;
     width: 100%;
     &:hover {
       opacity: 0.75;
@@ -17,9 +16,9 @@
 
 details {
   color: #000;
-  padding-left: 8px;
-  padding-top: 15px;
-  margin-bottom: 14px;
+  padding-top: 4px;
+  padding-right: 5px;
+  margin-bottom: 9px;
   flex-wrap: wrap;
   cursor: pointer;
   -webkit-user-select: none; /* Chrome all / Safari all */
@@ -30,10 +29,9 @@ details {
 
   summary {
     display: block;
-    font-size: 17px;
+    font-size: 18px;
     list-style-type: none;
-    // padding: 7px;
-    padding-left: 7px;
+    padding-bottom: 3px;
     &::-webkit-details-marker {
       display: none;
     }
@@ -47,14 +45,13 @@ details {
     flex-direction: column;
     display: flex;
     list-style-type: none;
-    padding-top: 14px;
+    padding-top: 9px;
     margin-bottom: 0;
     li {
       display: block;
-      padding-left: 7px;
-      padding-bottom: 7px;
+      padding-bottom: 9px;
       width: 100%;
-      font-size: 14px;
+      font-size: 18px;
       a {
         color: #000;
         &:hover {
@@ -69,14 +66,11 @@ details {
 // Desktop
 @media only screen and (min-width: 1224px) {
   .link {
-    padding-left: 10px;
     width: 100%;
   }
   details {
     summary {
       list-style-type: none;
-      padding-left: 7px;
-      // margin-left: 0;
       &::-webkit-details-marker {
         display: none;
       }
@@ -91,7 +85,6 @@ details {
   }
   details {
     summary {
-      padding-top: 0;
       list-style-type: none;
       &::-webkit-details-marker {
         display: none;
@@ -102,11 +95,9 @@ details {
 
 @media (max-width: 960px) {
   .link {
-    padding-left: 10px;
     width: 100%;
   }
   details {
-    padding-top: 14px;
     summary {
       list-style-type: none;
       &::-webkit-details-marker {
@@ -119,14 +110,10 @@ details {
 // Mobile
 @media (max-width: 501px) {
   .link {
-    padding-left: 10px;
     width: 100%;
   }
   details {
-    padding-top: 4px;
-    padding-bottom: 5px;
     summary {
-      // padding-left: 17px;
       list-style-type: none;
       &::-webkit-details-marker {
         display: none;
@@ -137,14 +124,10 @@ details {
 
 @media (max-width: 500px) and (min-width: 400px) {
   .link {
-    padding-left: 10px;
     width: 100%;
   }
   details {
-    padding-top: 14px;
-    padding-bottom: 0;
     summary {
-      // padding-left: 17px;
       list-style-type: none;
       &::-webkit-details-marker {
         display: none;
@@ -155,14 +138,10 @@ details {
 
 @media (max-width: 501px) and (min-width: 320px) {
   .link {
-    padding-left: 10px;
     width: 100%;
   }
   details {
-    padding-top: 14px;
-    padding-bottom: 0;
     summary {
-      // padding-left: 17px;
       list-style-type: none;
       &::-webkit-details-marker {
         display: none;

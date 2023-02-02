@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import logo from "../../assets/logo/bb-logo-noir.webp";
 
-const About = ({ img, alt, text }) => {
+const About = ({ img, alt, text, textmobile }) => {
   return (
     <div className={styles.about}>
       <div className={styles.__container}>
@@ -15,6 +15,9 @@ const About = ({ img, alt, text }) => {
           </div>
           <div className={styles.__text}>
             <p>{text}</p>
+          </div>
+          <div className={styles.__text_mobile}>
+            <p>{textmobile}</p>
           </div>
         </div>
       </div>

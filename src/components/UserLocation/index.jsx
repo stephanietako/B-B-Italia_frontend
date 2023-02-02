@@ -33,8 +33,9 @@ const UserLocation = () => {
   useEffect(() => {
     getUserLocation.setCurrentPosition("");
     return () => {
-      console.log("POSITION DU USER", setCurrentPosition);
+      console.info("USER'S POSITION:", setCurrentPosition);
     };
+    // eslint-disable-next-line
   }, []);
 
   return (

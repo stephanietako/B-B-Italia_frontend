@@ -44,6 +44,7 @@
   transform: rotateX(55deg);
   z-index: -2;
 }
+
 .pulse:after {
   content: "";
   border-radius: 50%;
@@ -67,6 +68,17 @@
   color: #000;
   white-space: pre-wrap;
   background-color: #d6d4d4;
+}
+.markerButton {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid gray;
+  cursor: pointer;
+  .markerText {
+    display: block;
+    width: 145px;
+    height: auto;
+    position: relative;
+  }
 }
 
 @keyframes pulsate {

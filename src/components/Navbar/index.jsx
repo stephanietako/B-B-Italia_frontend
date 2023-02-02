@@ -19,8 +19,7 @@ const Navbar = () => {
     // This effect will only run after the navbar element has been rendered
     // eslint-disable-next-line
     navigationHeight = navbarElement.current.offsetHeight;
-    console.log(navbarElement.current.offsetHeight);
-    console.log(navbarElement);
+    console.info("Navbar height:", navbarElement.current.offsetHeight);
     navbarElement.current.style.setProperty(
       "--scroll-padding",
       navigationHeight
@@ -42,17 +41,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Main navbar menu
-  // const links = [
-  //   { name: "Accueil", target: "#welcome" },
-  //   { name: "A propos", target: "#about" },
-  //   { name: "Showroom", target: "#showroom" },
-  //   { name: "Produits", target: "", dropdown: true },
-  //   { name: "Projets", target: "#projects" },
-  //   { name: "Contact", target: "#contact" },
-  // ];
-
-  // Main navbar menu for mobile
+  // Main navbar menu fhamburger
   const linksMobile = [
     { name: "Accueil", target: "#welcome" },
     { name: "A propos", target: "#about" },
@@ -84,7 +73,7 @@ const Navbar = () => {
         />
       </a>
       {/* MOBILE MENU */}
-      <div className={styles.__nav_mobile_menu}>
+      <div className={styles.__nav_hamburger_menu}>
         <button
           className={styles.__summ}
           onClick={toggleMenu}

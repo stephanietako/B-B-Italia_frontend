@@ -1,6 +1,6 @@
 @import "../../style/scss-variables";
 
-.welcome {
+.icons_contacts {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -28,7 +28,7 @@
 // ############## RESPONSIVE  ###############
 // Desktop-Large
 @media (min-width: 1900px) {
-  .welcome {
+  .icons_contacts {
     .__icons {
       right: 20px;
     }
@@ -36,7 +36,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1900px) {
-  .welcome {
+  .icons_contacts {
     .__icons {
       right: 20px;
     }
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 768px) {
-  .welcome {
+  .icons_contacts {
     .__icons {
       right: 20px;
     }

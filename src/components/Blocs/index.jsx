@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-const Blocs = ({ img, alt, text, logo, altLogo, link }) => {
+const Blocs = ({ img, alt, text, textmobile, logo, altLogo, link }) => {
   return (
     <div className={styles.blocs}>
       <div className={styles.__container}>
@@ -16,6 +16,9 @@ const Blocs = ({ img, alt, text, logo, altLogo, link }) => {
           </div>
           <div className={styles.__text}>
             <p>{text}</p>
+          </div>
+          <div className={styles.__text_mobile}>
+            <p>{textmobile}</p>
           </div>
         </div>
       </div>

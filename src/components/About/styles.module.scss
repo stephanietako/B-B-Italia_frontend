@@ -91,7 +91,6 @@
         }
       }
       .__about_content {
-        //$height, $width, $left
         @include blocsTxt(48%, 100%, 50%);
         top: 67%;
         flex-direction: row;

@@ -66,7 +66,7 @@
         margin: auto;
         display: none;
         width: 100%;
-        padding: 12px;
+        padding: 0 5px 0 5px;
         height: auto;
         p {
           font-size: 16px;
@@ -102,9 +102,9 @@
         }
       }
       .__bloc {
-        @include blocsTxt(auto, 100%, 50%);
+        @include blocsTxt(58%, 100%, 50%);
         flex-direction: column;
-        padding: 22px;
+        padding-top: 15px;
         .__logo {
           width: 7rem;
           img {

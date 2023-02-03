@@ -102,14 +102,14 @@
         }
       }
       .__bloc {
-        @include blocsTxt(67%, 100%, 50%);
+        @include blocsTxt(auto, 100%, 50%);
         flex-direction: column;
+        padding: 22px;
         .__logo {
           width: 7rem;
           img {
             width: 100%;
             height: auto;
-            margin-top: 10px;
           }
         }
         .__text {

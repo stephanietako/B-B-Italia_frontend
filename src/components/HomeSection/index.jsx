@@ -49,7 +49,7 @@ const HomeSection = ({ slides }) => {
           loop
           muted
           playsInline
-          controls
+          // controls
           width="100%"
           height="100%"
           className={styles.__mobile_video}

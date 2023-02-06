@@ -12,8 +12,8 @@
     position: relative;
     &.__active {
       opacity: 1;
-      transition-duration: 1s;
-      animation: slider_scale 1s ease-in-out forwards;
+      transition-duration: 2s;
+      animation: slider_scale 2s ease-in-out forwards;
     }
     &.__inactive {
       opacity: 0;

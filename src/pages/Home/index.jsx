@@ -157,7 +157,7 @@ const HomePage = () => {
       </section>
       <section id="showroom">
         <div className={styles.sections}>
-          <ImgSlider slides={SliderDataShowroom} />
+          <ImgSlider slides={SliderDataShowroom} title="Showroom" />
         </div>
       </section>
       <section id="bandb">
@@ -213,7 +213,7 @@ const HomePage = () => {
       </section>
       <section id="projects">
         <div className={styles.sections}>
-          <ImgSlider slides={SliderDataProjects} />
+          <ImgSlider slides={SliderDataProjects} title="Projets" />
         </div>
       </section>
       <section id="contact">

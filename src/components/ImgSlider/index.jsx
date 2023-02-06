@@ -5,7 +5,7 @@ import chevron_right from "../../assets/icon/chevron_right.svg";
 // Style
 import styles from "./styles.module.scss";
 
-const ImgSlider = ({ slides }) => {
+const ImgSlider = ({ slides, title }) => {
   const [current, setCurrent] = useState(0);
   const sliderlength = slides.length;
   const imagesRef = useRef([]);
@@ -63,7 +63,7 @@ const ImgSlider = ({ slides }) => {
           >
             {index === current && (
               <div className={styles.__image}>
-                <h1>Showroom</h1>
+                <h1>{title}</h1>
                 <img src={slide.image} alt="mobilier design" />
               </div>
             )}

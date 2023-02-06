@@ -5,7 +5,10 @@ const MentionsLegales = () => {
   return (
     <div className={styles.terms_section} id="terms">
       <>
-        <button className={styles.__btn_home}>Retour sur le site</button>
+        {/* <button className={styles.__btn_home}>Retour sur le site</button> */}
+        <a href="/">
+          <button className={styles.__btn_home}>Retour sur le site</button>
+        </a>
         <h2>MENTIONS LÉGALES</h2>
         <div className={styles.__container}>
           <p>

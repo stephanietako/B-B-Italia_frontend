@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import logo from "../../assets/logo/bb-logo-noir.webp";
 import menu from "../../assets/icon/menu.svg";
 import cross from "../../assets/icon/cross.svg";
-// Cmp
+// Components
 import Links from "../Links";
 // Styles
 import styles from "./styles.module.scss";
@@ -97,27 +97,6 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      {/* DESKTOP MENU */}
-      {/* <ul className={styles.__nav_menu}>
-        {links.map((link, index) => {
-          let dropdownPosition = 0;
-          const ddList = links.filter((lnk) => lnk.dropdown === true);
-          ddList.map((lnk, index) => {
-            if (link.name === lnk.name) dropdownPosition = index;
-            return null;
-          });
-
-          return (
-            <Links
-              key={uuidv4()}
-              link={link}
-              sublinks={sublinks}
-              dropdownPosition={dropdownPosition}
-              onClick={toggleMenu}
-            />
-          );
-        })}
-      </ul> */}
     </nav>
   );
 };

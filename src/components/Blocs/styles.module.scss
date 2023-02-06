@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   .__container {
-    // border: 4px solid blue;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
@@ -28,13 +27,11 @@
       }
     }
     .__bloc {
-      // border: 3px solid fuchsia;
-      //$height, $width, $left
       @include blocsTxt(50%, 100%, 50%);
       padding: 8px;
       .bloc_box {
         display: flex;
-        // border: 3px solid greenyellow;
+
         width: 100%;
         height: auto;
         margin: auto;
@@ -42,7 +39,7 @@
           display: flex;
           max-width: 12rem;
           align-self: center;
-          border: 3px solid violet;
+
           img {
             justify-content: center;
             width: 100%;
@@ -59,7 +56,7 @@
           width: 100%;
           padding: 20px;
           height: auto;
-          // border: 2px solid red;
+
           p {
             font-size: 18px;
             line-height: 22px;
@@ -70,7 +67,6 @@
         .__text_mobile {
           position: relative;
           display: none;
-          // border: 3px solid blue;
 
           width: 100%;
           padding-left: 10px;
@@ -99,7 +95,6 @@
       .__bloc {
         @include blocsTxt(48%, 100%, 50%);
         flex-direction: column;
-        border: 3px solid cyan;
         .__logo {
           width: 6rem;
           img {
@@ -109,11 +104,9 @@
         }
         .__text {
           display: none !important;
-          // border: 3px solid red;
         }
         .__text_mobile {
           display: block !important;
-          // border: 3px solid blue;
         }
       }
     }
@@ -123,24 +116,18 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .blocs {
     .__container {
-      // border: 4px solid blue;
       .__bloc {
-        border: 3px solid fuchsia;
-        //$height, $width, $left
         @include blocsTxt(65%, 100%, 50%);
         padding: 8px;
         .bloc_box {
           .__logo {
             max-width: 7rem;
-            // border: 3px solid red;
           }
           .__text {
             display: block !important;
-            // border: 2px solid red;
           }
           .__text_mobile {
             display: none !important;
-            // border: 3px solid blue;
           }
         }
       }
@@ -151,22 +138,16 @@
 @media (max-width: 375px) and (min-width: 360px) {
   .blocs {
     .__container {
-      // border: 4px solid blue;
       .__bloc {
-        border: 3px solid orange;
-        //$height, $width, $left
         @include blocsTxt(65%, 100%, 50%);
         padding: 8px;
         .bloc_box {
           .__text {
             display: none !important;
-
-            // border: 2px solid red;
           }
           .__text_mobile {
             position: relative;
             display: block !important;
-            // border: 3px solid blue;
           }
         }
       }
@@ -177,22 +158,16 @@
 @media (min-width: 376px) and (max-width: 400px) {
   .blocs {
     .__container {
-      // border: 4px solid blue;
       .__bloc {
-        border: 3px solid green;
-        //$height, $width, $left
         @include blocsTxt(50%, 100%, 50%);
         padding: 8px;
         .bloc_box {
           .__text {
             display: none !important;
-
-            // border: 2px solid red;
           }
           .__text_mobile {
             position: relative;
             display: block !important;
-            // border: 3px solid blue;
           }
         }
       }
@@ -203,22 +178,16 @@
 @media (min-width: 320px) and (max-width: 321px) {
   .blocs {
     .__container {
-      // border: 4px solid blue;
       .__bloc {
-        border: 3px solid black;
-        //$height, $width, $left
         @include blocsTxt(80%, 100%, 50%);
         padding: 8px;
         .bloc_box {
           .__text {
             display: none !important;
-
-            // border: 2px solid red;
           }
           .__text_mobile {
             position: relative;
             display: block !important;
-            // border: 3px solid blue;
           }
         }
       }

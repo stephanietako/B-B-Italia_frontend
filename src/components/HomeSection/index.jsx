@@ -6,7 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 // Styles
 import styles from "./styles.module.scss";
 // Video
-import video from "../../assets/video/home_video_large.mp4";
+import video_small from "../../assets/video/home_video.mp4";
+import video_regular from "../../assets/video/VIDEO1250.mp4";
 
 const settings = {
   dots: true,
@@ -42,7 +43,23 @@ const HomeSection = ({ slides }) => {
             })}
           </Slider>
         </div>
-        {/* video mobile section */}
+        {/* video medium for ipad ...*/}
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          // controls
+          width="100%"
+          height="100%"
+          className={styles.__regular_video}
+        >
+          <source src={video_regular} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/*  video small for mobile */}
         <video
           ref={videoRef}
           autoPlay
@@ -54,7 +71,7 @@ const HomeSection = ({ slides }) => {
           height="100%"
           className={styles.__mobile_video}
         >
-          <source src={video} type="video/mp4" />
+          <source src={video_small} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

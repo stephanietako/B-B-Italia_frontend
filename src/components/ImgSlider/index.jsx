@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 // Icons
 import chevron_left from "../../assets/icon/chevron_left.svg";
 import chevron_right from "../../assets/icon/chevron_right.svg";
-// Styles
+// Style
 import styles from "./styles.module.scss";
 
 const ImgSlider = ({ slides }) => {
@@ -59,17 +59,28 @@ const ImgSlider = ({ slides }) => {
           <div
             key={index}
             className={`${styles.__slide} ${
-              index === current ? styles.__active : ""
+              index === current ? styles.__active : styles.__inactive
             }`}
           >
             {index === current && (
               <div className={styles.__image}>
+                <h1>Showroom</h1>
                 <img src={slide.image} alt="mobilier design" />
               </div>
             )}
           </div>
         );
       })}
+      <div className={styles.__arrow_left}>
+        <img src={chevron_left} alt={"arrow left symbol"} onClick={prevSlide} />
+      </div>
+      <div className={styles.__arrow_right}>
+        <img
+          src={chevron_right}
+          alt={"arrow right symbol"}
+          onClick={nextSlide}
+        />
+      </div>
     </div>
   );
 };

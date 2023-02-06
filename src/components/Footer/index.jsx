@@ -25,8 +25,8 @@ const Footer = () => {
           </li>
           <li>
             <div className={styles.__copyright}>
-              &#169; Copyright {currentYear} | Lise Braun & Stéphanietako | Tous
-              droits réservés{" "}
+              &#169; Copyright {currentYear} | Lise Braun & Stéphanie Gabbay |
+              Tous droits réservés{" "}
             </div>
           </li>
         </ul>

@@ -25,10 +25,22 @@ import slide3 from "../../assets/images/slide3.webp";
 import slide4 from "../../assets/images/slide4.webp";
 import vue from "../../assets/images/vue.webp";
 // Images Slide Showroom
-import showroom1 from "../../assets/images/showroom1.webp";
-import showroom2 from "../../assets/images/showroom2.webp";
-import showroom3 from "../../assets/images/showroom3.webp";
-import showroom4 from "../../assets/images/showroom4.webp";
+import s1 from "../../assets/images/s1.webp";
+import s2 from "../../assets/images/s2.webp";
+import s3 from "../../assets/images/s3.webp";
+import s4 from "../../assets/images/s4.webp";
+import s5 from "../../assets/images/s5.webp";
+import s6 from "../../assets/images/s6.webp";
+import s7 from "../../assets/images/s7.webp";
+import s8 from "../../assets/images/s8.webp";
+import s9 from "../../assets/images/s9.webp";
+import s10 from "../../assets/images/s10.webp";
+import s11 from "../../assets/images/s11.webp";
+import s12 from "../../assets/images/s12.webp";
+import s13 from "../../assets/images/s13.webp";
+import s14 from "../../assets/images/s14.webp";
+import s15 from "../../assets/images/s15.webp";
+import s16 from "../../assets/images/s16.webp";
 // Images Slide Home
 import home1 from "../../assets/images/home1.webp";
 import home2 from "../../assets/images/home2.webp";
@@ -54,16 +66,52 @@ const HomePage = () => {
   // Showroom section data images
   const SliderDataShowroom = [
     {
-      image: showroom1,
+      image: s1,
     },
     {
-      image: showroom2,
+      image: s2,
     },
     {
-      image: showroom3,
+      image: s3,
     },
     {
-      image: showroom4,
+      image: s4,
+    },
+    {
+      image: s5,
+    },
+    {
+      image: s6,
+    },
+    {
+      image: s7,
+    },
+    {
+      image: s8,
+    },
+    {
+      image: s9,
+    },
+    {
+      image: s10,
+    },
+    {
+      image: s11,
+    },
+    {
+      image: s12,
+    },
+    {
+      image: s13,
+    },
+    {
+      image: s14,
+    },
+    {
+      image: s15,
+    },
+    {
+      image: s16,
     },
   ];
   // Home section data images
@@ -98,7 +146,7 @@ const HomePage = () => {
               "Tropézien depuis 25 ans, Christophe Papa vient de l’univers du luxe et de la mode.\nCe sont les figures historiques tel Le Corbusier ou Charlotte Perriand, qui lui ont donné l’envie d’aller plus loin.\nLa rencontre avec un acteur majeur du design italien en France lui a permis de concrétiser, il ouvre en 2016 le 1er showroom monomarque B&B Italia en France."
             }
             textmobile={
-              " Tropézien depuis 25 ans, Christophe Papa vient de l’univers du luxe, de la mode. Le Corbusier, Charlotte Perriand lui ont donné l’envie d’aller plus loin. La rencontre avec un acteur majeur du design italien en France lui a permis de concrétiser. 2016 1er showroom monomarque B&B Italia en France."
+              " Tropézien depuis 25 ans, Christophe Papa vient de l’univers du luxe et de la mode. La rencontre avec un acteur majeur du design italien en France lui a permis de concrétiser, il ouvre en 2016 le 1er showroom monomarque B&B Italia en France."
             }
             img={christophe}
             alt="Christophe"
@@ -153,7 +201,7 @@ const HomePage = () => {
               "Arclinea, fabricant majeur de cuisine en Italie depuis 1925, rejoint le groupe B&B Italia en 2016.\nCe partenariat stratégique repose sur des valeurs communes de conception, d'innovation et de qualité, sur une même approche de la production et de l'industrie axée sur l'excellence.Pour Arclinea, contribuer à améliorer la qualité de vie est le véritable engagement qui a guidé les choix entrepreneuriaux faits au fil du temps et qui s'est concrétisé dans tous les domaines d'intervention.\nDepuis toujours, Arclinea traite la complexité du projet en cherchant à concilier la précision technique et la fonctionnalité, l'innovation des formes et celle des espaces, en choisissant de travailler depuis des années Antonio Citterio, pour produire non seulement des équipements et des meubles, mais également des architectures de vie.\nChaque innovation anticipe l'évolution des espaces à cuisiner."
             }
             textmobile={
-              " Arclinea, le fabricant majeur de cuisine en Italie depuis 1925, rejoint le groupe B&B Italia en 2016.\nCe partenariat stratégique repose sur des valeurs communes de conception, d'innovation et de qualité, et sur une approche commune de la production et de l'industrie axée sur l'excellence, la durabilité et le design."
+              " Arclinea, le fabricant majeur de cuisine en Italie depuis 1925, rejoint le groupe B&B Italia en 2016. Ce partenariat stratégique repose sur des valeurs communes de conception, d'innovation et de qualité, et sur une approche commune de la production et de l'industrie axée sur l'excellence, la durabilité et le design."
             }
             img={arclinea}
             alt="Arclinea"

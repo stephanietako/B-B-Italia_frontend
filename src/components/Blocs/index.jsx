@@ -9,16 +9,18 @@ const Blocs = ({ img, alt, text, textmobile, logo, altLogo, link }) => {
           <img src={img} alt={alt} />
         </div>
         <div className={styles.__bloc}>
-          <div className={styles.__logo}>
-            <a href={link}>
-              <img src={logo} alt={altLogo} />
-            </a>
-          </div>
-          <div className={styles.__text}>
-            <p>{text}</p>
-          </div>
-          <div className={styles.__text_mobile}>
-            <p>{textmobile}</p>
+          <div className={styles.bloc_box}>
+            <div className={styles.__logo}>
+              <a href={link}>
+                <img src={logo} alt={altLogo} />
+              </a>
+            </div>
+            <div className={styles.__text}>
+              <p>{text}</p>
+            </div>
+            <div className={styles.__text_mobile}>
+              <p>{textmobile}</p>
+            </div>
           </div>
         </div>
       </div>

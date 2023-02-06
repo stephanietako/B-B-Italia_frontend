@@ -6,37 +6,50 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
 
-  .__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    img {
-      object-fit: cover;
-      width: 62.5rem;
-    }
-  }
   .__slide {
-    /* Cache l'élément au départ */
     opacity: 1;
-
-    /* Lorsque l'élément est sélectionné avec la classe .__active... */
+    position: relative;
     &.__active {
-      /* Fade-in l'élément sur 2 secondes */
       opacity: 1;
       transition-duration: 1s;
-      /* Augmente la taille de l'élément de 8% */
-      transform: scale(1.08);
+      animation: slider_scale 1s ease-in-out forwards;
     }
-  }
+    &.__inactive {
+      opacity: 0;
+      transition-duration: 1s;
+      transform: scale(0.92);
+    }
 
-  .__inactive {
-    /* Masque l'élément sur 1 secondes */
-    opacity: 0;
-    transition-duration: 1s;
-    /* Réduit la taille de l'élément de 8% */
-    transform: scale(0.92);
+    .__image {
+      width: 1000px;
+      height: 490px;
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      img {
+        width: 1000px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0px -128px;
+      }
+    }
+    h1 {
+      display: flex;
+      background: rgba(255, 255, 255, 0.75);
+      padding: 7px 7px 7px 40px;
+      min-width: 15%;
+      text-align: center;
+      color: #696969;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 16px;
+      text-align: center;
+    }
   }
   .__arrow_left {
     position: absolute;
@@ -48,7 +61,7 @@
     -webkit-user-select: none; /* Chrome all / Safari all */
     -moz-user-select: none; /* Firefox all */
     -ms-user-select: none; /* IE 10+ */
-    user-select: none; /* Likely future */
+
     img {
       width: 43px;
     }
@@ -63,46 +76,109 @@
     -webkit-user-select: none; /* Chrome all / Safari all */
     -moz-user-select: none; /* Firefox all */
     -ms-user-select: none; /* IE 10+ */
-    user-select: none; /* Likely future */
+
     img {
       width: 43px;
     }
   }
 }
-// ############## RESPONSIVE  ###############
-@media (max-width: 960px) {
+@keyframes slider_scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .slider {
-    .__image {
-      display: block;
-      width: 100%;
-      height: 100%;
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
+    .__slide {
+      opacity: 1;
+      .__image {
+        justify-content: center;
+        width: 820px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+          width: 829px;
+          height: auto;
+          // height: 200px;
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
       }
     }
-  }
-  .__arrow_left {
-    position: absolute;
-    top: 44%;
-    left: -1%;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    img {
-      width: 50px;
+
+    .__arrow_left {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none; /* Chrome all / Safari all */
+      -moz-user-select: none; /* Firefox all */
+      -ms-user-select: none; /* IE 10+ */
+
+      img {
+        width: 43px;
+      }
     }
-  }
-  .__arrow_right {
-    position: absolute;
-    top: 44%;
-    right: -2%;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    img {
-      width: 50px;
+    .__arrow_right {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      // background: rgba(255, 255, 255, 0.75);
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .slider {
+    .__slide {
+      opacity: 1;
+      .__image {
+        justify-content: center;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+          width: 764px;
+          height: auto;
+        }
+      }
+    }
+
+    .__arrow_left {
+      top: 43%;
+    }
+    .__arrow_right {
+      top: 43%;
+    }
+  }
+}
+
+// @media (max-width: 600px) {
+//   .slider {
+//     .__slide {
+//       .__image {
+//         img {
+//           width: 100%;
+//           height: auto;
+//           // height: 200px;
+//           object-fit: cover;
+//         }
+//       }
+//     }
+
+//     .__arrow_left {
+//       top: 75%;
+//     }
+//     .__arrow_right {
+//       top: 75%;
+//     }
+//   }
+// }

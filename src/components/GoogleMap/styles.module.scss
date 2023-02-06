@@ -11,6 +11,7 @@
   height: auto;
   border: 1px solid $light-grey;
   justify-content: space-around;
+  margin: 10px 0 10px 0;
   button {
     &.__btnPosition {
       position: relative;
@@ -22,7 +23,6 @@
       justify-content: space-between;
       height: auto;
       font-weight: bold;
-      margin: 7px 0 7px 0;
       background-color: transparent;
       border: 1px solid gray;
       &:hover {

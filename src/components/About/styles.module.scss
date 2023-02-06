@@ -28,7 +28,7 @@
     .__about_content {
       @include blocsTxt(100%, 40%, 20%);
       flex-direction: column;
-      padding: 33px 20px 0 20px;
+      padding: 20px 20px 0 20px;
       .__logo {
         display: flex;
         max-width: 12rem;
@@ -103,7 +103,7 @@
         .__text_mobile {
           display: none !important;
           border: 2px solid blue;
-          margin-top: 34px;
+          margin-top: 23px;
         }
       }
     }
@@ -137,7 +137,7 @@
       .__text_mobile {
         display: block !important;
         border: 2px solid blue;
-        margin-top: 30px;
+        margin-top: 23px;
       }
     }
   }
@@ -170,7 +170,7 @@
         .__text_mobile {
           display: block !important;
           border: 2px solid blue;
-          margin-top: 30px;
+          margin-top: 23px;
         }
       }
     }
@@ -238,7 +238,7 @@
         .__text_mobile {
           display: block;
           border: 2px solid blue;
-          margin-top: 30px;
+          margin-top: 23px;
         }
       }
     }
@@ -259,7 +259,7 @@
       }
       .__about_content {
         border: 3px solid grey;
-        @include blocsTxt(87%, 100%, 50%);
+        @include blocsTxt(90%, 100%, 50%);
         padding: 8px;
         .__logo {
           width: 6rem;
@@ -273,7 +273,7 @@
         .__text_mobile {
           display: block;
           border: 2px solid blue;
-          margin-top: 30px;
+          margin-top: 23px;
         }
       }
     }

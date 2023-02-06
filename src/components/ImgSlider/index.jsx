@@ -8,7 +8,6 @@ import styles from "./styles.module.scss";
 const ImgSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const sliderlength = slides.length;
-  //  Tableau vide qui sera utilisée pour stocker les références aux éléments img du slider.
   const imagesRef = useRef([]);
   const observer = useRef(
     new window.IntersectionObserver((entries) => {

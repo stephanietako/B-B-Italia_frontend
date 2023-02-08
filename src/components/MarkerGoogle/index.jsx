@@ -17,7 +17,7 @@ const Marker = (elMarker) => {
       }}
     >
       <div
-        className={`${styles.pin} ${styles.bounce} ${styles.pulse} `}
+        className={`${styles.pin} ${styles.clickos} ${styles.pulse} `}
         style={{ backgroundColor: color }}
         title={name}
         key={uuidv4()}

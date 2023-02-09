@@ -32,10 +32,12 @@
       .__logo {
         display: flex;
         max-width: 12rem;
+        height: auto;
         align-self: center;
         img {
           justify-content: center;
           width: 100%;
+          height: auto;
           object-fit: cover;
           display: block;
           margin-left: auto;

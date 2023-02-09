@@ -31,13 +31,13 @@
       padding: 8px;
       .bloc_box {
         display: flex;
-
         width: 100%;
         height: auto;
         margin: auto;
         .__logo {
           display: flex;
           max-width: 12rem;
+          height: auto;
           align-self: center;
 
           img {
@@ -67,7 +67,6 @@
         .__text_mobile {
           position: relative;
           display: none;
-
           width: 100%;
           padding-left: 10px;
           height: auto;

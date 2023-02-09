@@ -12,7 +12,6 @@
     z-index: 100;
     right: 35px;
     top: 8rem;
-
     ul {
       display: flex;
       li {
@@ -20,13 +19,13 @@
         list-style-type: none;
         img {
           width: 17px;
+          height: auto;
         }
       }
     }
   }
 }
 // ############## RESPONSIVE  ###############
-// Desktop-Large
 @media (min-width: 1900px) {
   .icons_contacts {
     .__icons {
@@ -51,7 +50,6 @@
   }
 }
 
-// Moble
 @media (max-width: 501px) {
   .icons_contacts {
     .__icons {
@@ -60,7 +58,6 @@
   }
 }
 
-// Mobile-Medium
 @media (max-width: 500px) and (min-width: 400px) {
   .icons_contacts {
     .__icons {
@@ -69,7 +66,6 @@
   }
 }
 
-// Mobile-Small
 @media (max-width: 501px) and (min-width: 320px) {
   .icons_contacts {
     .__icons {

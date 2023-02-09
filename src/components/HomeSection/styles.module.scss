@@ -48,3 +48,15 @@
     display: none !important;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .__container_slider {
+    display: block !important;
+  }
+  .__regular_video {
+    display: none !important;
+  }
+  .__mobile_video {
+    display: none !important;
+  }
+}

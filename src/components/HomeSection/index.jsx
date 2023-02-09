@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 // Styles
 import styles from "./styles.module.scss";
 // Video
-import video_small from "../../assets/video/home_video.mp4";
-import video_regular from "../../assets/video/VIDEO1250.mp4";
+import video_small from "../../assets/video/home_video.webm";
+import video_regular from "../../assets/video/VIDEO1250.webm";
 
 const settings = {
   dots: true,
@@ -55,7 +55,7 @@ const HomeSection = ({ slides }) => {
           height="100%"
           className={styles.__regular_video}
         >
-          <source src={video_regular} type="video/mp4" />
+          <source src={video_regular} type="video/webm" />
           Your browser does not support the video tag.
         </video>
 
@@ -66,12 +66,11 @@ const HomeSection = ({ slides }) => {
           loop
           muted
           playsInline
-          // controls
           width="100%"
           height="100%"
           className={styles.__mobile_video}
         >
-          <source src={video_small} type="video/mp4" />
+          <source src={video_small} type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>

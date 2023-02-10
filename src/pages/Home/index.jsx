@@ -143,7 +143,7 @@ const HomePage = () => {
         <div className={styles.sections}>
           <About
             text={
-              "Tropézien depuis 25 ans, Christophe Papa vient de l’univers du luxe et de la mode.\nCe sont les figures historiques tel Le Corbusier ou Charlotte Perriand, qui lui ont donné l’envie d’aller plus loin.\nLa rencontre avec un acteur majeur du design italien en France lui a permis de concrétiser, il ouvre en 2016 le 1er showroom monomarque B&B Italia en France."
+              "Tropézien depuis 25 ans, Christophe Papa vient de l’univers du luxe et de la mode.\nCe sont les figures historiques tel que Le Corbusier ou Charlotte Perriand, qui lui ont donné l’envie d’aller plus loin.\nLa rencontre avec un acteur majeur du design italien en France lui a permis de concrétiser, il ouvre en 2016 le 1er showroom monomarque B&B Italia en France."
             }
             textmobile={
               " Tropézien depuis 25 ans, Christophe Papa vient de l’univers du luxe et de la mode. La rencontre avec un acteur majeur du design italien en France lui a permis de concrétiser, il ouvre en 2016 le 1er showroom monomarque B&B Italia en France."
@@ -198,7 +198,7 @@ const HomePage = () => {
         <div className={styles.sections}>
           <Blocs
             text={
-              "Arclinea, fabricant majeur de cuisine en Italie depuis 1925, rejoint le groupe B&B Italia en 2016.\nCe partenariat stratégique repose sur des valeurs communes de conception, d'innovation et de qualité, sur une même approche de la production et de l'industrie axée sur l'excellence.Pour Arclinea, contribuer à améliorer la qualité de vie est le véritable engagement qui a guidé les choix entrepreneuriaux faits au fil du temps et qui s'est concrétisé dans tous les domaines d'intervention.\nDepuis toujours, Arclinea traite la complexité du projet en cherchant à concilier la précision technique et la fonctionnalité, l'innovation des formes et celle des espaces, en choisissant de travailler depuis des années Antonio Citterio, pour produire non seulement des équipements et des meubles, mais également des architectures de vie.\nChaque innovation anticipe l'évolution des espaces à cuisiner."
+              "Arclinea, fabricant majeur de cuisine en Italie depuis 1925, rejoint le groupe B&B Italia en 2016.\nCe partenariat stratégique repose sur des valeurs communes de conception, d'innovation et de qualité, sur une même approche de la production et de l'industrie axée sur l'excellence. Pour Arclinea, contribuer à améliorer la qualité de vie est le véritable engagement qui a guidé les choix entrepreneuriaux faits au fil du temps et qui s'est concrétisé dans tous les domaines d'intervention.\nDepuis toujours, Arclinea traite la complexité du projet en cherchant à concilier la précision technique et la fonctionnalité, l'innovation des formes et celle des espaces, en choisissant de travailler depuis des années Antonio Citterio, pour produire non seulement des équipements et des meubles, mais également des architectures de vie.\nChaque innovation anticipe l'évolution des espaces à cuisiner."
             }
             textmobile={
               " Arclinea, le fabricant majeur de cuisine en Italie depuis 1925, rejoint le groupe B&B Italia en 2016. Ce partenariat stratégique repose sur des valeurs communes de conception, d'innovation et de qualité, et sur une approche commune de la production et de l'industrie axée sur l'excellence, la durabilité et le design."

@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://www.bebitaliasainttropez.fr/sitemap-fr.xml
+Sitemap: https://www.bebitaliasainttropez.com/sitemap-com.xml

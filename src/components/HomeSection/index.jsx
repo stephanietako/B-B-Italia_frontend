@@ -8,6 +8,8 @@ import styles from "./styles.module.scss";
 // Video
 import video_small from "../../assets/video/home_video.mp4";
 import video_regular from "../../assets/video/VIDEO1250.mp4";
+// Images
+import img from "../../assets/images/poster.webp";
 
 const settings = {
   dots: true,
@@ -52,6 +54,8 @@ const HomeSection = ({ slides }) => {
           playsInline
           width="100%"
           height="100%"
+          controls
+          poster={img}
           className={styles.__regular_video}
         >
           <source src={video_regular} type="video/mp4" />
@@ -67,6 +71,8 @@ const HomeSection = ({ slides }) => {
           playsInline
           width="100%"
           height="100%"
+          controls
+          poster={img}
           className={styles.__mobile_video}
         >
           <source src={video_small} type="video/mp4" />

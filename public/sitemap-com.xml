@@ -7,3 +7,19 @@
     <priority>1.0</priority>
   </url>
 </urlset>
+
+  <url>
+    <loc>https://www.bebitaliasainttropez.com/terms</loc>
+    <lastmod>2023-02-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+
+ <url>
+    <loc>https://www.bebitaliasainttropez.com/page404</loc>
+    <lastmod>2023-02-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

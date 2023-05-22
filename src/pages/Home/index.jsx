@@ -19,6 +19,8 @@ import arclinea from "../../assets/images/arclinea.webp";
 import maxalto from "../../assets/images/maxalto.webp";
 import christophe from "../../assets/images/christophe.webp";
 // Images Slide Projects
+import slide1bis from "../../assets/images/slide1bis.webp";
+import slide2bis from "../../assets/images/slide2bis.webp";
 import slide1 from "../../assets/images/slide1.webp";
 import slide2 from "../../assets/images/slide2.webp";
 import slide3 from "../../assets/images/slide3.webp";
@@ -63,6 +65,12 @@ const HomePage = () => {
 
   // Projects section data images
   const SliderDataProjects = [
+    {
+      image: slide1bis,
+    },
+    {
+      image: slide2bis,
+    },
     {
       image: slide1,
     },

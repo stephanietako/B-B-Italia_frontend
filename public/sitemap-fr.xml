@@ -20,4 +20,10 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+     <loc>https://www.bebitaliasainttropez.fr/</loc>
+    <lastmod>2023-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>

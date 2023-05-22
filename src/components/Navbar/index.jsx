@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 // Assets
 import logo from "../../assets/logo/bb-logo-noir.webp";
@@ -9,7 +9,7 @@ import Links from "../Links";
 // Styles
 import styles from "./styles.module.scss";
 
-const Navbar = () => {
+const Navbar = ({ lang, setLang }) => {
   // The error "Uncaught TypeError: Cannot read properties of null (reading 'offsetHeight')"
   //In this case, it is possible that you are trying to access the offsetHeight property of a DOM element that has not yet been rendered, or that is not present in the DOM.
   // Lets fix it: One way to do this is to wrap the code that accesses the DOM element in a useEffect hook, and to make sure that the hook only runs after the element has been rendered.
@@ -41,13 +41,17 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Main navbar menu fhamburger
+  // Main navbar menu
   const linksMobile = [
-    { name: "Accueil", target: "#welcome" },
-    { name: "A propos", target: "#about" },
+    { name: lang === "fr" ? "Accueil" : "Home", target: "#welcome" },
+    { name: lang === "fr" ? "A propos" : "About", target: "#about" },
     { name: "Showroom", target: "#showroom" },
-    { name: "Produits", target: "", dropdown: true },
-    { name: "Projets", target: "#projects" },
+    {
+      name: lang === "fr" ? "Produits" : "Products",
+      target: "",
+      dropdown: true,
+    },
+    { name: lang === "fr" ? "Projets" : "Projects", target: "#projects" },
     { name: "Contact", target: "#contact" },
   ];
 
@@ -97,6 +101,15 @@ const Navbar = () => {
           </div>
         )}
       </div>
+      {/* <button className={styles.__lang_btn} onClick={() => handleLangChange()}>
+        {lang === "fr" ? "EN" : "FR"}
+      </button> */}
+      <button
+        className={styles.__lang_btn}
+        onClick={() => setLang(lang === "fr" ? "en" : "fr")}
+      >
+        {lang === "fr" ? "EN" : "FR"}
+      </button>
     </nav>
   );
 };

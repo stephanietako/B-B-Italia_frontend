@@ -13,6 +13,20 @@
     background: rgba(255, 255, 255, 0.75);
     z-index: 11;
   }
+
+  .__lang_btn {
+    padding: 5px 6px;
+    margin: 6px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    border: none;
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+
   .__logo {
     max-height: 9rem;
     height: auto;

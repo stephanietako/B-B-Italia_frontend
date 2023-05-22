@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
@@ -8,12 +8,35 @@ import ScrollToTop from "./components/ScrollToTop";
 import Page404 from "./components/Page404";
 
 const App = () => {
+  // Navigator language property
+  const userLang = navigator.language;
+  const [localLang, setLocalLang] = useState(
+    localStorage.getItem("__language_bb")
+  );
+
+  useEffect(() => {
+    if (
+      !localLang ||
+      (!localLang.includes("en") && !localLang.includes("fr"))
+    ) {
+      if (userLang.includes("fr")) {
+        setLocalLang("fr");
+        localStorage.setItem("__language_bb", "fr");
+      } else {
+        setLocalLang("en");
+        localStorage.setItem("__language_bb", "en");
+      }
+    } else {
+      setLocalLang(localLang);
+      localStorage.setItem("__language_bb", localLang);
+    }
+  }, [localLang, userLang]);
   return (
     <div className="App">
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage lang={localLang} />} />
         </Route>
         <Route path="/terms" element={<MentionsLegales />} />
         <Route path="*" element={<Page404 />} />

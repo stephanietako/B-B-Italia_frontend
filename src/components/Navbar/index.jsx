@@ -10,6 +10,12 @@ import Links from "../Links";
 import styles from "./styles.module.scss";
 
 const Navbar = ({ lang, setLang }) => {
+  useEffect(() => {
+    const storedLang = localStorage.getItem("lang");
+    if (storedLang && (storedLang === "en" || storedLang === "fr")) {
+      setLang(storedLang);
+    }
+  }, []);
   // The error "Uncaught TypeError: Cannot read properties of null (reading 'offsetHeight')"
   //In this case, it is possible that you are trying to access the offsetHeight property of a DOM element that has not yet been rendered, or that is not present in the DOM.
   // Lets fix it: One way to do this is to wrap the code that accesses the DOM element in a useEffect hook, and to make sure that the hook only runs after the element has been rendered.
@@ -101,9 +107,6 @@ const Navbar = ({ lang, setLang }) => {
           </div>
         )}
       </div>
-      {/* <button className={styles.__lang_btn} onClick={() => handleLangChange()}>
-        {lang === "fr" ? "EN" : "FR"}
-      </button> */}
       <button
         className={styles.__lang_btn}
         onClick={() => setLang(lang === "fr" ? "en" : "fr")}

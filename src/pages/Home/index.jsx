@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // Componenets
 import Contact from "../../components/Contact";
 import HomeSection from "../../components/HomeSection";
@@ -6,7 +6,7 @@ import Blocs from "../../components/Blocs";
 import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
 import IconsContacts from "../../components/IconsContacts";
-import NavBar from "../../components/Navbar";
+import Navbar from "../../components/Navbar";
 // Styles
 import styles from "./styles.module.scss";
 // Logos
@@ -50,12 +50,20 @@ import home3 from "../../assets/images/home3.webp";
 import home4 from "../../assets/images/home4.webp";
 
 const HomePage = () => {
-  // État pour stocker la langue actuelle
   const [lang, setLang] = useState("fr");
 
-  // Function to manage language change
+  useEffect(() => {
+    const storedLang = localStorage.getItem("lang");
+    if (storedLang) {
+      setLang(storedLang);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang);
+  }, [lang]);
+
   const handleLangChange = () => {
-    //  // Check current language and switch to opposite language
     if (lang === "fr") {
       setLang("en");
     } else {
@@ -153,7 +161,7 @@ const HomePage = () => {
 
   return (
     <>
-      <NavBar lang={lang} setLang={handleLangChange} />
+      <Navbar lang={lang} setLang={handleLangChange} />
       <IconsContacts />
       <section id="welcome">
         <div className={styles.sections}>

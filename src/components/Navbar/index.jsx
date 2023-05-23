@@ -82,8 +82,8 @@ const Navbar = ({ lang, setLang }) => {
           alt="B&B Italia Saint-Tropez"
         />
       </a>
-      {/* MOBILE MENU */}
-      <div className={styles.__nav_hamburger_menu}>
+
+      <div className={styles.__nav_burger_menu}>
         <button
           className={styles.__summ}
           onClick={toggleMenu}

@@ -5,6 +5,7 @@
   width: 100%;
   align-items: center;
   height: 100%;
+
   .__container {
     overflow: hidden;
     width: 100%;
@@ -12,6 +13,7 @@
     max-height: 100%;
     position: relative;
     display: block;
+
     .__img {
       display: block;
       width: 100%;
@@ -29,6 +31,7 @@
       @include blocsTxt(100%, 40%, 20%);
       flex-direction: column;
       padding: 20px 20px 0 20px;
+
       .__logo {
         display: flex;
         max-width: 12rem;

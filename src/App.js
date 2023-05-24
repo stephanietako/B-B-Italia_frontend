@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
@@ -31,15 +31,19 @@ const App = () => {
       localStorage.setItem("__language_bb", localLang);
     }
   }, [localLang, userLang]);
+
   return (
     <div className="App">
       <ScrollToTop />
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<HomePage lang={localLang} />} />
+        <Route element={<Layout lang={localLang} />}>
+          <Route
+            path="/"
+            element={<HomePage lang={localLang} setLang={setLocalLang} />}
+          />
         </Route>
-        <Route path="/terms" element={<MentionsLegales />} />
-        <Route path="*" element={<Page404 />} />
+        <Route path="/terms" element={<MentionsLegales lang={localLang} />} />
+        <Route path="*" element={<Page404 lang={localLang} />} />
       </Routes>
     </div>
   );

@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 // Componenets
 import Contact from "../../components/Contact";
 import HomeSection from "../../components/HomeSection";
@@ -49,28 +48,7 @@ import home2 from "../../assets/images/home2.webp";
 import home3 from "../../assets/images/home3.webp";
 import home4 from "../../assets/images/home4.webp";
 
-const HomePage = () => {
-  const [lang, setLang] = useState("fr");
-
-  useEffect(() => {
-    const storedLang = localStorage.getItem("lang");
-    if (storedLang) {
-      setLang(storedLang);
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("lang", lang);
-  }, [lang]);
-
-  const handleLangChange = () => {
-    if (lang === "fr") {
-      setLang("en");
-    } else {
-      setLang("fr");
-    }
-  };
-
+const HomePage = ({ lang, setLang }) => {
   // Projects section data images
   const SliderDataProjects = [
     {
@@ -161,7 +139,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Navbar lang={lang} setLang={handleLangChange} />
+      <Navbar lang={lang} setLang={setLang} />
       <IconsContacts />
       <section id="welcome">
         <div className={styles.sections}>
@@ -265,12 +243,15 @@ const HomePage = () => {
         <div className={styles.sections}>
           <Contact
             address={
-              "avenue FOCH \n 83990 \n Saint-Tropez \n Accès direct par le Parking Foch "
+              lang === "fr"
+                ? "avenue FOCH \n 83990 \n Saint-Tropez \n Accès direct par le Parking Foch"
+                : "avenue FOCH \n 83990 \n Saint-Tropez \n Direct access from Parking Foch"
             }
             phone={<a href="tel:+33494457720">04 94 45 77 20</a>}
             mail={
               <a href="mailto:contact@bebsttropez.fr">contact@bebsttropez.fr</a>
             }
+            lang={lang}
           />
         </div>
       </section>

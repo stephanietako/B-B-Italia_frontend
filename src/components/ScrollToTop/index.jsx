@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // Icons
 import chevron_double_up from "../../assets/icon/chevron_double_up.svg";
 

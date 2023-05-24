@@ -1,9 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 import logo from "../../assets/logo/bandb-logo-blanc.webp";
 
-const Footer = () => {
+const Footer = ({ lang }) => {
   const date = new Date();
   const currentYear = date.getFullYear();
 
@@ -21,12 +20,14 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <Link to="terms">Mentions légales</Link>
+            <Link to="terms">
+              {lang === "fr" ? "Mentions légales" : "Legal notices"}
+            </Link>
           </li>
           <li>
             <div className={styles.__copyright}>
               &#169; Copyright {currentYear} | Lise Braun & Stéphanie Gabbay |
-              Tous droits réservés{" "}
+              {lang === "fr" ? "Tous droits réservés" : "All rights reserved"}{" "}
             </div>
           </li>
         </ul>

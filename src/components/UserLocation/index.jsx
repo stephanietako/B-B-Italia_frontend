@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import GoogleMap from "../GoogleMap";
 // Styles
 import styles from "./styles.module.scss";

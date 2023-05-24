@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import Slider from "react-slick";
 // CSS Import library
 import "slick-carousel/slick/slick.css";

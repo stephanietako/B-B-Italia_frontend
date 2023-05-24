@@ -1,11 +1,10 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer";
-const Layout = () => {
+const Layout = ({ lang }) => {
   return (
     <main className="layout">
       <Outlet />
-      <Footer />
+      <Footer lang={lang} />
     </main>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import GoogleMapReact from "google-map-react";
 import Marker from "../MarkerGoogle";
 import { getUserLocation } from "../../helpers/getUserLocation.js";
@@ -16,7 +16,7 @@ const GooglePinUser = ({ name, icon, alt }) => (
   </div>
 );
 
-const GoogleMap = () => {
+const GoogleMap = ({ lang }) => {
   const [currentCenter, setCurrentCenter] = useState(null);
 
   // User Location
@@ -68,8 +68,8 @@ const GoogleMap = () => {
               lat={currentCenter.center.lat}
               lng={currentCenter.center.lng}
               icon={marker}
-              alt="logo user"
-              name="Vous êtes ici"
+              alt={lang === "fr" ? "Vous êtes ici" : "You are here"}
+              name={lang === "fr" ? "Vous êtes ici" : "You are here"}
             />
           )}
         </GoogleMapReact>
@@ -79,7 +79,7 @@ const GoogleMap = () => {
           className={styles.__btnPosition}
           onClick={() => centerMyLocation()}
         >
-          Vous êtes ici
+          {lang === "fr" ? "Me localiser" : "Locate me"}
           <img src={marker} alt="logo marker's map" />
         </button>
 
@@ -89,7 +89,7 @@ const GoogleMap = () => {
           rel="noreferrer noopener"
         >
           <button className={styles.__btn_googlemap}>
-            Ouvrir dans Google Maps
+            {lang === "fr" ? "Ouvrir dans Google Maps" : "Open in Google Maps"}
           </button>
         </a>
       </div>

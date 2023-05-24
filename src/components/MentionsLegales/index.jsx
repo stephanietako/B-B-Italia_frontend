@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./styles.module.scss";
 
-const MentionsLegales = () => {
+const MentionsLegales = ({ lang }) => {
   return (
     <div className={styles.terms_section} id="terms">
       <>
@@ -12,143 +11,10 @@ const MentionsLegales = () => {
         <h2>MENTIONS LÉGALES</h2>
         <div className={styles.__container}>
           <p>
-            Merci de lire avec attention les différentes modalités d’utilisation
-            du présent site avant d’y parcourir ses pages. En vous connectant
-            sur ce site, vous acceptez, sans réserves, les présentes modalités.
-            Aussi, conformément à l’article n°6 de la Loi n°2004-575 du 21 Juin
-            2004 pour la confiance dans l’économie numérique, les responsables
-            du présent site internet www.bebitaliasainttropez.com sont : Éditeur
-            du Site : SAS B ET P ST TROPEZ Numéro de SIRET : 82777230200010
-            Responsable éditorial : Christophe Papa Avenue du Maréchal Foch
-            83990 Saint-Tropez Téléphone : 04 94 45 77 20 Email :
-            contact@bebsttropez.fr Site Web : www.bebitaliasainttropez.com
-            Hébergement : Hébergeur : SAS OVH 2 rue Kellermann 59100 Roubaix
-            Site Web : www.bebitaliasainttropez.com Développement : SAS B ET P
-            ST TROPEZ Adresse : Avenue du Maréchal Foch 83990 Saint-Tropez Site
-            Web : www.bebitaliasainttropez.com Conditions d’utilisation : Ce
-            site (www.bebitaliasainttropez.com) est proposé en différents
-            langages web (HTML, HTML5, Javascript, CSS, etc…) pour un meilleur
-            confort d’utilisation et un graphisme plus agréable. Nous vous
-            recommandons de recourir à des navigateurs modernes comme Internet
-            explorer, Safari, Firefox, Google Chrome, etc… La SAS B ET P ST
-            TROPEZ met en œuvre tous les moyens dont elle dispose, pour assurer
-            une information fiable et une mise à jour fiable de ses sites
-            internet.Toutefois, des erreurs ou omissions peuvent survenir.
-            L’internaute devra donc s’assurer de l’exactitude des informations
-            auprès de SAS B ET P ST TROPEZ , et signaler toutes modifications du
-            site qu’il jugerait utile. SAS B ET P ST TROPEZ n’est en aucun cas
-            responsable de l’utilisation faite de ces informations, et de tout
-            préjudice direct ou indirect pouvant en découler. Cookies : Le site
-            www.bebitaliasainttropez.com peut-être amené à vous demander
-            l’acceptation des cookies pour des besoins de statistiques et
-            d’affichage. Un cookie est une information déposée sur votre disque
-            dur par le serveur du site que vous visitez. Il contient plusieurs
-            données qui sont stockées sur votre ordinateur dans un simple
-            fichier texte auquel un serveur accède pour lire et enregistrer des
-            informations . Certaines parties de ce site ne peuvent être
-            fonctionnelles sans l’acceptation de cookies. Liens hypertextes :
-            Les sites internet de peuvent offrir des liens vers d’autres sites
-            internet ou d’autres ressources disponibles sur Internet. SAS B ET P
-            ST TROPEZ ne dispose d’aucun moyen pour contrôler les sites en
-            connexion avec ses sites internet. B ET P ST TROPEZ ne répond pas de
-            la disponibilité de tels sites et sources externes, ni ne la
-            garantit. Elle ne peut être tenue pour responsable de tout dommage,
-            de quelque nature que ce soit, résultant du contenu de ces sites ou
-            sources externes, et notamment des informations, produits ou
-            services qu’ils proposent, ou de tout usage qui peut être fait de
-            ces éléments. Les risques liés à cette utilisation incombent
-            pleinement à l’internaute, qui doit se conformer à leurs conditions
-            d’utilisation. Les utilisateurs, les abonnés et les visiteurs des
-            sites internet ne peuvent pas mettre en place un hyperlien en
-            direction de ce site sans l’autorisation expresse et préalable de
-            SAS B ET P ST TROPEZ. Dans l’hypothèse où un utilisateur ou visiteur
-            souhaiterait mettre en place un hyperlien en direction d’un des
-            sites internet de SAS B ET P ST TROPEZ, il lui appartiendra
-            d’adresser un email accessible sur le site afin de formuler sa
-            demande de mise en place d’un hyperlien. La SAS B ET P ST TROPEZ se
-            réserve le droit d’accepter ou de refuser un hyperlien sans avoir à
-            en justifier sa décision. Services fournis : L’ensemble des
-            activités de la société ainsi que ses informations sont présentés
-            sur notre site www.bebitaliasainttropez.com. SAS B ET P ST TROPEZ
-            s’efforce de fournir sur le site www.bebitaliasainttropez.com des
-            informations aussi précises que possible. Les renseignements
-            figurant sur le site www.bebitaliasainttropez.com ne sont pas
-            exhaustifs et les photos non contractuelles. Ils sont donnés sous
-            réserve de modifications ayant été apportées depuis leur mise en
-            ligne. Par ailleurs, tous les informations indiquées sur le site
-            www.bebitaliasainttropez.com sont données à titre indicatif, et sont
-            susceptibles de changer ou d’évoluer sans préavis. Limitation
-            contractuelles sur les données : Les informations contenues sur ce
-            site sont aussi précises que possible et le site remis à jour à
-            différentes périodes de l’année, mais peut toutefois contenir des
-            inexactitudes ou des omissions. Si vous constatez une lacune, erreur
-            ou ce qui parait être un dysfonctionnement, merci de bien vouloir le
-            signaler par courriel, à l’adresse contact@bebsttropez.fr, en
-            décrivant le problème de la manière la plus précise possible (page
-            posant problème, type d’ordinateur et de navigateur utilisé, …).
-            Tout contenu téléchargé se fait aux risques et périls de
-            l’utilisateur et sous sa seule responsabilité. En conséquence, ne
-            saurait être tenu responsable d’un quelconque dommage subi par
-            l’ordinateur de l’utilisateur ou d’une quelconque perte de données
-            consécutives au téléchargement. De plus, l’utilisateur du site
-            s’engage à accéder au site en utilisant un matériel récent, ne
-            contenant pas de virus et avec un navigateur de dernière génération
-            mis-à-jour. Les liens hypertextes mis en place dans le cadre du
-            présent site internet en direction d’autres ressources présentes sur
-            le réseau Internet ne sauraient engager la responsabilité de SAS B
-            ET P ST TROPEZ. Propriété intellectuelle : Tout le contenu du
-            présent site www.bebitaliasainttropez.com, incluant, de façon non
-            limitative, les graphismes, images, textes, vidéos, animations,
-            sons, logos, gifs et icônes ainsi que leur mise en forme sont la
-            propriété exclusive de la société à l’exception des marques, logos
-            ou contenus appartenant à d’autres sociétés partenaires ou auteurs.
-            Toute reproduction, distribution, modification, adaptation,
-            retransmission ou publication, même partielle, de ces différents
-            éléments est strictement interdite sans l’accord exprès par écrit de
-            SAS B ET P ST TROPEZ. Cette représentation ou reproduction, par
-            quelque procédé que ce soit, constitue une contrefaçon sanctionnée
-            par les articles L.335-2 et suivants du Code de la propriété
-            intellectuelle. Le non-respect de cette interdiction constitue une
-            contrefaçon pouvant engager la responsabilité civile et pénale du
-            contrefacteur. En outre, les propriétaires des Contenus copiés
-            pourraient intenter une action en justice à votre encontre.
-            Déclaration à la CNIL : Conformément à la loi 78-17 du 6 janvier
-            1978 (modifiée par la loi 2004-801 du 6 août 2004 relative à la
-            protection des personnes physiques à l’égard des traitements de
-            données à caractère personnel) relative à l’informatique, aux
-            fichiers et aux libertés, ce site a fait l’objet d’une
-            déclaration1656629 auprès de la Commission nationale de
-            l’informatique et des libertés (www.cnil.fr). Litiges : Les
-            présentes conditions du site www.bebitaliasainttropez.com sont
-            régies par les lois françaises et toute contestation ou litiges qui
-            pourraient naître de l’interprétation ou de l’exécution de celles-ci
-            seront de la compétence exclusive des tribunaux dont dépend le siège
-            social de la société. La langue de référence, pour le règlement de
-            contentieux éventuels, est le français. Données personnelles : De
-            manière générale, vous n’êtes pas tenu de nous communiquer vos
-            données personnelles lorsque vous visitez notre site Internet
-            www.bebitaliasainttropez.com Cependant, ce principe comporte
-            certaines exceptions. En effet, pour certains services proposés par
-            notre site, vous pouvez être amenés à nous communiquer certaines
-            données telles que: votre nom, votre fonction, le nom de votre
-            société, votre adresse électronique, et votre numéro de téléphone.
-            Tel est le cas lorsque vous remplissez le formulaire qui vous est
-            proposé en ligne, dans la rubrique « contact ». Dans tous les cas,
-            vous pouvez refuser de fournir vos données personnelles. Dans ce
-            cas, vous ne pourrez pas utiliser les services du site, notamment
-            celui de solliciter des renseignements sur notre société, ou de
-            recevoir les lettres d’information. Enfin, nous pouvons collecter de
-            manière automatique certaines informations vous concernant lors
-            d’une simple navigation sur notre site internet notamment : des
-            informations concernant l’utilisation de notre site, comme les zones
-            que vous visitez et les services auxquels vous accédez, votre
-            adresse IP, le type de votre navigateur, vos temps d’accès. De
-            telles informations sont utilisées exclusivement à des fins de
-            statistiques internes, de manière à améliorer la qualité des
-            services qui vous sont proposés. Les bases de données sont protégées
-            par les dispositions de la loi du 1er juillet 1998 transposant la
-            directive 96/9 du 11 mars 1996 relative à la protection juridique
-            des bases de données.
+            {" "}
+            {lang === "fr"
+              ? "Merci de lire avec attention les différentes modalités d’utilisation du présent site avant d’y parcourir ses pages. En vous connectant sur ce site, vous acceptez, sans réserves, les présentes modalités. Aussi, conformément à l’article n°6 de la Loi n°2004-575 du 21 Juin 2004 pour la confiance dans l’économie numérique, les responsables du présent site internet www.bebitaliasainttropez.com sont : Éditeur du Site : SAS B ET P ST TROPEZ Numéro de SIRET : 82777230200010 Responsable éditorial : Christophe Papa Avenue du Maréchal Foch 83990 Saint-Tropez Téléphone : 04 94 45 77 20 Email : contact@bebsttropez.fr Site Web : www.bebitaliasainttropez.com Hébergement : Hébergeur : SAS OVH 2 rue Kellermann 59100 Roubaix Site Web : www.bebitaliasainttropez.com Développement : SAS B ET P ST TROPEZ Adresse : Avenue du Maréchal Foch 83990 Saint-Tropez Site Web : www.bebitaliasainttropez.com Conditions d’utilisation : Ce site (www.bebitaliasainttropez.com) est proposé en différents langages web (HTML, HTML5, Javascript, CSS, etc…) pour un meilleur confort d’utilisation et un graphisme plus agréable. Nous vous recommandons de recourir à des navigateurs modernes comme Internet explorer, Safari, Firefox, Google Chrome, etc… La SAS B ET P ST TROPEZ met en œuvre tous les moyens dont elle dispose, pour assurer une information fiable et une mise à jour fiable de ses sites internet.Toutefois, des erreurs ou omissions peuvent survenir. L’internaute devra donc s’assurer de l’exactitude des informations auprès de SAS B ET P ST TROPEZ , et signaler toutes modifications du site qu’il jugerait utile. SAS B ET P ST TROPEZ n’est en aucun cas responsable de l’utilisation faite de ces informations, et de tout préjudice direct ou indirect pouvant en découler. Cookies : Le site www.bebitaliasainttropez.com peut-être amené à vous demander l’acceptation des cookies pour des besoins de statistiques et d’affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez. Il contient plusieurs données qui sont stockées sur votre ordinateur dans un simple fichier texte auquel un serveur accède pour lire et enregistrer des informations . Certaines parties de ce site ne peuvent être fonctionnelles sans l’acceptation de cookies. Liens hypertextes : Les sites internet de peuvent offrir des liens vers d’autres sites internet ou d’autres ressources disponibles sur Internet. SAS B ET P ST TROPEZ ne dispose d’aucun moyen pour contrôler les sites en connexion avec ses sites internet. B ET P ST TROPEZ ne répond pas de la disponibilité de tels sites et sources externes, ni ne la garantit. Elle ne peut être tenue pour responsable de tout dommage, de quelque nature que ce soit, résultant du contenu de ces sites ou sources externes, et notamment des informations, produits ou services qu’ils proposent, ou de tout usage qui peut être fait de ces éléments. Les risques liés à cette utilisation incombent pleinement à l’internaute, qui doit se conformer à leurs conditions d’utilisation. Les utilisateurs, les abonnés et les visiteurs des sites internet ne peuvent pas mettre en place un hyperlien en direction de ce site sans l’autorisation expresse et préalable de SAS B ET P ST TROPEZ. Dans l’hypothèse où un utilisateur ou visiteur souhaiterait mettre en place un hyperlien en direction d’un des sites internet de SAS B ET P ST TROPEZ, il lui appartiendra d’adresser un email accessible sur le site afin de formuler sa demande de mise en place d’un hyperlien. La SAS B ET P ST TROPEZ se réserve le droit d’accepter ou de refuser un hyperlien sans avoir à en justifier sa décision. Services fournis : L’ensemble des activités de la société ainsi que ses informations sont présentés sur notre site www.bebitaliasainttropez.com. SAS B ET P ST TROPEZ s’efforce de fournir sur le site www.bebitaliasainttropez.com des informations aussi précises que possible. Les renseignements figurant sur le site www.bebitaliasainttropez.com ne sont pas exhaustifs et les photos non contractuelles. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne. Par ailleurs, tous les informations indiquées sur le site www.bebitaliasainttropez.com sont données à titre indicatif, et sont susceptibles de changer ou d’évoluer sans préavis. Limitation contractuelles sur les données : Les informations contenues sur ce site sont aussi précises que possible et le site remis à jour à différentes périodes de l’année, mais peut toutefois contenir des inexactitudes ou des omissions. Si vous constatez une lacune, erreur ou ce qui parait être un dysfonctionnement, merci de bien vouloir le signaler par courriel, à l’adresse contact@bebsttropez.fr, en décrivant le problème de la manière la plus précise possible (page posant problème, type d’ordinateur et de navigateur utilisé, …). Tout contenu téléchargé se fait aux risques et périls de l’utilisateur et sous sa seule responsabilité. En conséquence, ne saurait être tenu responsable d’un quelconque dommage subi par l’ordinateur de l’utilisateur ou d’une quelconque perte de données consécutives au téléchargement. De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour. Les liens hypertextes mis en place dans le cadre du présent site internet en direction d’autres ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de SAS B ET P ST TROPEZ. Propriété intellectuelle : Tout le contenu du présent site www.bebitaliasainttropez.com, incluant, de façon non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive de la société à l’exception des marques, logos ou contenus appartenant à d’autres sociétés partenaires ou auteurs. Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l’accord exprès par écrit de SAS B ET P ST TROPEZ. Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et pénale du contrefacteur. En outre, les propriétaires des Contenus copiés pourraient intenter une action en justice à votre encontre. Déclaration à la CNIL : Conformément à la loi 78-17 du 6 janvier 1978 (modifiée par la loi 2004-801 du 6 août 2004 relative à la protection des personnes physiques à l’égard des traitements de données à caractère personnel) relative à l’informatique, aux fichiers et aux libertés, ce site a fait l’objet d’une déclaration1656629 auprès de la Commission nationale de l’informatique et des libertés (www.cnil.fr). Litiges : Les présentes conditions du site www.bebitaliasainttropez.com sont régies par les lois françaises et toute contestation ou litiges qui pourraient naître de l’interprétation ou de l’exécution de celles-ci seront de la compétence exclusive des tribunaux dont dépend le siège social de la société. La langue de référence, pour le règlement de contentieux éventuels, est le français. Données personnelles : De manière générale, vous n’êtes pas tenu de nous communiquer vos données personnelles lorsque vous visitez notre site Internet www.bebitaliasainttropez.com Cependant, ce principe comporte certaines exceptions. En effet, pour certains services proposés par notre site, vous pouvez être amenés à nous communiquer certaines données telles que: votre nom, votre fonction, le nom de votre société, votre adresse électronique, et votre numéro de téléphone. Tel est le cas lorsque vous remplissez le formulaire qui vous est proposé en ligne, dans la rubrique « contact ». Dans tous les cas, vous pouvez refuser de fournir vos données personnelles. Dans ce cas, vous ne pourrez pas utiliser les services du site, notamment celui de solliciter des renseignements sur notre société, ou de recevoir les lettres d’information. Enfin, nous pouvons collecter de manière automatique certaines informations vous concernant lors d’une simple navigation sur notre site internet notamment : des informations concernant l’utilisation de notre site, comme les zones que vous visitez et les services auxquels vous accédez, votre adresse IP, le type de votre navigateur, vos temps d’accès. De telles informations sont utilisées exclusivement à des fins de statistiques internes, de manière à améliorer la qualité des services qui vous sont proposés. Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données."
+              : "Please read carefully the different terms of use of this site before browsing its pages. By connecting to this site, you accept, without reservation, the present terms and conditions. Also, in accordance with the article n°6 of the Law n°2004-575 of June 21, 2004 for the confidence in the digital economy, the persons in charge of the present Internet site www.bebitaliasainttropez.com are: Site editor: SAS B ET P ST TROPEZ SIRET number: 82777230200010 Editorial manager: Christophe Papa Avenue du Maréchal Foch 83990 Saint-Tropez Telephone: 04 94 45 77 20 Email: contact@bebsttropez.fr Website: www.bebitaliasainttropez.com Hosting: SAS OVH 2 rue Kellermann 59100 Roubaix Website: www.bebitaliasainttropez. com Development : SAS B ET P ST TROPEZ Address : Avenue du Maréchal Foch 83990 Saint-Tropez Website : www.bebitaliasainttropez.com Terms of use : This site (www.bebitaliasainttropez.com) is proposed in different web languages (HTML, HTML5, Javascript, CSS, etc...) for a better comfort of use and a more pleasant graphics. We recommend you to use modern browsers as Internet explorer, Safari, Firefox, Google Chrome, etc... SAS B ET P ST TROPEZ implements all the means at its disposal, to ensure a reliable information and a reliable update of its websites. However, errors or omissions can occur. The user must therefore ensure the accuracy of the information provided by SAS B ET P ST TROPEZ, and report any changes to the site that he/she deems useful. SAS B ET P ST TROPEZ is in no case responsible for the use made of this information, and for any direct or indirect damage which can result from it. Cookies : The site www.bebitaliasainttropez.com may ask you to accept cookies for statistical and display purposes. A cookie is a piece of information placed on your hard drive by the server of the site you are visiting. It contains several pieces of data that are stored on your computer in a simple text file that a server accesses to read and record information. Some parts of this site cannot be functional without accepting cookies. Hyperlinks: The websites of may offer links to other websites or other resources available on the Internet. SAS B ET P ST TROPEZ has no means of controlling the sites connected to its websites. B ET P ST TROPEZ is not responsible for the availability of such sites and external sources, nor does it guarantee them. It cannot be held responsible for any damage, of any nature whatsoever, resulting from the content of these external sites or sources, and in particular from the information, products or services they offer, or from any use that may be made of these elements. The risks related to this use are fully incumbent on the Internet user, who must comply with their conditions of use. Users, subscribers and visitors to the websites cannot set up a hyperlink to this site without the express prior authorization of SAS B ET P ST TROPEZ. In the event that a user or visitor wishes to set up a hyperlink to one of SAS B ET P ST TROPEZ's websites, he/she must send an email to the website in order to formulate his/her request to set up a hyperlink. SAS B ET P ST TROPEZ reserves the right to accept or refuse a hyperlink without having to justify its decision. Provided services: The whole of the activities of the company as well as its information are presented on our site www.bebitaliasainttropez.com. SAS B ET P ST TROPEZ endeavors to provide on the site www.bebitaliasainttropez.com information as precise as possible. The information appearing on the site www.bebitaliasainttropez.com is not exhaustive and the photographs are not contractual. They are given subject to modifications having been made since they were put on line. In addition, all the information indicated on the site www.bebitaliasainttropez.com is given as an indication, and is likely to change or evolve without notice. Contractual limitation on data: The information contained on this site is as accurate as possible and the site is updated at various times of the year, but may contain inaccuracies or omissions. If you notice a gap, error or what seems to be a malfunction, please report it by e-mail to contact@bebsttropez.fr, describing the problem as precisely as possible (page causing the problem, type of computer and browser used, ...). Any downloaded content is done at the user's own risk and under his sole responsibility. As a result, we cannot be held responsible for any damage to the user's computer or for any loss of data resulting from the download. Moreover, the user of the site undertakes to access the site using recent equipment, free of viruses and with a last generation updated browser. The hypertext links set up within the framework of the present Internet site in direction of other resources present on the Internet network would not know how to engage the responsibility of SAS B ET P ST TROPEZ. Intellectual property: All the contents of the present site www.bebitaliasainttropez.com, including, in a non-limitative way, the graphics, images, texts, videos, animations, sounds, logos, gifs and icons as well as their formatting are the exclusive property of the company with the exception of the marks, logos or contents belonging to other companies partners or authors. Any reproduction, distribution, modification, adaptation, retransmission or publication, even partial, of these various elements is strictly forbidden without the express written agreement of SAS B ET P ST TROPEZ. This representation or reproduction, by any process whatsoever, constitutes an infringement punishable by articles L.335-2 and following of the Code of intellectual property. Failure to comply with this prohibition constitutes an infringement that may incur the civil and criminal liability of the infringer. In addition, the owners of the copied Contents could bring a legal action against you. Declaration to the CNIL : In accordance with the law 78-17 of January 6, 1978 (modified by the law 2004-801 of August 6, 2004 relating to the protection of physical persons with regard to the processing of personal data) relating to data processing, files and freedoms, this site was the subject of a declaration1656629 with the National Commission of Data processing and Freedoms (www.cnil.fr). Disputes: The present conditions of the site www.bebitaliasainttropez.com are governed by French law and any dispute or litigation which could arise from the interpretation or the execution of these will be of the exclusive competence of the courts on which depends the registered office of the company. The reference language for the settlement of any disputes is French. Personal data: In general, you are not obliged to communicate your personal data to us when you visit our website www.bebitaliasainttropez.com. However, this principle has certain exceptions. Indeed, for certain services offered by our site, you may be required to communicate certain data to us such as: your name, your function, the name of your company, your e-mail address, and your telephone number. This is the case when you fill out the form that is offered online, in the 'contact' section. In any case, you can refuse to provide your personal data. In this case, you will not be able to use the services of the site, in particular that of requesting information on our company, or to receive the newsletters. Finally, we may automatically collect certain information about you when you browse our website, including: information about the use of our site, such as the areas you visit and the services you access, your IP address, your browser type, and your access times. Such information is used exclusively for internal statistical purposes, in order to improve the quality of the services offered to you. The databases are protected by the provisions of the law of July 1, 1998 transposing the directive 96/9 of March 11, 1996 relating to the legal protection of databases."}
           </p>
         </div>
       </>

@@ -1,8 +1,7 @@
-import React from "react";
 import styles from "./styles.module.scss";
 import GoogleMap from "../../components/GoogleMap";
 
-const Contact = ({ address, phone, mail }) => {
+const Contact = ({ address, phone, mail, lang }) => {
   return (
     <div className={styles.contact}>
       <div className={styles.__contact_container}>
@@ -15,7 +14,7 @@ const Contact = ({ address, phone, mail }) => {
 
         <div className={styles.__map_box}>
           <div className={styles.__map}>
-            <GoogleMap />
+            <GoogleMap lang={lang} />
           </div>
         </div>
       </div>

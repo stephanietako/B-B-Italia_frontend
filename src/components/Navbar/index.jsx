@@ -50,15 +50,15 @@ const Navbar = ({ lang, setLang }) => {
 
   // Main navbar menu
   const linksMobile = [
-    { name: lang === "fr" ? "Accueil" : "Home", target: "#welcome" },
-    { name: lang === "fr" ? "A propos" : "About", target: "#about" },
+    { name: "Accueil", target: "#welcome" },
+    { name: "A propos", target: "#about" },
     { name: "Showroom", target: "#showroom" },
     {
-      name: lang === "fr" ? "Produits" : "Products",
+      name: "Produits",
       target: "",
       dropdown: true,
     },
-    { name: lang === "fr" ? "Projets" : "Projects", target: "#projects" },
+    { name: "Projets", target: "#projects" },
     { name: "Contact", target: "#contact" },
   ];
 

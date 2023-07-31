@@ -6,6 +6,7 @@ import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
 import IconsContacts from "../../components/IconsContacts";
 import Navbar from "../../components/Navbar";
+import Banner from "../../components/Banner";
 // Styles
 import styles from "./styles.module.scss";
 // Logos
@@ -17,6 +18,7 @@ import maxaltoLogo from "../../assets/logo/maxalto-logo-crop.webp";
 import arclinea from "../../assets/images/arclinea.webp";
 import maxalto from "../../assets/images/maxalto.webp";
 import christophe from "../../assets/images/christophe.webp";
+import vue from "../../assets/images/vue.webp";
 // Images Slide Projects
 import slide1bis from "../../assets/images/slide1bis.webp";
 import slide2bis from "../../assets/images/slide2bis.webp";
@@ -24,7 +26,13 @@ import slide1 from "../../assets/images/slide1.webp";
 import slide2 from "../../assets/images/slide2.webp";
 import slide3 from "../../assets/images/slide3.webp";
 import slide4 from "../../assets/images/slide4.webp";
-import vue from "../../assets/images/vue.webp";
+import capon from "../../assets/images/capon.webp";
+import capon1 from "../../assets/images/capon1.webp";
+import capon2 from "../../assets/images/capon2.webp";
+import capon3 from "../../assets/images/capon3.webp";
+import capon4 from "../../assets/images/capon4.webp";
+import capon5_6 from "../../assets/images/capon5-6.webp";
+import capon7 from "../../assets/images/capon7.webp";
 // Images Slide Showroom
 import s1 from "../../assets/images/s1.webp";
 import s2 from "../../assets/images/s2.webp";
@@ -68,6 +76,27 @@ const HomePage = ({ lang, setLang }) => {
     },
     {
       image: slide4,
+    },
+    {
+      image: capon,
+    },
+    {
+      image: capon1,
+    },
+    {
+      image: capon2,
+    },
+    {
+      image: capon3,
+    },
+    {
+      image: capon4,
+    },
+    {
+      image: capon5_6,
+    },
+    {
+      image: capon7,
     },
   ];
   // Showroom section data images
@@ -143,6 +172,7 @@ const HomePage = ({ lang, setLang }) => {
       <IconsContacts />
       <section id="welcome">
         <div className={styles.sections}>
+          <Banner />
           <HomeSection slides={SliderDataHome} />
         </div>
       </section>

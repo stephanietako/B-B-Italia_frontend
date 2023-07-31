@@ -1,0 +1,33 @@
+// Banner.scss
+.banner {
+  width: 81%;
+  height: 10vh; /* 20% de la hauteur de l'écran */
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 4px solid red;
+  margin: auto;
+
+  .__text_container {
+    width: 100%;
+    animation: marquee 14s linear infinite; /* Vitesse et boucle du défilement */
+    p {
+      color: #000;
+      font-size: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(
+        -100%
+      ); /* Décalage vers la gauche pour le défilement */
+    }
+  }
+}

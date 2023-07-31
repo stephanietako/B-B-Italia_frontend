@@ -6,7 +6,6 @@ import About from "../../components/About";
 import ImgSlider from "../../components/ImgSlider";
 import IconsContacts from "../../components/IconsContacts";
 import Navbar from "../../components/Navbar";
-import Banner from "../../components/Banner";
 // Styles
 import styles from "./styles.module.scss";
 // Logos
@@ -172,7 +171,6 @@ const HomePage = ({ lang, setLang }) => {
       <IconsContacts />
       <section id="welcome">
         <div className={styles.sections}>
-          <Banner />
           <HomeSection slides={SliderDataHome} />
         </div>
       </section>

@@ -7,7 +7,14 @@ function Banner() {
       <div className={styles.__text_container}>
         <p>
           Offre exceptionnelle sur tout le mobilier Outdoor disponible au
-          showroom{" "}
+          showroom Offre exceptionnelle sur tout le mobilier Outdoor disponible
+          au showroom Offre exceptionnelle sur tout le mobilier Outdoor
+          disponible au showroom Offre exceptionnelle sur tout le mobilier
+          Outdoor disponible au showroom Offre exceptionnelle sur tout le
+          mobilier Outdoor disponible au showroom Offre exceptionnelle sur tout
+          le mobilier Outdoor disponible au showroom Offre exceptionnelle sur
+          tout le mobilier Outdoor disponible au showroom Offre exceptionnelle
+          sur tout le mobilier Outdoor disponible au showroom
         </p>
       </div>
     </div>

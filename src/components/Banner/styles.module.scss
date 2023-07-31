@@ -1,17 +1,20 @@
-// Banner.scss
 .banner {
-  width: 81%;
-  height: 10vh; /* 20% de la hauteur de l'écran */
+  height: auto;
   background-color: #fff;
   overflow: hidden;
   display: flex;
   align-items: center;
   margin: auto;
+  padding-top: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   .__text_container {
-    width: 100%;
-    animation: marquee 14s linear infinite; /* Vitesse et boucle du défilement */
+    width: auto;
+    animation: marquee 20s linear infinite;
     p {
+      white-space: nowrap;
       color: #000;
       font-size: 2rem;
       margin: 0;
@@ -21,12 +24,26 @@
 
   @keyframes marquee {
     0% {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
+
     100% {
-      transform: translateX(
-        -100%
-      ); /* Décalage vers la gauche pour le défilement */
+      transform: translateX(-50%);
+    }
+  }
+}
+
+// ############## RESPONSIVE  ###############
+@media (max-width: 600px) {
+  .banner {
+    height: 4vh;
+    padding-top: 5px;
+    .__text_container {
+      p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 }

@@ -1,0 +1,22 @@
+.translate_txt {
+  display: flex;
+  width: auto;
+  height: auto;
+  right: 0;
+  position: fixed;
+  z-index: 999;
+  padding: 26px;
+  flex-direction: column;
+
+  .__lang_btn {
+    padding: 5px 6px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    border: none;
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+}

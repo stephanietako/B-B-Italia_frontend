@@ -3,6 +3,8 @@ import at from "../../assets/icon/at.svg";
 import phone from "../../assets/icon/phone.svg";
 import instagram from "../../assets/icon/instagram.svg";
 import { v4 as uuidv4 } from "uuid";
+// Translation component
+import Translation from "../../components/Translation";
 
 const IconsContacts = () => {
   const contactLinks = [
@@ -15,19 +17,22 @@ const IconsContacts = () => {
     },
   ];
   return (
-    <div className={styles.icons_contacts}>
-      <div className={styles.__icons}>
-        <ul>
-          {contactLinks.map(({ logo, alt, link } = contactLinks) => (
-            <li key={uuidv4()}>
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                <img src={logo} alt={alt} />
-              </a>
-            </li>
-          ))}
-        </ul>
+    <>
+      <div className={styles.icons_contacts}>
+        <div className={styles.__icons}>
+          <ul>
+            {contactLinks.map(({ logo, alt, link } = contactLinks) => (
+              <li key={uuidv4()}>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <img src={logo} alt={alt} />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <Translation />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 export default IconsContacts;

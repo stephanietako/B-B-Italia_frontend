@@ -30,7 +30,7 @@
       }
     }
     .__bloc {
-      @include blocsTxt(50%, 100%, 50%);
+      @include blocsTxt(64%, 100%, 50%);
       padding: 8px;
       .bloc_box {
         display: flex;
@@ -94,7 +94,7 @@
         }
       }
       .__bloc {
-        @include blocsTxt(48%, 100%, 50%);
+        @include blocsTxt(55%, 100%, 50%);
         flex-direction: column;
         .__logo {
           width: 6rem;
@@ -140,7 +140,7 @@
   .blocs {
     .__container {
       .__bloc {
-        @include blocsTxt(65%, 100%, 50%);
+        @include blocsTxt(77%, 100%, 50%);
         padding: 8px;
         .bloc_box {
           .__text {

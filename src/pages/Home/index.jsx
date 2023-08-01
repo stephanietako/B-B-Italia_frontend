@@ -30,8 +30,9 @@ import capon1 from "../../assets/images/capon1.webp";
 import capon2 from "../../assets/images/capon2.webp";
 import capon3 from "../../assets/images/capon3.webp";
 import capon4 from "../../assets/images/capon4.webp";
-import capon5_6 from "../../assets/images/capon5-6.webp";
 import capon7 from "../../assets/images/capon7.webp";
+import capon5 from "../../assets/images/e5bis.webp";
+import capon6 from "../../assets/images/e6bis.webp";
 // Images Slide Showroom
 import s1 from "../../assets/images/s1.webp";
 import s2 from "../../assets/images/s2.webp";
@@ -92,7 +93,10 @@ const HomePage = ({ lang, setLang }) => {
       image: capon4,
     },
     {
-      image: capon5_6,
+      image: capon5,
+    },
+    {
+      image: capon6,
     },
     {
       image: capon7,

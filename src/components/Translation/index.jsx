@@ -1,7 +1,7 @@
 // Styles
 import styles from "./styles.module.scss";
 
-const index = ({ lang, setLang }) => {
+const Translation = ({ lang, setLang }) => {
   const handleLangChange = () => {
     if (lang === "fr") {
       setLang("en");
@@ -18,4 +18,4 @@ const index = ({ lang, setLang }) => {
   );
 };
 
-export default index;
+export default Translation;

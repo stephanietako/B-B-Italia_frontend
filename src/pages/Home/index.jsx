@@ -172,7 +172,7 @@ const HomePage = ({ lang, setLang }) => {
   return (
     <>
       <Navbar lang={lang} setLang={setLang} />
-      <IconsContacts />
+      <IconsContacts lang={lang} setLang={setLang} />
       <section id="welcome">
         <div className={styles.sections}>
           <HomeSection slides={SliderDataHome} />

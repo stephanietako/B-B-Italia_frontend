@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 // Translation component
 import Translation from "../../components/Translation";
 
-const IconsContacts = () => {
+const IconsContacts = ({ lang, setLang }) => {
   const contactLinks = [
     { logo: phone, alt: "Phone symbol", link: "tel:+33494457720" },
     { logo: at, alt: "Mail symbol", link: "mailto:contact@bebsttropez.fr" },
@@ -29,7 +29,7 @@ const IconsContacts = () => {
               </li>
             ))}
           </ul>
-          <Translation />
+          <Translation lang={lang} setLang={setLang} />
         </div>
       </div>
     </>

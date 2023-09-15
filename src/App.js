@@ -6,7 +6,6 @@ import HomePage from "./pages/Home";
 import MentionsLegales from "./components/MentionsLegales";
 import ScrollToTop from "./components/ScrollToTop";
 import Page404 from "./components/Page404";
-import Banner from "./components/Banner";
 
 const App = () => {
   // Navigator language property
@@ -35,7 +34,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <Banner />
       <ScrollToTop />
       <Routes>
         <Route element={<Layout lang={localLang} />}>

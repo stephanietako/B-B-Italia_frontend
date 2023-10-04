@@ -26,8 +26,10 @@ const Footer = ({ lang }) => {
           </li>
           <li>
             <div className={styles.__copyright}>
-              &#169; Copyright {currentYear} | Lise Braun & Stéphanie Gabbay |
-              {lang === "fr" ? "Tous droits réservés" : "All rights reserved"}{" "}
+              &#169; Copyright {currentYear} | Lise Braun | Tako Dev |
+              {lang === "fr"
+                ? "\nTous droits réservés"
+                : "\nAll rights reserved"}{" "}
             </div>
           </li>
         </ul>

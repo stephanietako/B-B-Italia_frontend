@@ -6,7 +6,7 @@
   height: 100%;
   justify-content: center;
   align-items: center;
-  padding-bottom: 176px;
+  // padding-bottom: 176px;
 
   .__container {
     overflow: hidden;
@@ -87,6 +87,7 @@
 // ############## RESPONSIVE  ###############
 @media only screen and (max-width: 768px) {
   .blocs {
+    // padding-bottom: 0;
     .__container {
       .__img {
         img {

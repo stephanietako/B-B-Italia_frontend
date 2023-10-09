@@ -11,8 +11,8 @@
     position: fixed;
     display: flex;
     z-index: 100;
-    right: 35px;
     top: 8rem;
+    right: 20px;
     ul {
       display: flex;
       li {
@@ -27,14 +27,6 @@
   }
 }
 // ############## RESPONSIVE  ###############
-@media (min-width: 1900px) {
-  .icons_contacts {
-    .__icons {
-      right: 20px;
-    }
-  }
-}
-
 @media (min-width: 768px) and (max-width: 1900px) {
   .icons_contacts {
     .__icons {

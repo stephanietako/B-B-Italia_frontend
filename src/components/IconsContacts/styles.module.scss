@@ -35,31 +35,7 @@
   }
 }
 
-@media (max-width: 768px) {
-  .icons_contacts {
-    .__icons {
-      right: 20px;
-    }
-  }
-}
-
-@media (max-width: 501px) {
-  .icons_contacts {
-    .__icons {
-      right: 20px;
-    }
-  }
-}
-
-@media (max-width: 500px) and (min-width: 400px) {
-  .icons_contacts {
-    .__icons {
-      right: 20px;
-    }
-  }
-}
-
-@media (max-width: 501px) and (min-width: 320px) {
+@media (max-width: 500px) and (min-width: 320px) {
   .icons_contacts {
     .__icons {
       right: 20px;
